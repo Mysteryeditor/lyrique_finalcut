@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <!-- css page -->
+    <link rel="stylesheet" href="./assets/css/registration.css">
+
+    <!-- script page -->
+    <script src="./assets/js/registration.js"></script>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="h-100 bg-dark">
+        <form action="#" id="regform" method="post">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <div class="card card-registration my-4">
+                            <div class="row g-0">
+                                <div class="col-xl-6 d-none d-xl-block">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                                        alt="Sample photo" class="img-fluid"
+                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card-body p-md-5 text-black">
+                                        <h3 class="mb-5 text-uppercase">registration form</h3>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-outline">
+                                                    <input type="text" id="firstn"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="firstn">First name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-outline">
+                                                    <input type="text" id="lastn"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="lastn">Last name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                            <h6 class="mb-0 me-4">Gender: </h6>
+
+                                            <div class="form-check form-check-inline mb-0 me-4">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="femaleGender" value="female" />
+                                                <label class="form-check-label" for="female">Female</label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline mb-0 me-4">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="maleGender" value="male" />
+                                                <label class="form-check-label" for="male">Male</label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline mb-0">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="otherGender" value="other" />
+                                                <label class="form-check-label" for="other">Other</label>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="form-outline mb-4">
+                                            <input type="date" id="DOB"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="DOB">DOB</label>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="email"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="email">Email ID</label>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="password" class="form-control form-control-lg">
+                                            <label class="form-label" for="password">Password</label>
+                                            <span toggle="#password" class="password-toggle" onclick="togglePasswordVisibility('password')">
+                                              <i id="toggle-icon" class="fa fa-eye"></i>
+                                            </span>
+                                          </div>
+
+                                          <div class="form-outline mb-4">
+                                            <input type="password" id="cpwd" class="form-control form-control-lg">
+                                            <label class="form-label" for="cpwd">Confirm Password</label>
+                                            <span class="toggle-icon" onclick="togglePasswordVisibility('cpwd')">
+                                              <i id="toggle-icon-cpwd" class="fa fa-eye"></i>
+                                            </span>
+                                          </div>
+
+                                        <!-- agree to terms checkbox -->
+                                        <div class="container">
+                                            <input type="checkbox" name="terms">
+                                            
+                                            <span class="container-label">I Agree To The <a href="./terms.html"> Terms &amp; Conditions</a></span>
+                                            <p id="checkboxvalidate"></p>
+                                        </div>
+                                          
+
+                                        <div class="d-flex justify-content-end pt-3">
+                                            <button type="reset" class="btn btn-light btn-lg">Reset all</button>
+                                            <button type="button" class="btn btn-warning btn-lg ms-2"
+                                                onclick="registerUser()">Submit form</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

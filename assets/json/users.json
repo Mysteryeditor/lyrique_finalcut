@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "firstname": "sr",
+      "lastname": "ss",
+      "gender": "male",
+      "dob": "2023-05-01",
+      "email": "sri027.cvb@gmail.com",
+      "password": "gigily",
+      "id": 1
+    }
+  ],
+  "login": [{
+    "email": "sri027.cvb@gmail.com",
+    "password": "gigily"}
+    
+  ]
+}
