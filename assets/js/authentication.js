@@ -13,11 +13,13 @@ function authenticate() {
         for (let user of userdata) {
           if (user.email === email && user.password === pwd) {
             // Authentication successful
+            window.location.href("./homepage.html");
             return;
           }
           else{
+            alert("Invalid Username or Password");
             console.log("Authentication failed");
-            return;
+            return ;
           }
         }
       }

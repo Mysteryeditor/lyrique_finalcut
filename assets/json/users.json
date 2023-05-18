@@ -17,12 +17,50 @@
       "email": "rakesh@gmail.com",
       "password": "Thisisrakesh",
       "id": 2
+    },
+    {
+      "firstname": "Madhav",
+      "lastname": "S",
+      "gender": "male",
+      "dob": "2023-05-11",
+      "email": "maddy@gmail.com",
+      "password": "maddy",
+      "id": 3
+    },
+    {
+      "firstname": "Mani",
+      "lastname": "S",
+      "gender": "male",
+      "dob": "2023-05-03",
+      "email": "mani@gmail.com",
+      "password": "asd",
+      "id": 4
     }
   ],
-  "login": [
+  "songs": [
     {
-      "email": "sri027.cvb@gmail.com",
-      "password": "gigily"
+      "id": 1,
+      "name": "Love Me Again",
+      "Artist": "John Newman",
+      "year": 2013,
+      "image": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978"
+    },
+    {
+      "id": 2,
+      "name": "Another Love",
+      "Artist": "Tom Odell",
+      "year": 2013,
+      "image": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f"
+    }
+  ],
+  "lyrics": [
+    {
+      "name": "Love Me Again",
+      "lyrics": "Know I've done wrong,\n left your heart torn Is that what devils do?\n Took you so low, where only fools go I shook the angel in you\n Now I'm rising from the ground Rising up to you\nFilled with all the strength I found\nThere's nothing I can't do\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again?\nCan you love me again?\nIt's unforgivable\nI stole and burnt your soul\nIs that what demons do?\nThey rule the worst of me\nDestroy everything\nThey bring down angels like you\nNow I'm rising from the ground\nRising up to you\nFilled with all the strength I found\nThere's nothing I can't do\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again?\nCan you love me again?\nOh, I told you once again\nI can't do this again, do this again, oh\nI told you once again\nI can't do this again, do this again, oh no\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again?\nI need to know now, know now\nCan you love me again (Oh, oh)\nCan you love me again?\nCan you love me again?\nCan you love me again?"
+    },
+    {
+      "name": "Another Love",
+      "lyrics": "I wanna take you somewhere so you know I care\nBut it's so cold and I don't know where\nI brought you daffodils in a pretty string\nBut they won't flower like they did last spring\nAnd I wanna kiss you, make you feel alright\nI'm just so tired to share my nights\nI wanna cry and I wanna love\nBut all my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up, up\nAnd if somebody hurts you, I wanna fight\nBut my hand's been broken one too many times\nSo I'll use my voice, I'll be so fucking rude\nWords, they always win, but I know I'll lose\nAnd I'd sing a song that'd be just ours\nBut I sang 'em all to another heart\nAnd I wanna cry, I wanna learn to love\nBut all my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up, up\nOh, need a love, now\nMy heart is thinking of\nI wanna sing a song that'd be just ours\nBut I sang 'em all to another heart\nAnd I wanna cry, I wanna fall in love\nBut all my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up\nOn another love, another love\nAll my tears have been used up, up"
     }
   ]
 }

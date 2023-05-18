@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>HomePage</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- styling page -->
+    <link rel="stylesheet" href="./assets/css/styling.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<!-- Modal -->
-<div id="favoriteArtistsModal" class="modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Modal content goes here -->
-        <div class="modal-header">
-          <h5 class="modal-title">Favorite Artists</h5>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+            <a class="navbar-brand" href="#">Lyrique</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./artists.html">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Languages</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="modal-body">
-          <!-- Modal body content -->
+    </nav>
+
+    <!-- <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <!-- Modal footer content -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <script>
-  // Homepage.js
+    </div> -->
 
-// Retrieve the cookie
-var cookies = document.cookie.split(';');
-var hasSeenModal = false;
-for (var i = 0; i < cookies.length; i++) {
-  var cookie = cookies[i].trim();
-  if (cookie.startsWith("hasSeenModal=")) {
-    hasSeenModal = true;
-    break;
-  }
-}
-
-// Display or skip the modal based on the cookie value
-if (!hasSeenModal) {
-  $(document).ready(function () {
-    $('#favoriteArtistsModal').modal('show');
-  });
-}
-
-  </script>
-
-  <!-- Include jQuery and Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
-  
 </body>
+
 </html>

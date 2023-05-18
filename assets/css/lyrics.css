@@ -1,0 +1,68 @@
+/* for the navbar */
+#logo{
+  height: 50px;
+  width: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(133, 34, 34);
+}
+
+/* for the lyrics div */
+#lyricsContainer {
+  background-color: #242323;
+  color: #f6f6f6e8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  white-space: pre-line;
+}
+
+#lyricsContainer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+#lyricsContainer p:before {
+  margin-right: 10px;
+}
+
+#lyricsContainer p:first-child:before {
+  margin-right: 0;
+}
+
+/* for the logout button */
+button {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+ }
+ 
+ button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ button:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }
+
