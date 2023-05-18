@@ -13,9 +13,7 @@ function authenticate() {
         for (let user of userdata) {
           if (user.email === email && user.password === pwd) {
             // Authentication successful
-            window.open("./index.html")
             return;
-            
           }
           else{
             console.log("Authentication failed");
@@ -25,4 +23,5 @@ function authenticate() {
       }
     };
   }
+
   

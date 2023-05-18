@@ -8,11 +8,21 @@
       "email": "sri027.cvb@gmail.com",
       "password": "gigily",
       "id": 1
+    },
+    {
+      "firstname": "Rakesh",
+      "lastname": "S",
+      "gender": "male",
+      "dob": "2023-05-10",
+      "email": "rakesh@gmail.com",
+      "password": "Thisisrakesh",
+      "id": 2
     }
   ],
-  "login": [{
-    "email": "sri027.cvb@gmail.com",
-    "password": "gigily"}
-    
+  "login": [
+    {
+      "email": "sri027.cvb@gmail.com",
+      "password": "gigily"
+    }
   ]
 }
