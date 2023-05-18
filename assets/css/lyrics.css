@@ -34,7 +34,7 @@ a{
 }
 
 /* for the logout button */
-button {
+.navbar button {
   display: flex;
   height: 3em;
   width: 100px;
@@ -46,23 +46,26 @@ button {
   transition: all 0.2s linear;
   cursor: pointer;
   border: none;
-  background: #fff;
+  background: #716161;
  }
  
- button > svg {
+.navbar button > svg {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 20px;
   transition: all 0.4s ease-in;
  }
  
- button:hover > svg {
+ .navbar button:hover > svg {
   font-size: 1.2em;
   transform: translateX(-5px);
  }
  
- button:hover {
-  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ .navbar button:hover {
+  box-shadow: 9px 9px 33px #292727, -9px -9px 33px #ffffff;
   transform: translateY(-2px);
  }
+
+ /* for the loading animation */
+ 
 
