@@ -1,40 +1,51 @@
 {
   "users": [
     {
-      "firstname": "sr",
-      "lastname": "ss",
+      "firstname": "s",
+      "lastname": "s",
       "gender": "male",
-      "dob": "2023-05-01",
+      "dob": "2023-05-09",
       "email": "sri027.cvb@gmail.com",
-      "password": "gigily",
+      "password": "asd",
+      "username": "ss",
       "id": 1
     },
     {
-      "firstname": "Rakesh",
-      "lastname": "S",
+      "firstname": "Kokki",
+      "lastname": "Kumar",
       "gender": "male",
-      "dob": "2023-05-10",
-      "email": "rakesh@gmail.com",
-      "password": "Thisisrakesh",
+      "dob": "1996-07-28",
+      "email": "kokki@gmail.com",
+      "password": "abc",
+      "username": "KokkiKumar",
       "id": 2
     },
     {
-      "firstname": "Madhav",
-      "lastname": "S",
+      "firstname": "Rakesh",
+      "lastname": "v",
       "gender": "male",
-      "dob": "2023-05-11",
-      "email": "maddy@gmail.com",
-      "password": "maddy",
+      "dob": "2023-05-03",
+      "email": "rakesh@gmail.com",
+      "password": "abc@",
+      "username": "Rakeshv",
       "id": 3
     },
     {
-      "firstname": "Mani",
+      "firstname": "Mahesh",
       "lastname": "S",
       "gender": "male",
       "dob": "2023-05-03",
-      "email": "mani@gmail.com",
-      "password": "asd",
+      "email": "ma@gmail.com",
+      "password": "abc",
+      "username": "MaheshS",
       "id": 4
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "username": "MaheshS",
+      "password": "abc"
     }
   ],
   "songs": [

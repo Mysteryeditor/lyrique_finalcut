@@ -19,8 +19,8 @@ function registerUser() {
     return false;
   }
   else {
-    const firstname = document.getElementById("firstn").value;
-    const lastname = document.getElementById("lastn").value;
+    var firstname = document.getElementById("firstn").value;
+    var lastname = document.getElementById("lastn").value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
     // const gender=document.regform.gender;
     const dob = document.getElementById("DOB").value;
@@ -37,9 +37,32 @@ function registerUser() {
         gender: gender,
         dob: dob,
         email: email,
-        password: password
+        password: password,
+        username:firstname+lastname
       })
     );
-    window.location.href("./login.html");
+    var username=firstname+lastname;
+    Swal.fire({
+      icon: 'success',
+      title: 'Registered Successfully!',
+      showClass:{
+        popup:'animate__fadeOut'
+      },
+      hideClass:{
+        popup:'animate__fadeOut'
+      },
+      html: 'Your Username Is <strong><mark>'+username+"</mark></strong>",
+      confirmButtonText: 'Login',
+      preConfirm: () => {
+        window.location.href = './authentication.html'; // Redirect to authentication.html
+      }
+    });
+    
+
+
+ 
+    
   }
 }
+// window.location.href("./login.html");
+

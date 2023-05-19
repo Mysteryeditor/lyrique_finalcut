@@ -14,12 +14,63 @@
 	<!-- css file -->
 	<link rel="stylesheet" href="./assets/css/authentication.css">
 
+	    <!-- styling page -->
+		<link rel="stylesheet" href="./assets/css/styling.css">
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<!-- javascript file -->
 	<script src="./assets/js/authentication.js"></script>
 
 
 	</head>
+
 	<body class="img js-fullheight" style="background-image: url(./assets/images/authentication_banner.jpg);">
+		<!-- the navbar -->
+		<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="dark">
+			<div class="container-fluid p-0">
+				<img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+				<a class="navbar-brand" href="./index.html">Lyrique</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	
+					<i class="fa-solid fa-bars navbar-toggler-icon"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item ">
+							<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+						</li>
+	
+						<li class="nav-item ">
+							<a class="nav-link" aria-current="page" href="#">NewsLetters</a>
+						</li>
+	
+						<li class="nav-item ">
+							<a class="nav-link " aria-current="page" href="#">Concerts</a>
+						</li>
+	
+						<li class="nav-item ">
+							<a class="nav-link " aria-current="page" href="#">Events</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav  ms-auto" >
+					   
+						<li >
+							<i class="fa-regular fa-user"></i>
+							<a href="./authentication.html">SIGN-IN</a>
+						</li>
+						<li >
+							<i class="fa-solid fa-user-plus"></i>
+							<a href="./registration.html">SignUp</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -33,14 +84,14 @@
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
 		      	<form action="" class="signin-form">
 		      		<div class="form-group">
-		      			<input id="email" type="text" class="form-control" placeholder="Email" required>
+		      			<input id="username" type="text" class="form-control" placeholder="Username" required>
 		      		</div>
 	            <div class="form-group">
 	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" onclick="authenticate()" class="form-control btn btn-primary submit px-3">Sign In</button>
+	            	<button type="submit" onclick="authenticate(); return false;" class="form-control btn btn-primary submit px-3">Sign In</button>
 	            </div>
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
@@ -66,7 +117,7 @@
 	</section>
 
 	<script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/popper.js"></script>
+
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
 

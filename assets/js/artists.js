@@ -1,3 +1,20 @@
+// function profilePic()
+// {
+// var image=document.getElementById("profilepic");
+// const http
+// image.setAttribute("src",url);
+// }
+function username(){
+  const xhttp=new XMLHttpRequest();
+  xhttp.open("GET","http://localhost:3000/users");
+  xhttp.send();
+  xhttp.onreadystatechange=function(){
+    if(xhttp.readyState==4 && xhttp.status==200){
+      const users=JSON.parse(this.responseText);
+      
+    }
+  }
+}
 function displayUniqueArtists() {
     var xhttp = new XMLHttpRequest();
     xhttp.open('GET', 'http://localhost:3000/songs');
