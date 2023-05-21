@@ -12,13 +12,28 @@ function togglePasswordVisibility(elementId) {
   }
 }
 
+(function () {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over each form and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+          }
+
+          form.classList.add('was-validated');
+      }, false);
+  });
+})();
+
 // inserting the records to a json file
 function registerUser() {
-  if (!regform.terms.checked) {
-    checkboxvalidate.innerHTML = "Please Agree To the Terms and Conditions!!";
-    return false;
-  }
-  else {
+  
     var firstname = document.getElementById("firstn").value;
     var lastname = document.getElementById("lastn").value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
@@ -57,12 +72,10 @@ function registerUser() {
         window.location.href = './authentication.html'; // Redirect to authentication.html
       }
     });
-    
-
-
- 
-    
   }
-}
-// window.location.href("./login.html");
+
+
+
+
+
 

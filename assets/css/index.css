@@ -1,0 +1,11 @@
+/* for the background image in layer2 */
+#layer2bg{
+    position: absolute;
+    width: 100%;
+    filter: blur(2px);
+}
+
+/* for the heading of layer2 */
+#layer2head{
+    position: relative;
+}

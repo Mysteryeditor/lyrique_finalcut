@@ -1,20 +1,24 @@
-// function profilePic()
-// {
-// var image=document.getElementById("profilepic");
-// const http
-// image.setAttribute("src",url);
-// }
-function username(){
+// to display the username in the navbar
+function displayuname(){
+    
   const xhttp=new XMLHttpRequest();
-  xhttp.open("GET","http://localhost:3000/users");
+  xhttp.open("GET","http://localhost:3000/login");
   xhttp.send();
   xhttp.onreadystatechange=function(){
-    if(xhttp.readyState==4 && xhttp.status==200){
-      const users=JSON.parse(this.responseText);
-      
-    }
+      if(this.readyState==4 && xhttp.status==200){
+          const userdata=JSON.parse(this.responseText);
+          
+          var username=userdata[0].username;
+          var usercontainer=document.getElementById("username");
+          usercontainer.textContent=username;
+          console.log(username);
+          
+      }
   }
 }
+displayuname();
+
+// to display the artists of the songs
 function displayUniqueArtists() {
     var xhttp = new XMLHttpRequest();
     xhttp.open('GET', 'http://localhost:3000/songs');
@@ -33,7 +37,7 @@ function displayUniqueArtists() {
               }
             });
   
-            var cardContainer = document.getElementById('card-container'); // Container element for the cards
+            var cardContainer = document.getElementById('card-container'); //Container element for the cards
   
             // Create a Bootstrap card for each unique artist
             uniqueArtists.forEach(function (artist) {
@@ -65,6 +69,10 @@ function displayUniqueArtists() {
   
   // Call the displayUniqueArtists() function
   displayUniqueArtists();
+
+ 
+  
+  
   
   
   

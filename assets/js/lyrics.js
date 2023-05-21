@@ -1,3 +1,23 @@
+// to display username
+function displayuname(){
+    
+  const xhttp=new XMLHttpRequest();
+  xhttp.open("GET","http://localhost:3000/login");
+  xhttp.send();
+  xhttp.onreadystatechange=function(){
+      if(this.readyState==4 && xhttp.status==200){
+          const userdata=JSON.parse(this.responseText);
+          
+          var username=userdata[0].username;
+          var usercontainer=document.getElementById("username");
+          usercontainer.textContent=username;
+          console.log(username);
+          
+      }
+  }
+}
+displayuname();
+
 function viewsongs(){
 const xhttp=new XMLHttpRequest();
 xhttp.open("GET","http://localhost:3000/songs");
@@ -13,7 +33,7 @@ xhttp.onreadystatechange=function(){
             songdet+="<td>"+song["name"]+"</td>";
             songdet+="<td>"+song["Artist"]+"</td>";
             songdet+="<td>"+song["year"]+"</td>";
-            songdet+='<td><img style="width:50px;height:50px" src="'+song["image"]+'"></td>';
+            songdet+='<td><img style="width:50px;height:50px" src="'+song["artwork"]+'"></td>';
             songdet += '<td><button type="button" onclick="showLyrics(\'' + song["name"] + '\')">Lyrics</button></td>';
             songdet+="</tr>";
 
