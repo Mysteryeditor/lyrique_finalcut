@@ -8,4 +8,5 @@
 /* for the heading of layer2 */
 #layer2head{
     position: relative;
+    vertical-align: middle;
 }

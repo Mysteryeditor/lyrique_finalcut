@@ -20,11 +20,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="./assets/js/homepage.js"></script>
+    <script src="./assets/js/homepage.js"></script>
+
+    <!-- sweetalert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
 </head>
 
 
 <body>
+            
+            
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="dark">
         <div class="container-fluid">
             <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
@@ -47,19 +54,19 @@
                     </li>
                     <li>
                         <a class="nav-link" href="./lyrics.html">Lyrics</a>
-                      </li>
-
-                      <li>
-                        <!-- image
-                        <img src="" alt="profilepic" id="profilepic"> -->
                     </li>
 
                     <li>
                         <!-- hello+username -->
                         <span id="Hello">Hello</span>
                         <span id="username"></span>
-                        
+
                     </li>
+                    <li>
+                        <button onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
+                            Profile</button>
+                    </li>
+
                     <li>
                         <button onclick="logout()">LOGOUT</button>
                     </li>
@@ -67,40 +74,73 @@
             </div>
         </div>
     </nav>
-    
 
-    <!-- <div class="container">
-        <div class="card-group">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+    <div class="container">
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <input type="number" id="user_id" hidden="true">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="Username" placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender">
+                                    <option value="">Select your gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="non-binary">Non-Binary</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                        <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
+                            Changes</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+        <!-- for the update profile modal -->
+
+        <h1>
+            Songs
+        </h1>
+
+        <div id="songlist">
+
+        </div>
+
+
+    </div>
+
+
 
 </body>
 

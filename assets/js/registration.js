@@ -60,12 +60,6 @@ function registerUser() {
     Swal.fire({
       icon: 'success',
       title: 'Registered Successfully!',
-      showClass:{
-        popup:'animate__fadeOut'
-      },
-      hideClass:{
-        popup:'animate__fadeOut'
-      },
       html: 'Your Username Is <strong><mark>'+username+"</mark></strong>",
       confirmButtonText: 'Login',
       preConfirm: () => {

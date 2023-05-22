@@ -11,13 +11,11 @@
       "id": 1
     },
     {
-      "firstname": "Kokki",
-      "lastname": "Kumar",
+      "username": "KokkiKumaruh",
       "gender": "male",
-      "dob": "1996-07-28",
+      "dob": "2023-05-09",
       "email": "kokki@gmail.com",
       "password": "abc",
-      "username": "KokkiKumar",
       "id": 2
     },
     {
@@ -39,6 +37,96 @@
       "password": "abcAbc12",
       "username": "MuruganShiva",
       "id": 4
+    },
+    {
+      "firstname": "Selena",
+      "lastname": "Gomez",
+      "gender": "female",
+      "dob": "2019-12-30",
+      "email": "selenasellu@gmail.com",
+      "password": "abcAbc12",
+      "username": "SelenaGomez",
+      "id": 5
+    },
+    {
+      "firstname": "Justin ",
+      "lastname": "Bieber",
+      "gender": "male",
+      "dob": "2023-05-03",
+      "email": "jb@gmail.com",
+      "password": "jbJB1234",
+      "username": "Justin Bieber",
+      "id": 6
+    },
+    {
+      "firstname": "Ariana",
+      "lastname": "Gr",
+      "gender": "female",
+      "dob": "1990-02-28",
+      "email": "arianag@gmail.com",
+      "password": "arianaG123",
+      "username": "ArianaGr",
+      "id": 7
+    },
+    {
+      "firstname": "Arun",
+      "lastname": "Joseph",
+      "gender": "male",
+      "dob": "2000-11-22",
+      "email": "amigosouls@gmail.com",
+      "password": "abcAb123",
+      "username": "ArunJoseph",
+      "id": 8
+    },
+    {
+      "firstname": "vicket",
+      "lastname": "vicky",
+      "gender": "male",
+      "dob": "2023-07-11",
+      "email": "vicketvick@gmail.com",
+      "password": "Vicket12",
+      "username": "vicketvicky",
+      "id": 9
+    },
+    {
+      "firstname": "David",
+      "lastname": "Ashish",
+      "gender": "male",
+      "dob": "2023-05-11",
+      "email": "david@gmail.com",
+      "password": "David12",
+      "username": "DavidAshish",
+      "id": 10
+    },
+    {
+      "firstname": "Pallavi",
+      "lastname": "Kt",
+      "gender": "female",
+      "dob": "2017-05-09",
+      "email": "pallavikatari@gmail.com",
+      "password": "AbABC123",
+      "username": "PallaviKt",
+      "id": 11
+    },
+    {
+      "firstname": "Than",
+      "lastname": "gam",
+      "gender": "female",
+      "dob": "1994-06-08",
+      "email": "t@gmail.com",
+      "password": "thangamT12",
+      "username": "Thangam",
+      "id": 12
+    },
+    {
+      "firstname": "Than",
+      "lastname": "gam",
+      "gender": "female",
+      "dob": "1994-06-08",
+      "email": "t@gmail.com",
+      "password": "abAbc123",
+      "username": "Thangam",
+      "id": 13
     }
   ],
   "login": [],
@@ -48,7 +136,8 @@
       "name": "Love Me Again",
       "Artist": "John Newman",
       "year": 2013,
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978"
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "url": "https://soundcloud.com/kuba-kwiatek/love-me-again-john-newman"
     },
     {
       "id": 2,
@@ -62,7 +151,8 @@
       "name": "Death Bed",
       "Artist": "Powfu",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
+      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3"
     },
     {
       "id": 4,

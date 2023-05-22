@@ -1,5 +1,4 @@
 function authenticate() {
-  console.log("hello");
   const xhttp = new XMLHttpRequest();
   xhttp.open("GET", "http://localhost:3000/users");
   xhttp.send();
