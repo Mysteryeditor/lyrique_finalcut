@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,49 +20,151 @@
   <!-- styling page -->
   <link rel="stylesheet" href="./assets/css/styling.css">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style type="text/css">
+    @keyframes ldio-1zq8yhog4fu-1 {
+      0% {
+        top: 36px;
+        height: 128px
+      }
+
+      50% {
+        top: 60px;
+        height: 80px
+      }
+
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    @keyframes ldio-1zq8yhog4fu-2 {
+      0% {
+        top: 41.99999999999999px;
+        height: 116.00000000000001px
+      }
+
+      50% {
+        top: 60px;
+        height: 80px
+      }
+
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    @keyframes ldio-1zq8yhog4fu-3 {
+      0% {
+        top: 48px;
+        height: 104px
+      }
+
+      50% {
+        top: 60px;
+        height: 80px
+      }
+
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    .ldio-1zq8yhog4fu div {
+      position: absolute;
+      width: 30px
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(1) {
+      left: 35px;
+      background: #e15b64;
+      animation: ldio-1zq8yhog4fu-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: -0.2s
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(2) {
+      left: 85px;
+      background: #f8b26a;
+      animation: ldio-1zq8yhog4fu-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: -0.1s
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(3) {
+      left: 135px;
+      background: #abbd81;
+      animation: ldio-1zq8yhog4fu-3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: undefineds
+    }
+
+    .loadingio-spinner-pulse-2a5iv0z8ysb {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .ldio-1zq8yhog4fu {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0;
+      /* see note above */
+    }
+
+    .ldio-1zq8yhog4fu div {
+      box-sizing: content-box;
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-        <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
-        <a class="navbar-brand" href="#">Lyrique</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+      <a class="navbar-brand" href="#">Lyrique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-            <i class="fa-solid fa-bars navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./artists.html">Artists</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Languages</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="./lyrics.html">Lyrics</a>
-                </li>
+        <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./artists.html">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Languages</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./lyrics.html">Lyrics</a>
+          </li>
 
-                <li>
-                  <!-- hello+username -->
-                  <span id="Hello">Hello</span>
-                  <span id="username"></span>
-              </li>
+          <li>
+            <!-- hello+username -->
+            <span id="Hello">Hello</span>
+            <span id="username"></span>
+          </li>
 
-              <li>
-                <button onclick="logout()">LOGOUT</button>
-            </li>
-            </ul>
-        </div>
+          <li>
+            <button onclick="logout()">LOGOUT</button>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
   <!-- table -->
   <table class="table">
     <thead>
@@ -75,16 +178,27 @@
       </tr>
     </thead>
     <tbody id="songs">
-<th scope="row"></th>
-<th scope="row"></th>
-<th scope="row"></th>
-<th scope="row"></th>
-<th scope="row"><div class="spinner-border" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div></th>
-<th scope="row"></th>
+      <th scope="row"></th>
+      <th scope="row"></th>
+      <th scope="row"></th>
+      <th scope="row"></th>
+      <th scope="row">
+        <!-- <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div> -->
+        <div class="loadingio-spinner-pulse-2a5iv0z8ysb">
+          <div class="ldio-1zq8yhog4fu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+      </th>
+      <th scope="row"></th>
     </tbody>
   </table>
   <div id="lyricsContainer"></div>
 </body>
+
 </html>
