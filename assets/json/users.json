@@ -1,132 +1,32 @@
 {
   "users": [
     {
-      "firstname": "s",
-      "lastname": "s",
-      "gender": "male",
-      "dob": "2023-05-09",
-      "email": "sri027.cvb@gmail.com",
-      "password": "asd",
-      "username": "ss",
-      "id": 1
-    },
-    {
       "username": "KokkiKumaruh",
       "gender": "male",
       "dob": "2023-05-09",
       "email": "kokki@gmail.com",
       "password": "abc",
-      "id": 2
-    },
-    {
-      "firstname": "Keerthana",
-      "lastname": "SS",
-      "gender": "male",
-      "dob": "2023-07-22",
-      "email": "kerrthana@gmail.com",
-      "password": "ABCabc12",
-      "username": "KeerthanaSS",
-      "id": 3
-    },
-    {
-      "firstname": "Murugan",
-      "lastname": "Shiva",
-      "gender": "male",
-      "dob": "2023-05-24",
-      "email": "sri027.cvb@gmail.com",
-      "password": "abcAbc12",
-      "username": "MuruganShiva",
-      "id": 4
-    },
-    {
-      "firstname": "Selena",
-      "lastname": "Gomez",
-      "gender": "female",
-      "dob": "2019-12-30",
-      "email": "selenasellu@gmail.com",
-      "password": "abcAbc12",
-      "username": "SelenaGomez",
-      "id": 5
-    },
-    {
-      "firstname": "Justin ",
-      "lastname": "Bieber",
-      "gender": "male",
-      "dob": "2023-05-03",
-      "email": "jb@gmail.com",
-      "password": "jbJB1234",
-      "username": "Justin Bieber",
-      "id": 6
-    },
-    {
-      "firstname": "Ariana",
-      "lastname": "Gr",
-      "gender": "female",
-      "dob": "1990-02-28",
-      "email": "arianag@gmail.com",
-      "password": "arianaG123",
-      "username": "ArianaGr",
-      "id": 7
+      "id": 1
     },
     {
       "firstname": "Arun",
       "lastname": "Joseph",
       "gender": "male",
-      "dob": "2000-11-22",
-      "email": "amigosouls@gmail.com",
-      "password": "abcAb123",
+      "dob": "2023-05-03",
+      "email": "arianag@gmail.com",
+      "password": "abcAB123",
       "username": "ArunJoseph",
-      "id": 8
+      "id": 2
     },
     {
-      "firstname": "vicket",
-      "lastname": "vicky",
-      "gender": "male",
-      "dob": "2023-07-11",
-      "email": "vicketvick@gmail.com",
-      "password": "Vicket12",
-      "username": "vicketvicky",
-      "id": 9
-    },
-    {
-      "firstname": "David",
-      "lastname": "Ashish",
-      "gender": "male",
-      "dob": "2023-05-11",
-      "email": "david@gmail.com",
-      "password": "David12",
-      "username": "DavidAshish",
-      "id": 10
-    },
-    {
-      "firstname": "Pallavi",
-      "lastname": "Kt",
-      "gender": "female",
-      "dob": "2017-05-09",
-      "email": "pallavikatari@gmail.com",
-      "password": "AbABC123",
-      "username": "PallaviKt",
-      "id": 11
-    },
-    {
-      "firstname": "Than",
-      "lastname": "gam",
-      "gender": "female",
-      "dob": "1994-06-08",
-      "email": "t@gmail.com",
-      "password": "thangamT12",
-      "username": "Thangam",
-      "id": 12
-    },
-    {
-      "firstname": "Than",
-      "lastname": "gam",
-      "gender": "female",
-      "dob": "1994-06-08",
-      "email": "t@gmail.com",
-      "password": "abAbc123",
-      "username": "Thangam",
-      "id": 13
+      "firstname": "Ragav",
+      "lastname": "juyal",
+      "gender": "non-binary",
+      "dob": "2021-01-23",
+      "email": "rj@gmail.com",
+      "password": "rjRJ1234",
+      "username": "Ragavjuyal",
+      "id": 3
     }
   ],
   "login": [],
@@ -137,14 +37,16 @@
       "Artist": "John Newman",
       "year": 2013,
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "url": "https://soundcloud.com/kuba-kwiatek/love-me-again-john-newman"
+      "url": "https://soundcloud.com/kuba-kwiatek/love-me-again-john-newman",
+      "language": "English"
     },
     {
       "id": 2,
       "name": "Another Love",
       "Artist": "Tom Odell",
       "year": 2013,
-      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f"
+      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "language": "English"
     },
     {
       "id": 3,
@@ -152,42 +54,64 @@
       "Artist": "Powfu",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
-      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3"
+      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
+      "language": "English"
     },
     {
       "id": 4,
       "name": "Bad Liar",
       "Artist": "Imagine Dragons",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
+      "language": "English"
     },
     {
       "id": 5,
       "name": "Faded",
       "Artist": "Alan Walker",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg",
+      "language": "English"
     },
     {
       "id": 6,
       "name": "Hate Me",
       "Artist": "Ellie Goulding",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/hate-me.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/hate-me.jpg",
+      "language": "English"
     },
     {
       "id": 7,
       "name": "Solo",
       "Artist": "Clean Bandit",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/solo.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/solo.jpg",
+      "language": "English"
     },
     {
       "id": 8,
       "name": "Without Me",
       "Artist": "Halsey",
       "year": 2014,
-      "artwork": "https://samplesongs.netlify.app/album-arts/without-me.jpg"
+      "artwork": "https://samplesongs.netlify.app/album-arts/without-me.jpg",
+      "language": "English"
+    },
+    {
+      "id": 9,
+      "name": "Despacito",
+      "Artist": "Luis Fonsi",
+      "year": 2017,
+      "artwork": "https://upload.wikimedia.org/wikipedia/en/c/c8/Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png",
+      "language": "Spanish"
+    },
+    {
+      "id": 10,
+      "name": "Gangnam Style",
+      "Artist": "Psy",
+      "year": 2012,
+      "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodP1tm2y__bMUyve9UJib3eMZDUZBPO8xenQTlL9hug&s",
+      "language": "Korean"
     }
   ],
   "lyrics": [
@@ -222,6 +146,76 @@
     {
       "name": "Without Me",
       "lyrics": "Found you when your heart was broke\nI filled your cup until it overflowed\nTook it so far to keep you close (Keep you close)\nI was afraid to leave you on your own\nI said I'd catch you if you fall (Fall)\nAnd if they laugh, then fuck 'em all (All)\nAnd then I got you off your knees\nPut you right back on your feet\nJust so you can take advantage of me\n\nTell me, how's it feel sittin' up there?\nFeeling so high, but too far away to hold me\nYou know I'm the one who put you up there\nName in the sky, does it ever get lonely?\nThinking you could live without me\nThinking you could live without me\nBaby, I'm the one who put you up there\nI don't know why (Yeah, I don't know why)\nThinking you could live without me\nLive without me\n\nBaby, I'm the one who put you up there\nI don't know why (I don't know why)\nYeah, you don't have to say just what you did (What you did)\nI already know (I know)\nI had to go and find out from them (Oh-woah)\nSo tell me, how's it feel (Oh-woah)\nTell me, how's it feel sittin' up there?\nFeeling so high, but too far away to hold me\nYou know I'm the one who put you up there\nName in the sky, does it ever get lonely?\nThinking you could live without me\nThinking you could live without me\nBaby, I'm the one who put you up there\nI don't know why, yeah (I don't know why)\n\nYou don't have to say just what you did (What you did)\nI already know (I know)\nI had to go and find out from them (Oh-woah)\nSo tell me, how's it feel? (Oh-woah)\nTell me, how's it feel sittin' up there?\nFeeling so high, but too far away to hold me\nYou know I'm the one who put you up there\nName in the sky, does it ever get lonely?\nThinking you could live without me\nThinking you could live without me\nBaby, I'm the one who put you up there\nI don't know why, yeah"
+    },
+    {
+      "name": "Despacito",
+      "lyrics": "¡Ay!\nFonsi, DY\nOh, oh no, oh no (oh)\nHey yeah\nDiridiri, dirididi Daddy\nGo!\n\nSí, sabes que ya llevo un rato mirándote\nTengo que bailar contigo hoy (DY)\nVi que tu mirada ya estaba llamándome\nMuéstrame el camino que yo voy\n\nOh, tú, tú eres el imán y yo soy el metal\nMe voy acercando y voy armando el plan\nSolo con pensarlo se acelera el pulso (oh yeah)\nYa, ya me estás gustando más de lo normal\nTodos mis sentidos van pidiendo más\nEsto hay que tomarlo sin ningún apuro\nDespacito"
+    },
+    {
+      "name": "Gangnam Style",
+      "lyrics": "Oppa Gangnam Style\nGangnam Style\nWarmeul seuchyeo jinaesseo\ndalkomhan ni moksori\ngwangyanghage nae mameul heundeureo\nneol hyanghae sori jilleo\nnaege dhaejyeo kiseuhae\nppalgan seolgukhage weonhaneun nom\ngeureon banjeon i neomu yeppeo\nBeautiful, loveable\nYes you, hey, yes you, hey\nBeautiful, loveable\nYes you, hey, yes you, hey\nNow let's go until the end\nOppa Gangnam Style\nGangnam Style\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\nEh, sexy lady\nJal saenggakhaetneunde\nbarami bureo ddeugeowojineun\ngirls, girls, girls, girls\ngeureon banjeon i neomu yeppeo\nBeautiful, loveable\nYes you, hey, yes you, hey\nBeautiful, loveable\nYes you, hey, yes you, hey\nNow let's go until the end\nOppa Gangnam Style\nGangnam Style\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\n"
+    }
+  ],
+  "artists": [
+    {
+      "name": "Taylor Swift",
+      "age": 32,
+      "gender": "female",
+      "imageURL": "https://example.com/images/taylor_swift.jpg",
+      "albums": [
+        {
+          "title": "Fearless",
+          "year": 2008
+        },
+        {
+          "title": "1989",
+          "year": 2014
+        },
+        {
+          "title": "Lover",
+          "year": 2019
+        }
+      ]
+    },
+    {
+      "name": "Ed Sheeran",
+      "age": 31,
+      "gender": "male",
+      "imageURL": "https://example.com/images/ed_sheeran.jpg",
+      "albums": [
+        {
+          "title": "Divide",
+          "year": 2017
+        },
+        {
+          "title": "X",
+          "year": 2014
+        },
+        {
+          "title": "Multiply",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "name": "Ariana Grande",
+      "age": 28,
+      "gender": "female",
+      "imageURL": "https://example.com/images/ariana_grande.jpg",
+      "albums": [
+        {
+          "title": "Thank U, Next",
+          "year": 2019
+        },
+        {
+          "title": "Dangerous Woman",
+          "year": 2016
+        },
+        {
+          "title": "Sweetener",
+          "year": 2018
+        }
+      ]
     }
   ]
 }

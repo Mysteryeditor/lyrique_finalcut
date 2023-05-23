@@ -18,6 +18,14 @@ function displayuname(){
 }
 displayuname();
 
+// for loggin out
+function logout(){
+  const xhttp=new XMLHttpRequest();
+  xhttp.open("DELETE","http://localhost:3000/login/1");
+  xhttp.send();
+  window.location.href="./authentication.html"
+}
+
 // to display the artists of the songs
 function displayUniqueArtists() {
     var xhttp = new XMLHttpRequest();

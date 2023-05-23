@@ -1,12 +1,37 @@
+@font-face {
+  font-family: LyriqueFont;
+  src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
+}
 /* for the navbar */
-#logo{
+#logo {
   height: 50px;
   width: 50px;
 }
 
-a{
+a,a:hover,a:visited {
+  font-size: x-large;
   text-decoration: none;
-  color: rgb(133, 34, 34);
+  color: rgb(237, 236, 236);
+  font-family: LyriqueFont; 
+}
+
+nav{
+  background-color: #242323;
+}
+
+a:visited:hover{
+  text-decoration: none;
+  color: rgb(235, 224, 224);
+
+}
+
+*{
+  font-family: LyriqueFont;
+}
+
+/* for the username */
+span{
+  color: #ffffff;
 }
 
 /* for the lyrics div */
@@ -33,5 +58,103 @@ a{
   margin-right: 0;
 }
 
+/* styling for the loader  */
+    @keyframes ldio-1zq8yhog4fu-1 {
+      0% {
+        top: 36px;
+        height: 128px
+      }
 
+      50% {
+        top: 60px;
+        height: 80px
+      }
 
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    @keyframes ldio-1zq8yhog4fu-2 {
+      0% {
+        top: 41.99999999999999px;
+        height: 116.00000000000001px
+      }
+
+      50% {
+        top: 60px;
+        height: 80px
+      }
+
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    @keyframes ldio-1zq8yhog4fu-3 {
+      0% {
+        top: 48px;
+        height: 104px
+      }
+
+      50% {
+        top: 60px;
+        height: 80px
+      }
+
+      100% {
+        top: 60px;
+        height: 80px
+      }
+    }
+
+    .ldio-1zq8yhog4fu div {
+      position: absolute;
+      width: 30px
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(1) {
+      left: 35px;
+      background: #e15b64;
+      animation: ldio-1zq8yhog4fu-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: -0.2s
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(2) {
+      left: 85px;
+      background: #f8b26a;
+      animation: ldio-1zq8yhog4fu-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: -0.1s
+    }
+
+    .ldio-1zq8yhog4fu div:nth-child(3) {
+      left: 135px;
+      background: #abbd81;
+      animation: ldio-1zq8yhog4fu-3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      animation-delay: undefineds
+    }
+
+    .loadingio-spinner-pulse-2a5iv0z8ysb {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .ldio-1zq8yhog4fu {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0;
+      /* see note above */
+    }
+
+    .ldio-1zq8yhog4fu div {
+      box-sizing: content-box;
+    }
+  

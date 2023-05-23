@@ -42,6 +42,7 @@ function registerUser() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
+
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:3000/users");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -60,12 +61,20 @@ function registerUser() {
     Swal.fire({
       icon: 'success',
       title: 'Registered Successfully!',
-      html: 'Your Username Is <strong><mark>'+username+"</mark></strong>",
+      html: 'Your Username Is <strong><mark>' + username + '</mark></strong>',
       confirmButtonText: 'Login',
-      preConfirm: () => {
-        window.location.href = './authentication.html'; // Redirect to authentication.html
+      showCancelButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = './authentication.html';
       }
     });
+    
+
+    
+
   }
 
 

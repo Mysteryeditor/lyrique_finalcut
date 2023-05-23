@@ -46,7 +46,16 @@ xhttp.onreadystatechange=function(){
 }
 viewsongs();
 
+// for loggin out
+function logout(){
+  const xhttp=new XMLHttpRequest();
+  xhttp.open("DELETE","http://localhost:3000/login/1");
+  xhttp.send();
+  window.location.href="./authentication.html"
+}
+
 function showLyrics(songName) {
+
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:3000/lyrics");
     xhttp.send();
@@ -55,6 +64,8 @@ function showLyrics(songName) {
         const lyrics = JSON.parse(this.responseText);
         const songLyrics = lyrics.find((song) => song.name === songName);
         if (songLyrics) {
+          var element = document.getElementById("lyricsContainer");
+          element.scrollIntoView({ behavior: "smooth" });
           const lyricsContainer = document.getElementById("lyricsContainer");
           lyricsContainer.innerHTML = `<h2>${songName} - Lyrics</h2><p>${songLyrics.lyrics}</p>`;
         } else {

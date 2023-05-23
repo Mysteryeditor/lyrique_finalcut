@@ -1,3 +1,35 @@
+@font-face {
+    font-family: LyriqueFont;
+     src: url("./assets/fonts/003 Engineer's Hand Regular.ttf"); 
+    /* src: url("/E:/lyrique/assets/fonts/003 Engineer's Hand Regular.ttf"); */
+}
+/* for the logo */
+#logo{
+    height: 50px;
+    width: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-weight: 900;
+    font-family: LyriqueFont; 
+    font-size: larger;
+}
+
+a:hover{
+    font-size: x-large;
+    color: rgb(245, 245, 245);
+}
+
+.navbuttons:hover{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-weight: 900;
+    font-family: LyriqueFont; 
+    font-size: larger;
+}
+
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
     font-size: 1rem;
     line-height: 2.15;
@@ -13,3 +45,5 @@
     color: red;
     text-transform: uppercase;
 }
+
+

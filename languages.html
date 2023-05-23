@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+      <!-- bootstrap js -->
+      <script src="./assets/js/bootstrap.min.js"></script>
+
+      <!-- css page -->
+      <link rel="stylesheet" href="./assets/css/languages.css">
+
+       <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+            <a class="navbar-brand" href="./homepage.html">Lyrique</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" >
+                        <a class="nav-link " aria-current="page" href="./homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./artists.html">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./languages.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lyrics.html">Lyrics</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto" >
+
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <!-- hello+username -->
+                        <span id="Hello">Hello</span>
+                        <span id="username"></span>
+
+                    </li>
+                   
+
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <button  onclick="logout()">LOGOUT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- the languages cards -->
+    <div class="container-fluid " id="lang-list">
+
+    </div>
+
+    <footer class="text-center text-lg-start fixed-bottom" style="background-color: #222222;">
+  
+  
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="./homepage.html">Lyrique</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+   
+
+    <!-- script page -->
+    <script src="./assets/js/languages.js"></script>
+</body>
+</html>

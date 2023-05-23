@@ -113,6 +113,64 @@ xhttp.onreadystatechange = function () {
 
 }
 
+function artistdata(){
+    const xhttp=new XMLHttpRequest();
+    xhttp.open("GET",`http://localhost:3000/artists`);
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if(this.readyState==4 && this.status==200)
+        {
+          
+          var artistinfo=JSON.parse(this.responseText);
+          console.log(artistinfo);
+          var artists=document.getElementById("artistsinfo");
+          var card=document.createElement('div')
+          card.className="card";
+
+          var image=document.createElement("img");
+          image.src=artistinfo.imageURL;
+          image.alt=artistinfo.name;
+          image.className="img-top";
+
+          var cardbody=document.createElement('div');
+          cardbody.className="card-body";
+
+          var title=document.createElement("h5");
+          heading.className = "card-title";
+          heading.textContent = artistinfo.name;
+          cardbody.appendChild(heading);
+
+          var ageParagraph = document.createElement("p");
+      ageParagraph.textContent = "Age: " + artistinfo.age;
+      cardbody.appendChild(ageParagraph);
+
+      var genderParagraph = document.createElement("p");
+      genderParagraph.textContent = "Gender: " + artistinfo.gender;
+      cardbody.appendChild(genderParagraph);
+
+      // Append the card body to the card element
+      card.appendChild(cardbody);
+
+      // Append the card to the document or a container element
+      var container = document.getElementById("card-container");
+      container.appendChild(card);
+    }
+  } 
+};
+
+
+
+
+
+
+
+
+
+                 
+
+    artistdata()
+
+
 
   
 

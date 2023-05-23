@@ -6,14 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
-    <!-- css page -->
-    <link rel="stylesheet" href="./assets/css/registration.css">
+    
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-    <!-- css page -->
-    <link rel="stylesheet" href="./assets/css/styling.css">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -21,63 +19,56 @@
 
     <!-- sweetalert cdn -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- css page -->
+    <link rel="stylesheet" href="./assets/css/registration.css">
 </head>
 
 <body>
-    <!-- the navbar -->
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="dark">
+ 
+    <section class="h-100" style="background-image: url(https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);background-repeat: no-repeat;background-size: cover;">
+           <!-- the navbar -->
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
         <div class="container-fluid p-0">
             <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
-            <a class="navbar-brand" href="./index.html">Lyrique</a>
+            <a class="navbar-brand" href="./index.html">Lyrique-A World Of Music</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        
                     </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="#">NewsLetters</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link " aria-current="page" href="#">Concerts</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link " aria-current="page" href="#">Events</a>
-                    </li>
                 </ul>
-                <ul class="navbar-nav  ms-auto">
-
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                        <a href="./authentication.html">SIGN-IN</a>
+                <ul class="navbar-nav  ms-auto" >
+                   
+                    <li >
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        <a class="navbuttons" href="./authentication.html">SIGN-IN</a>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-user-plus"></i>
-                        <a href="./registration.html">SignUp</a>
+                    <li >
+                        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                        <a class="navbuttons" href="./registration.html">SIGN-UP</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="h-100 bg-dark">
         <form action="#" id="regform" method="post" novalidate class="needs-validation">
-            <div class="container py-5 h-100">
+            <div  class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col">
                         <div class="card card-registration my-4">
                             <div class="row g-0">
-                                <div class="col-xl-6 d-none d-xl-block">
+                                <div  class="col-xl-6 d-none d-xl-block">
                                     <img src="./assets/images/regn pic.png" alt="Sample photo" class="img-fluid"
-                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
                                 </div>
-                                <div class="col-xl-6">
+                                <div class="col-xl-6" >
                                     <div class="card-body p-md-5 text-black">
                                         <h3 class="mb-5 text-uppercase">Registration Form</h3>
                                         <div class="row">
@@ -181,6 +172,7 @@
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" id="terms" required>
                                             <label class="form-check-label" for="terms">I agree to the <a
+                                                style="color: #000;"
                                                     href="./terms.html"> terms and
                                                     conditions </a></label>
                                             <div class="invalid-feedback">
@@ -188,7 +180,7 @@
                                             </div>
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary btn-lg"
+                                        <button type="submit" id="registernow" class="btn btn-primary btn-lg"
                                             onclick="registerUser()">Register</button>
                                     </div>
                                 </div>
@@ -198,7 +190,19 @@
                 </div>
             </div>
         </form>
+        <footer class="text-center text-lg-start " style="background-color: rgba(63, 30, 139,0.5);" >
+  
+  
+            <!-- Copyright -->
+            <div class="text-center text-white p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="./index.html">Lyrique</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
     </section>
+
+    
 
     <!-- bootstrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
