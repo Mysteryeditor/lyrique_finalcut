@@ -18,9 +18,9 @@ function displayuname(){
 }
 displayuname();
 
-function viewsongs(){
+function viewsongs(songname=''){
 const xhttp=new XMLHttpRequest();
-xhttp.open("GET","http://localhost:3000/songs");
+xhttp.open("GET",`http://localhost:3000/songs?name_like=${songname}`);
 xhttp.send();
 xhttp.onreadystatechange=function(){
     console.log(this.responseText);
