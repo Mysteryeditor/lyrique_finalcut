@@ -1,12 +1,71 @@
+@font-face {
+    font-family: LyriqueFont;
+    src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
+}
+
+/* for the logo */
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+a,a:visited {
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    font-weight: 900;
+    font-family: LyriqueFont;
+    font-size: larger;
+}
+
+a:hover,a:visited:hover {
+    font-size: x-large;
+    color: rgb(227, 70, 18);
+}
+
+.navbuttons:hover {
+    text-decoration: none;
+    color: rgb(227, 70, 18);
+    font-weight: 900;
+    font-family: LyriqueFont;
+    font-size: larger;
+}
+
+#layer1 {
+    /* background-image: url(https://wallpapercave.com/wp/wp2326986.jp.); */
+    background-image: url(./assets/images/layer1bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#layer1 label{
+    font-size: x-large;
+    color: white;
+}
+
+#layer1 span{
+    font-size: xx-large;
+    font-family: LyriqueFont;
+    color:rgb(227, 70, 18);
+    text-transform: uppercase;
+}
+
+#layer1 span:hover{
+    font-size: 35px;
+}
+
+
+
+
 /* for the background image in layer2 */
-#layer2bg{
+#layer2bg {
     position: absolute;
     width: 100%;
     filter: blur(2px);
 }
 
 /* for the heading of layer2 */
-#layer2head{
+#layer2head {
     position: relative;
     vertical-align: middle;
 }

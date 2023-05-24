@@ -18,9 +18,15 @@ function displayuname(){
 }
 displayuname();
 
-function viewsongs(songname=''){
+// for search functionality
+function search() {
+  const name = document.getElementById("searchvalue").value;
+  viewsongs(name);
+}
+
+function viewsongs(name=''){
 const xhttp=new XMLHttpRequest();
-xhttp.open("GET",`http://localhost:3000/songs?name_like=${songname}`);
+xhttp.open("GET",`http://localhost:3000/songs?name_like=${name}`);
 xhttp.send();
 xhttp.onreadystatechange=function(){
     console.log(this.responseText);
@@ -45,6 +51,8 @@ xhttp.onreadystatechange=function(){
 }
 }
 viewsongs();
+
+
 
 // for loggin out
 function logout(){

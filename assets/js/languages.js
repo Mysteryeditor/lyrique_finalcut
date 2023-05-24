@@ -25,49 +25,6 @@ function displayuname(){
     window.location.href="./authentication.html"
 }
 
-//  function displaylang(){
-//  const xhttp=new XMLHttpRequest();
-//  xhttp.open("GET",'http://localhost:3000/songs')
-//  xhttp.send();
-//  xhttp.onreadystatechange=function(){
-//      if(this.readyState==4 && this.status==200){
-//          var data=JSON.parse(xhttp.responseText);
-//          if(Array.isArray(data)){
-//              var lang=[];
-
-//              data.forEach(function(song){
-//                  if(song.language && !lang.includes(song.language)){
-//                      lang.push(song.language);
-//                  }
-//              });
-//              var langcard=document.getElementById("lang-list");
-
-//              // creating bootstrap card dynamically
-//             lang.forEach(function(lang){
-//                 var card=document.createElement("div");
-//                 card.className="card m-2";
-
-//                 var cardbody=document.createElement('div');
-//                 cardbody.className="card-body";
-
-//                 var language=document.createElement('h6');
-//                 language.className="card-title";
-//                 language.textContent=lang;
-
-//                 cardbody.appendChild(language);
-//                 card.appendChild(cardbody);
-//                 langcard.appendChild(card);
-
-//             })
-
-//         }
-//         else{
-//             console.log("invalid data format");
-//         }
-//     }
-// }
-// }
-// displaylang();
 
 function displaylang() {
     const xhttp = new XMLHttpRequest();

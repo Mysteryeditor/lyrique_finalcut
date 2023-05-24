@@ -18,15 +18,19 @@ function authenticate() {
           session(username, pwd);
           return;
         }
-        //  else {
-          
-        //    return;
-        //  }
       }
-      alert("Invalid Username or Password");
+      Swal.fire({
+        icon:"error",
+        title:"Oops...",
+        text:"Invalid username/password"
+      });
+     
     }
   };
 }
+
+
+
 
   function session(username, pwd) {
     const xhttp = new XMLHttpRequest();
@@ -38,7 +42,4 @@ function authenticate() {
       password: pwd
     }
     ));
-    
-
-
   }

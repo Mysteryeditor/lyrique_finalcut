@@ -35,3 +35,21 @@ a:visited:hover{
 span {
   color: #ffffff;
 }
+
+/* card */
+.card{
+  background-color: #242323;
+}
+
+/* language */
+h6{
+  color:white;
+  font-size: 35px;
+}
+
+/* the song list */
+.card ul{
+  font-size: 30px;
+  color: orangered;
+  list-style-type: circle;
+}
