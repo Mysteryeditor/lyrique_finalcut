@@ -2,329 +2,356 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-    <!-- bootstrap js -->
-    <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="./assets/js/bootstrap.min.js"></script>
 
-    <!-- styling page -->
-    <!-- <link rel="stylesheet" href="./assets/css/styling.css"> -->
-    <link rel="stylesheet" href="./assets/css/homepage.css">
+  <!-- styling page -->
+  <!-- <link rel="stylesheet" href="./assets/css/styling.css"> -->
+  <link rel="stylesheet" href="./assets/css/homepage.css">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- sweetalert cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-   
-   
-      
+  <!-- sweetalert cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 </head>
 
 
 <body>
-            
-            
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
-            <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
-            <a class="navbar-brand" href="./homepage.html">Lyrique</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item" >
-                        <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./artists.html">Artists</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./languages.html">Languages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./lyrics.html">Lyrics</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto" >
 
-                    <li class="nav-item" style="padding-right: 10px;">
-                        <!-- hello+username -->
-                        <span id="Hello">Hello</span>
-                        <span id="username"></span>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+      <a class="navbar-brand" href="./homepage.html">Lyrique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                    </li>
-                    <li class="nav-item" style="padding-right: 10px;" >
-                        <button onclick="updateprofile()"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
-                            Profile</button>
-                    </li>
+        <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./artists.html">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./languages.html">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lyrics.html">Lyrics</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item" style="padding-right: 10px;">
-                        <button  onclick="logout()">LOGOUT</button>
-                    </li>
-                </ul>
+          <li class="nav-item" style="padding-right: 10px;">
+            <!-- hello+username -->
+            <span id="Hello">Hello</span>
+            <span id="username"></span>
+
+          </li>
+          <li class="nav-item" style="padding-right: 10px;">
+            <button onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
+              Profile</button>
+          </li>
+
+          <li class="nav-item" style="padding-right: 10px;">
+            <button onclick="logout()">LOGOUT</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input type="number" id="user_id" hidden="true">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="Username" placeholder="Enter your username">
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender">
+                  <option value="">Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="non-binary">Non-Binary</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+            <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
+              Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info about the artists -->
+    <div class="container" id="artistinfo">
+      <!-- Artists -->
+      <h1>Artists</h1>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'english')">English</button>
+        <button class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
+      </div>
+
+      <div id="english" class="tab-content">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/2a/90/86/2a9086b3eabd4cc6bbae6f216dbd4a25.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>The Weeknd<br><span>Best Album: After Hours</span></h2>
+              </div>
             </div>
-        </div>
-    </nav>
+          </div>
 
-
-    <div class="container">
-
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <input type="number" id="user_id" hidden="true">
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="Username" placeholder="Enter your username">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gender" class="form-label">Gender</label>
-                                <select class="form-select" id="gender">
-                                    <option value="">Select your gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="non-binary">Non-Binary</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="dob" class="form-label">Date of Birth</label>
-                                <input type="date" class="form-control" id="dob">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Enter your password">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
-                            Changes</button>
-                    </div>
-                </div>
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/f1/11/dd/f111dd867c624a85834727c1cf957e5e.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Eminem<br><span>Best Album: Encore</span></h2>
+              </div>
             </div>
-        </div>
-        <!-- for the update profile modal -->
+          </div>
 
-        <h1>
-            Songs
-        </h1>
+          <!-- Card 3 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/736x/0a/1a/48/0a1a48c5f057c4d2adfd7dd67a0676f3.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Taylor Swift<br><span>Best Album: 1989</span></h2>
+              </div>
+            </div>
+          </div>
 
-        <div class="container" id="songlist">
-            
+          <!-- Card 4 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/a3/0c/ea/a30ceaad2a27a086916ba473afc03646.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Selena Gomez<br><span>Best Album: Rare</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img
+                  src="https://media.glamour.com/photos/6436a07a81c6a78ab79423a6/3:2/w_3600,h_2400,c_limit/GettyImages-1202826388.jpg"
+                  alt="images">
+              </div>
+              <div class="details">
+                <h2>Ariana Grande<br><span>Best Album: Thank You Next</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/69/c9/20/69c92094819b986e3733d5c3485d95dc.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Ed Sheeran<br><span>Best Album: Divide</span></h2>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div id="tamil" class="tab-content">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/564x/79/f2/eb/79f2eb66f49441a8f750c5688d1fd9f3.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Anirudh Ravichandar<br><span>Best Album: Vikram</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/f1/42/53/f1425338539cfddd84e4be99c2c23ff3.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Ar Rahman<br><span>Best Album: Rhythm</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/bc/53/3b/bc533b273a6e95ad63dcb71853ef3e9a.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Yuvan Shankar Raja<br><span>Best Album: Mankatha</span></h2>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/564x/a4/9e/aa/a49eaac9f7379f77d50fa2e6957ddbc5.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>GV Prakash<br><span>Best Album: Aayirathil Oruvan</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img
+                  src="https://yt3.googleusercontent.com/_YNMQknsdF6jBaT47GsmUsd-OEomixCZKlrCy7f5v6eOeoTZ5fQshG0jF7Sl6woLxL9ImwKAHQ=s900-c-k-c0x00ffffff-no-rj"
+                  alt="images">
+              </div>
+              <div class="details">
+                <h2>Santhosh Narayanan<br><span>Best Album: VadaChennai</span></h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4 p-5">
+            <div class="card">
+              <div class="imgBx">
+                <img src="https://i.pinimg.com/236x/0c/e7/8e/0ce78e38bc37b587d527a78b17e2ae8f.jpg" alt="images">
+              </div>
+              <div class="details">
+                <h2>Harris Jayaraj<br><span>Best Album: Vaaranam Ayiram</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </div>
-    <div class="container" id="artistinfo">
-        <!-- Artists -->
-        <h1>Artists</h1>
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'english')">English</button>
-            <button class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
+
+    <h1>
+      Songs
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-2 col-md-6 " id="songlist">
+
+        </div>
+        <!--<div class="container-audio">
+          <audio id="player" controls  loop autoplay src="" type="audio">
+                 </audio>
+      </div> -->
+
+        <!-- the music player -->
+        <div class="container-audio col-sm-2 col-lg-4 col-md-6 ">
+          <div class="album-art">
+            <img id="albumimage" src="" alt="Album Art">
           </div>
-          
-          <div id="english" class="tab-content">
-            <div class="row">
-              <!-- Card 1 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/2a/90/86/2a9086b3eabd4cc6bbae6f216dbd4a25.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>The Weeknd<br><span>Best Album: After Hours</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Card 2 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/f1/11/dd/f111dd867c624a85834727c1cf957e5e.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Eminem<br><span>Best Album: Encore</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Card 3 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/736x/0a/1a/48/0a1a48c5f057c4d2adfd7dd67a0676f3.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Taylor Swift<br><span>Best Album: 1989</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Card 4 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/a3/0c/ea/a30ceaad2a27a086916ba473afc03646.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Selena Gomez<br><span>Best Album: Rare</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Card 5 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://media.glamour.com/photos/6436a07a81c6a78ab79423a6/3:2/w_3600,h_2400,c_limit/GettyImages-1202826388.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Ariana Grande<br><span>Best Album: Thank You Next</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Card 6 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/69/c9/20/69c92094819b986e3733d5c3485d95dc.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Ed Sheeran<br><span>Best Album: Divide</span></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="song-details">
+            <h3 id="songname" class="song-title">Song Title</h3>
           </div>
-
-          <div id="tamil" class="tab-content">
-            <div class="row">
-              <!-- Card 1 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/564x/79/f2/eb/79f2eb66f49441a8f750c5688d1fd9f3.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Anirudh Ravichandar<br><span>Best Album: Vikram</span></h2>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Card 2 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/f1/42/53/f1425338539cfddd84e4be99c2c23ff3.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Ar Rahman<br><span>Best Album: Rhythm</span></h2>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Card 3 -->
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/bc/53/3b/bc533b273a6e95ad63dcb71853ef3e9a.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Yuvan Shankar Raja<br><span>Best Album: Mankatha</span></h2>
-                  </div>
-                </div>
-              </div>
-              
-
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/564x/a4/9e/aa/a49eaac9f7379f77d50fa2e6957ddbc5.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>GV Prakash<br><span>Best Album: Aayirathil Oruvan</span></h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://yt3.googleusercontent.com/_YNMQknsdF6jBaT47GsmUsd-OEomixCZKlrCy7f5v6eOeoTZ5fQshG0jF7Sl6woLxL9ImwKAHQ=s900-c-k-c0x00ffffff-no-rj" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Santhosh Narayanan<br><span>Best Album: VadaChennai</span></h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-4 p-5">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="https://i.pinimg.com/236x/0c/e7/8e/0ce78e38bc37b587d527a78b17e2ae8f.jpg" alt="images">
-                  </div>
-                  <div class="details">
-                    <h2>Harris Jayaraj<br><span>Best Album: Vaaranam Ayiram</span></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
+          <audio id="player" controls loop autoplay
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
+            type="audio/ogg"></audio>
+        </div>
       </div>
-
-      <div class="container">
-        
-      </div>
-      
-   <!-- Remove the container if you want to extend the Footer to full width. -->
+    </div>
 
 
-    <footer class="text-center text-lg-start " style="background-color: #222222;">
-  
-  
-      <!-- Copyright -->
-      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright:
-        <a class="text-white" href="./homepage.html">Lyrique</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    
-  
+
+  </div>
+
+
+  <div class="container">
+
+  </div>
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <footer class="text-center text-lg-start " style="background-color: #222222;">
+
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="./homepage.html">Lyrique</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
   <!-- End of .container -->
 
 

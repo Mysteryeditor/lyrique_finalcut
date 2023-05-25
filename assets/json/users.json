@@ -6,7 +6,10 @@
       "dob": "2023-05-09",
       "email": "kokki@gmail.com",
       "password": "abcdefgh",
-      "id": 1
+      "id": 1,
+      "likes": [
+        {}
+      ]
     },
     {
       "firstname": "Dhana",
@@ -27,9 +30,25 @@
       "password": "Selva123",
       "username": "SelvaGanapathy",
       "id": 3
+    },
+    {
+      "firstname": "PriyaDarshan",
+      "lastname": "Ma",
+      "gender": "male",
+      "dob": "2021-02-25",
+      "email": "priyapd@gmail.com",
+      "password": "abc123AB",
+      "username": "PriyaDarshanMa",
+      "id": 4
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "id": 1,
+      "username": "KokkiKumar",
+      "password": "abcdefgh"
+    }
+  ],
   "songs": [
     {
       "id": 1,
@@ -37,7 +56,7 @@
       "Artist": "John Newman",
       "year": 2013,
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "url": "https://soundcloud.com/kuba-kwiatek/love-me-again-john-newman",
+      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
       "language": "English"
     },
     {
@@ -63,6 +82,7 @@
       "Artist": "Imagine Dragons",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
+      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
       "language": "English"
     },
     {
@@ -71,6 +91,7 @@
       "Artist": "Alan Walker",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg",
+      "url": "./assets/songs/Faded - Alan Walker-(DJMaza).mp3",
       "language": "English"
     },
     {
@@ -79,6 +100,7 @@
       "Artist": "Ellie Goulding",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/hate-me.jpg",
+      "url": "./assets/songs/Hate Me - Ellie Goulding, Juice WRLD_128- [PagalWorld.NL].mp3",
       "language": "English"
     },
     {
@@ -250,6 +272,80 @@
       "country": "United Kingdom",
       "date": "2023-09-05",
       "time": "19:00"
+    }
+  ],
+  "likes": [
+    {
+      "username": "KokkiKumar",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
+      "id": 1
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 2,
+      "name": "Another Love",
+      "id": 2
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 3,
+      "name": "Death Bed",
+      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
+      "id": 3
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 4,
+      "name": "Bad Liar",
+      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
+      "id": 4
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 5,
+      "name": "Faded",
+      "url": "./assets/songs/Faded - Alan Walker-(DJMaza).mp3",
+      "id": 5
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 9,
+      "name": "Despacito",
+      "id": 6
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 7,
+      "name": "Solo",
+      "id": 7
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 10,
+      "name": "Gangnam Style",
+      "id": 8
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 6,
+      "name": "Hate Me",
+      "url": "./assets/songs/Hate Me - Ellie Goulding, Juice WRLD_128- [PagalWorld.NL].mp3",
+      "id": 9
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 8,
+      "name": "Without Me",
+      "id": 10
+    },
+    {
+      "username": "DhanaPrakash",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
+      "id": 11
     }
   ]
 }

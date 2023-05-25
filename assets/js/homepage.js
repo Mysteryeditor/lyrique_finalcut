@@ -36,6 +36,8 @@ function displayuname(){
 
 displayuname();
 
+
+
 // for logging out
 function logout(){
     const xhttp=new XMLHttpRequest();
@@ -44,30 +46,136 @@ function logout(){
     window.location.href="./authentication.html"
 }
 
-function songlist(){
-    const xhttp=new XMLHttpRequest();
-    xhttp.open("GET","http://localhost:3000/songs");
+// for the songs display
+function songlist() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://localhost:3000/songs");
     xhttp.send();
-    
-    xhttp.onreadystatechange=function(){
-        if(this.readyState==4 && this.status==200){
-            const data=JSON.parse(this.responseText);
-            const songlist=document.getElementById("songlist");
-            for (let song of data){
-                const songName = document.createElement("p");
-                songName.textContent = song.name;
-                songlist.appendChild(songName);
-            }
-        }
-    }
-    
-    
   
-}
-songlist();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        const data = JSON.parse(this.responseText);
+        const songlist = document.getElementById("songlist");
+        const songurl = document.getElementById("player");
+        const songname = document.getElementById("songname");
+        const albumart = document.getElementById("albumimage");
+        const username = document.getElementById("username").textContent;
+        
+        for (let song of data) {
+          const songcontainer = document.createElement('div');
+          songcontainer.className = "songcontainer";
+          const songName = document.createElement("p");
+          songName.className = "title";
+  
+          // playbutton
+          const playbutton = document.createElement('button');
+          playbutton.className = "play-btn";
+          songName.textContent = song.name;
+  
+          // the liked songs button using ionicon
+          const likebutton = document.createElement('ion-icon');
+          likebutton.setAttribute("name", "heart");
+          likebutton.classList.add('large-font', 'text-center');
+
+          isSongAlreadyLiked(username, song.name, function(isLiked) {
+            if (isLiked) {
+              likebutton.classList.add('active');
+            }
+          });
+  
+          likebutton.addEventListener("click", function() {
+            likebutton.classList.add('active');
+  
+            console.log(username, song.name);
+  
+            isSongAlreadyLiked(username, song.name, function(isLiked) {
+              if (isLiked) {
+                likebutton.classList.add('active');
+                Swal.fire({
+                  title: "Song Already Present",
+                  icon: "error",
+                  showCancelButton: false,
+                  confirmButtonText: "OK",
+                  reverseButtons: true
+                }).then((result)=>{
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                           //viewing the liked songs list which has the delete operation
+                        })
+                        
+                    
 
 
-// for updating the user details
+                    }
+                });
+              } else {
+                const xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "http://localhost:3000/likes");
+                xhttp.setRequestHeader("Content-type", "application/json");
+  
+                xhttp.send(JSON.stringify({
+                  username: username,
+                  songid: song.id,
+                  name: song.name,
+                  url: song.url
+                }));
+              }
+            });
+          });
+  
+          const redbg = document.createElement('div');
+          redbg.className = "red-bg";
+  
+  
+          const spanplay = document.createElement('span');
+          playbutton.addEventListener("click", function() {
+            songurl.src = song.url;
+            songname.textContent = song.name;
+            albumart.src = song.artwork;
+            songurl.play();
+          });
+          
+          songlist.appendChild(songcontainer);
+          songcontainer.appendChild(songName);
+          songcontainer.appendChild(playbutton);
+          songcontainer.appendChild(likebutton);
+          playbutton.appendChild(spanplay);
+          likebutton.appendChild(redbg);
+        }
+      }
+    }
+  }
+  
+  // Checking if the song is already liked
+  function isSongAlreadyLiked(username, song, callback) {
+    console.log(username, song);
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", `http://localhost:3000/likes`);
+    xhttp.send();
+  
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+        const data = JSON.parse(xhttp.responseText);
+        for (let songcheck of data) {
+          if (songcheck.username === username && songcheck.name === song) {
+            callback(true);
+            return;
+          }
+        }
+        callback(false);
+      }
+    }
+  }
+  
+  // Call the songlist function
+  songlist();
+  
+
+
+
+
+//for updating the user details
 function updateprofile(){
     var username=document.getElementById("username").textContent;
 const xhttp=new XMLHttpRequest();
@@ -130,62 +238,51 @@ xhttp.onreadystatechange = function () {
 
 }
 
-function artistdata(){
-    const xhttp=new XMLHttpRequest();
-    xhttp.open("GET",`http://localhost:3000/artists`);
-    xhttp.send();
-    xhttp.onreadystatechange = function () {
-        if(this.readyState==4 && this.status==200)
-        {
+// function artistdata(){
+//     const xhttp=new XMLHttpRequest();
+//     xhttp.open("GET",`http://localhost:3000/artists`);
+//     xhttp.send();
+//     xhttp.onreadystatechange = function () {
+//         if(this.readyState==4 && this.status==200)
+//         {
           
-          var artistinfo=JSON.parse(this.responseText);
-          console.log(artistinfo);
-          var artists=document.getElementById("artistsinfo");
-          var card=document.createElement('div')
-          card.className="card";
+//           var artistinfo=JSON.parse(this.responseText);
+//           console.log(artistinfo);
+//           var artists=document.getElementById("artistsinfo");
+//           var card=document.createElement('div')
+//           card.className="card";
 
-          var image=document.createElement("img");
-          image.src=artistinfo.imageURL;
-          image.alt=artistinfo.name;
-          image.className="img-top";
+//           var image=document.createElement("img");
+//           image.src=artistinfo.imageURL;
+//           image.alt=artistinfo.name;
+//           image.className="img-top";
 
-          var cardbody=document.createElement('div');
-          cardbody.className="card-body";
+//           var cardbody=document.createElement('div');
+//           cardbody.className="card-body";
 
-          var title=document.createElement("h5");
-          heading.className = "card-title";
-          heading.textContent = artistinfo.name;
-          cardbody.appendChild(heading);
+//           var title=document.createElement("h5");
+//           heading.className = "card-title";
+//           heading.textContent = artistinfo.name;
+//           cardbody.appendChild(heading);
 
-          var ageParagraph = document.createElement("p");
-      ageParagraph.textContent = "Age: " + artistinfo.age;
-      cardbody.appendChild(ageParagraph);
+//           var ageParagraph = document.createElement("p");
+//       ageParagraph.textContent = "Age: " + artistinfo.age;
+//       cardbody.appendChild(ageParagraph);
 
-      var genderParagraph = document.createElement("p");
-      genderParagraph.textContent = "Gender: " + artistinfo.gender;
-      cardbody.appendChild(genderParagraph);
+//       var genderParagraph = document.createElement("p");
+//       genderParagraph.textContent = "Gender: " + artistinfo.gender;
+//       cardbody.appendChild(genderParagraph);
 
-      // Append the card body to the card element
-      card.appendChild(cardbody);
+//       // Append the card body to the card element
+//       card.appendChild(cardbody);
 
-      // Append the card to the document or a container element
-      var container = document.getElementById("card-container");
-      container.appendChild(card);
-    }
-  } 
-};
-
-
-
-
-
-
-
-
-
-                 
-
-    artistdata()
+//       // Append the card to the document or a container element
+//       var container = document.getElementById("card-container");
+//       container.appendChild(card);
+//     }
+//   } 
+// };
+//     artistdata()
 
 
 
