@@ -58,6 +58,41 @@ function displayUniqueArtists() {
               var artistName = document.createElement('h5');
               artistName.className = 'card-title';
               artistName.textContent = artist;
+
+              artistName.addEventListener("click",function(){
+                const xhttp=new XMLHttpRequest();
+                xhttp.open("GET",'http://localhost:3000/artists');
+                xhttp.send();
+                xhttp.onreadystatechange = function () {
+                  if (xhttp.readyState === 4 && xhttp.status === 200){
+                    var artinfo=JSON.parse(this.responseText);
+                    for(let a of artinfo){
+                      if(a.name===artist){
+                        Swal.fire({
+                          title: 'Artist Info',
+                          html:`<div class="row">
+                          <div class="col-lg-6 ">
+                          <h2>${a.name}</h2>
+                          <label>Age:</label>&nbsp${a.age}<br>
+                          <label>Gender:</label>&nbsp${a.gender}<br> 
+                          </div>
+                          <div class="col-lg-6">
+                          <img style="height:100%" class="img-fluid" alt="artist img" src=${a.imageURL}></div>`,
+                          confirmButtonText:'View Songs'
+                        })
+                        break;
+                      }
+                      else{
+                        Swal.fire({
+                          icon:'warning',
+                          title:'Database Updation',
+                          text:'Sorry,We are a work in Progress'
+                        })
+                      }
+                    }
+                  }
+                }
+              })
   
               cardBody.appendChild(artistName);
               card.appendChild(cardBody);

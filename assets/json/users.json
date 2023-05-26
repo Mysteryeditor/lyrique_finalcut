@@ -124,10 +124,28 @@
     {
       "id": 10,
       "name": "Gangnam Style",
-      "Artist": "Psy",
+      "Artist": "PSY",
       "year": 2012,
       "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodP1tm2y__bMUyve9UJib3eMZDUZBPO8xenQTlL9hug&s",
       "language": "Korean"
+    },
+    {
+      "id": 11,
+      "name": "Shape of You",
+      "Artist": "Ed Sheeran",
+      "year": 2017,
+      "artwork": "https://i.pinimg.com/236x/27/5e/26/275e26e27538792e29757efdeb6d33e7.jpg",
+      "url": "",
+      "language": "English"
+    },
+    {
+      "id": 12,
+      "name": "7 Rings",
+      "Artist": "Ariana Grande",
+      "year": 2019,
+      "artwork": "https://i.pinimg.com/236x/75/e7/ba/75e7bac6a9bb097d1dc4e316b3db0a07.jpg",
+      "url": "https://www.shazam.com/track/455579230/7-rings",
+      "language": "English"
     }
   ],
   "lyrics": [
@@ -177,7 +195,7 @@
       "name": "Taylor Swift",
       "age": 32,
       "gender": "female",
-      "imageURL": "https://example.com/images/taylor_swift.jpg",
+      "imageURL": "",
       "albums": [
         {
           "title": "Fearless",
@@ -197,7 +215,7 @@
       "name": "Ed Sheeran",
       "age": 31,
       "gender": "male",
-      "imageURL": "https://example.com/images/ed_sheeran.jpg",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3kMGs0VYloI08tllg9KYOOveLXlYfuOH7rZLg_NbTLw&usqp=CAU&ec=48600112",
       "albums": [
         {
           "title": "Divide",
@@ -217,7 +235,7 @@
       "name": "Ariana Grande",
       "age": 28,
       "gender": "female",
-      "imageURL": "https://example.com/images/ariana_grande.jpg",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbADCesNhekDYryDu9dKZCrBcyZdTJHWUtj-UZf-qSpw&usqp=CAU&ec=48600112",
       "albums": [
         {
           "title": "Thank U, Next",
@@ -230,6 +248,190 @@
         {
           "title": "Sweetener",
           "year": 2018
+        }
+      ]
+    },
+    {
+      "name": "John Newman",
+      "age": 31,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/43/01/b8/4301b894a32cb7f8ce3be4fe5b02a099.jpg",
+      "albums": [
+        {
+          "title": "Tribute",
+          "year": 2013
+        }
+      ]
+    },
+    {
+      "name": "PSY",
+      "age": 44,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/d3/36/b2/d336b254c6cb8154aa3f031cbc34cc4e.jpg",
+      "albums": [
+        {
+          "title": "Psy from the Psycho World!",
+          "year": 2001
+        },
+        {
+          "title": "PsyFive",
+          "year": 2010
+        },
+        {
+          "title": "Chiljip Psy-da",
+          "year": 2015
+        }
+      ]
+    },
+    {
+      "name": "Tom Odell",
+      "age": 31,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/42/67/ca/4267ca603527548dcdb79be476d60737.jpg",
+      "albums": [
+        {
+          "title": "Long Way Down",
+          "year": 2013
+        },
+        {
+          "title": "Wrong Crowd",
+          "year": 2016
+        },
+        {
+          "title": "Jubilee Road",
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "name": "Halsey",
+      "age": 27,
+      "gender": "female",
+      "imageURL": "https://i.pinimg.com/236x/84/c1/f0/84c1f023b52c0222b4450cc88ffc9428.jpg",
+      "albums": [
+        {
+          "title": "Badlands",
+          "year": 2015
+        },
+        {
+          "title": "Hopeless Fountain Kingdom",
+          "year": 2017
+        },
+        {
+          "title": "Manic",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "name": "Luis Fonsi",
+      "age": 43,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/69/e8/20/69e820c275d568a9b2c2634f41dcef12.jpg",
+      "albums": [
+        {
+          "title": "Comenzaré",
+          "year": 1998
+        },
+        {
+          "title": "Eterno",
+          "year": 2000
+        },
+        {
+          "title": "8",
+          "year": 2014
+        }
+      ]
+    },
+    {
+      "name": "Clean Bandit",
+      "age": "Group",
+      "gender": "mixed",
+      "imageURL": "https://i.pinimg.com/236x/8f/8a/40/8f8a403bd9af328d039ca7a24c6ec13b.jpg",
+      "albums": [
+        {
+          "title": "New Eyes",
+          "year": 2014
+        },
+        {
+          "title": "What Is Love?",
+          "year": 2018
+        },
+        {
+          "title": "Higher",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "name": "Ellie Goulding",
+      "age": 35,
+      "gender": "female",
+      "imageURL": "https://i.pinimg.com/236x/43/8f/3b/438f3b046371415050274dd07b52da88.jpg",
+      "albums": [
+        {
+          "title": "Lights",
+          "year": 2010
+        },
+        {
+          "title": "Halcyon",
+          "year": 2012
+        },
+        {
+          "title": "Delirium",
+          "year": 2015
+        }
+      ]
+    },
+    {
+      "name": "Alan Walker",
+      "age": 24,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/dd/c0/51/ddc05143c5fedf0b3be6313fca05bc4c.jpg",
+      "albums": [
+        {
+          "title": "Different World",
+          "year": 2018
+        },
+        {
+          "title": "Walker & the Ghost",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "name": "Imagine Dragons",
+      "age": "Group",
+      "gender": "mixed",
+      "imageURL": "https://i.pinimg.com/236x/e0/0e/87/e00e87d3c31a3b249ecff114c758126c.jpg",
+      "albums": [
+        {
+          "title": "Night Visions",
+          "year": 2012
+        },
+        {
+          "title": "Smoke + Mirrors",
+          "year": 2015
+        },
+        {
+          "title": "Evolve",
+          "year": 2017
+        }
+      ]
+    },
+    {
+      "name": "Powfu",
+      "age": 22,
+      "gender": "male",
+      "imageURL": "https://i.pinimg.com/236x/2b/0b/ef/2b0bef883a22f38e9487c0beba079cc1.jpg",
+      "albums": [
+        {
+          "title": "poems of the past",
+          "year": 2019
+        },
+        {
+          "title": "some boring, love stories, pt. 5",
+          "year": 2021
         }
       ]
     }
@@ -268,19 +470,5 @@
       "time": "19:00"
     }
   ],
-  "likes": [
-    {
-      "username": "",
-      "songid": 2,
-      "name": "Another Love",
-      "id": 2
-    },
-    {
-      "username": "",
-      "songid": 4,
-      "name": "Bad Liar",
-      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
-      "id": 4
-    }
-  ]
+  "likes": []
 }
