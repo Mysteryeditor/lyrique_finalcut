@@ -6,10 +6,7 @@
       "dob": "2023-05-09",
       "email": "kokki@gmail.com",
       "password": "abcdefgh",
-      "id": 1,
-      "likes": [
-        {}
-      ]
+      "id": 1
     },
     {
       "firstname": "Dhana",
