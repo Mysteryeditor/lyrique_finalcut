@@ -42,13 +42,7 @@
       "id": 4
     }
   ],
-  "login": [
-    {
-      "id": 1,
-      "username": "KokkiKumar",
-      "password": "abcdefgh"
-    }
-  ],
+  "login": [],
   "songs": [
     {
       "id": 1,
@@ -276,76 +270,17 @@
   ],
   "likes": [
     {
-      "username": "KokkiKumar",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
-      "id": 1
-    },
-    {
-      "username": "KokkiKumar",
+      "username": "",
       "songid": 2,
       "name": "Another Love",
       "id": 2
     },
     {
-      "username": "KokkiKumar",
-      "songid": 3,
-      "name": "Death Bed",
-      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
-      "id": 3
-    },
-    {
-      "username": "KokkiKumar",
+      "username": "",
       "songid": 4,
       "name": "Bad Liar",
       "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
       "id": 4
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 5,
-      "name": "Faded",
-      "url": "./assets/songs/Faded - Alan Walker-(DJMaza).mp3",
-      "id": 5
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 9,
-      "name": "Despacito",
-      "id": 6
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 7,
-      "name": "Solo",
-      "id": 7
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 10,
-      "name": "Gangnam Style",
-      "id": 8
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 6,
-      "name": "Hate Me",
-      "url": "./assets/songs/Hate Me - Ellie Goulding, Juice WRLD_128- [PagalWorld.NL].mp3",
-      "id": 9
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 8,
-      "name": "Without Me",
-      "id": 10
-    },
-    {
-      "username": "DhanaPrakash",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
-      "id": 11
     }
   ]
 }

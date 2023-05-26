@@ -15,6 +15,8 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  // the username display
 function displayuname(){
     
     const xhttp=new XMLHttpRequest();
@@ -23,20 +25,14 @@ function displayuname(){
     xhttp.onreadystatechange=function(){
         if(this.readyState==4 && xhttp.status==200){
             const userdata=JSON.parse(this.responseText);
-            
             var username=userdata[0].username;
             var usercontainer=document.getElementById("username");
             usercontainer.textContent=username;
-            console.log(username);
             
         }
     }
 }
-
-
 displayuname();
-
-
 
 // for logging out
 function logout(){
@@ -72,40 +68,73 @@ function songlist() {
           playbutton.className = "play-btn";
           songName.textContent = song.name;
   
-          // the liked songs button using ionicon
+          // the like button using ionicon
           const likebutton = document.createElement('ion-icon');
           likebutton.setAttribute("name", "heart");
           likebutton.classList.add('large-font', 'text-center');
 
+          //to activate the icon if its already liked
           isSongAlreadyLiked(username, song.name, function(isLiked) {
             if (isLiked) {
               likebutton.classList.add('active');
             }
           });
-  
+
+          //adding hover event to the like button
+          const tooltip=document.createElement('div');
+          likebutton.addEventListener('mouseover', function() {
+            tooltip.textContent = 'like';
+            tooltip.style.position = 'absolute';
+            tooltip.style.backgroundColor = 'black';
+            tooltip.style.color = '#E34612';
+            tooltip.style.padding = '5px';
+            tooltip.style.borderRadius = '5px';
+            tooltip.style.zIndex = '9999';
+            tooltip.style.left = (likebutton.offsetLeft + likebutton.offsetWidth) + 'px';
+            tooltip.style.top = likebutton.offsetTop + 'px';
+            document.body.appendChild(tooltip);
+          });
+          
+          likebutton.addEventListener('mouseout', function() {
+            tooltip.parentNode.removeChild(tooltip);
+          });
+          
+          // add click event to the like button
           likebutton.addEventListener("click", function() {
             likebutton.classList.add('active');
-  
-            console.log(username, song.name);
-  
             isSongAlreadyLiked(username, song.name, function(isLiked) {
               if (isLiked) {
                 likebutton.classList.add('active');
                 Swal.fire({
                   title: "Song Already Present",
                   icon: "error",
-                  showCancelButton: false,
-                  confirmButtonText: "OK",
+                  showCancelButton: true,
+                  confirmButtonText: "View Liked Songs",
                   reverseButtons: true
                 }).then((result)=>{
                     if (result.isConfirmed) {
-                        Swal.fire({
-                           //viewing the liked songs list which has the delete operation
-                        })
-                        
-                    
-
-
+                      const xhttp=new XMLHttpRequest();
+                      xhttp.open("GET",`http://localhost:3000/likes`);
+                      xhttp.send();
+                      xhttp.onreadystatechange=function(){
+                        if(this.readyState==4 && this.status==200){
+                          const likedsongs = JSON.parse(this.responseText);
+                          var likelist=""
+                          for(let likes of likedsongs){
+                         if(likes.username===username){
+                          likelist+=`<div class="liked-songs-container">
+                          <label class="liked-songs-name">${likes.name}</label>
+                          <button onclick='removeliked(${likes.id})'>Delete</button><br>`
+                         }
+                          }
+                          likelist+="</div>"
+                          Swal.fire({
+                            title:"Liked Songs",
+                            html:
+                            likelist,
+                            confirmButtonText:'Return'
+                         })   
+                      }}
                     }
                 });
               } else {
@@ -125,7 +154,6 @@ function songlist() {
   
           const redbg = document.createElement('div');
           redbg.className = "red-bg";
-  
   
           const spanplay = document.createElement('span');
           playbutton.addEventListener("click", function() {
@@ -148,14 +176,11 @@ function songlist() {
   
   // Checking if the song is already liked
   function isSongAlreadyLiked(username, song, callback) {
-    console.log(username, song);
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", `http://localhost:3000/likes`);
     xhttp.send();
-  
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
         const data = JSON.parse(xhttp.responseText);
         for (let songcheck of data) {
           if (songcheck.username === username && songcheck.name === song) {
@@ -167,14 +192,33 @@ function songlist() {
       }
     }
   }
-  
+
+  //deleting the liked song
+function removeliked(songid){
+  const xhttp=new XMLHttpRequest();
+  xhttp.open("DELETE",`http://localhost:3000/likes/${songid}`)
+  xhttp.send();
+  xhttp.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+      Swal.fire({
+        title:'Deleted!',
+        content:'Your song has been deleted.',
+        icon:'success',
+        showCancelButton:false,
+        confirmButtonText:'Return to Homepage'
+    }).
+    then((result) => {
+      if (result.isConfirmed) {
+        location.href = "./Homepage.html";
+        // songlist();
+      }
+    })
+    }
+  }
+}
   // Call the songlist function
   songlist();
-  
-
-
-
-
+ 
 //for updating the user details
 function updateprofile(){
     var username=document.getElementById("username").textContent;
@@ -183,7 +227,6 @@ xhttp.open("GET",`http://localhost:3000/users/?username_like=${username}`);
 xhttp.send();
 xhttp.onreadystatechange=function(){
     if(this.readyState==4 && this.status==200){
-        console.log(this.responseText);
         
         const userdetail=JSON.parse(this.responseText);
         for(let data of userdetail){
@@ -198,6 +241,7 @@ xhttp.onreadystatechange=function(){
 }
 }
 
+// using put method to reflect in the json
 function updateprofile2(uid){
 const xhttp=new XMLHttpRequest();
 var usname=document.getElementById("Username").value;
@@ -230,8 +274,6 @@ xhttp.onreadystatechange = function () {
             logout();
             }
 })
-
-   
     }
     
   };

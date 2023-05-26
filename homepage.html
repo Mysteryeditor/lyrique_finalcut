@@ -301,30 +301,38 @@
     </div>
 
     <h1>
-      Songs
+      Music Player
     </h1>
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-2 col-md-6 " id="songlist">
 
         </div>
-        <!--<div class="container-audio">
-          <audio id="player" controls  loop autoplay src="" type="audio">
-                 </audio>
-      </div> -->
+       
 
         <!-- the music player -->
-        <div class="container-audio col-sm-2 col-lg-4 col-md-6 ">
+        <div class="container-audio col-sm-12 col-lg-4 col-md-12 ">
           <div class="album-art">
-            <img id="albumimage" src="" alt="Album Art">
+            <img id="albumimage" src="assets/images/musicplayerdefaultalubumart.png" alt="Album Art">
           </div>
           <div class="song-details">
-            <h3 id="songname" class="song-title">Song Title</h3>
+            <h3 id="songname" class="song-title">Hold My Hand</h3>
           </div>
           <audio id="player" controls loop autoplay
             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
             type="audio/ogg"></audio>
         </div>
+
+        <div class="col-lg-4 col-sm-2 col-md-6 " id="lyrics">
+          <div class="lyrics-container">
+            <div class="lyrics-title">Lyrics</div>
+            <div id="lyrics-text" class="lyrics-text">
+              
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
