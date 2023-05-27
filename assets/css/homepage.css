@@ -9,8 +9,6 @@
     width: 50px;
 }
 
-
-
 a,
 a:hover,
 a:visited {
@@ -34,8 +32,98 @@ a:visited:hover {
     font-family: LyriqueFont;
 }
 
-span{
-    color: #ffffff;
+#Hello,#username{
+    font-size: 20px;
+    color: azure;
+}
+
+.menu-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.menu-btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.menu-btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.menu-btn .text {
+  transform: translateX(55px);
+}
+
+.menu-btn:hover .icon {
+  width: 175px;
+}
+
+.menu-btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.menu-btn:focus {
+  outline: none;
+}
+
+.menu-btn:active .icon {
+  transform: scale(0.85);
+}
+
+/* for the delete account button*/
+.custom-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid #c02525;
+  height: 48px;
+  padding: 0 10px 0 16px;
+  letter-spacing: 0.25px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn .mdi {
+  margin-right: 8px;
+}
+
+.btn-delete {
+  font-size: 16px;
+  color: rgb(227, 70, 18);
+}
+.btn-delete > .mdi-delete-empty {
+  display: none;
+}
+.btn-delete:hover {
+  background-color: #c7c7c7;
+}
+.btn-delete:hover > .mdi-delete-empty {
+  display: block;
+}
+.btn-delete:hover > .mdi-delete {
+  display: none;
+}
+.btn-delete:focus {
+  box-shadow: 0 0 0 4px #dedede;
 }
 
 
@@ -71,10 +159,93 @@ span{
   color: rgb(227, 70, 18);
 }
 
+p{
+  color: azure;
+}
+
+p:hover{
+  color: rgb(227, 70, 18);
+
+}
+
 audio {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 7px;
 }
+
+/* for the songs list */
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+#songlist .title{
+  font-size: 25px;
+  margin-bottom: 0px;
+  width: 186px;
+}
+   
+.songcontainer{
+  display: flex;
+  padding: 10px;
+}
+
+/* for the playbutton */
+.play-btn {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+}
+.play-btn span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #000000;
+  position: relative;
+  margin: 4px auto;
+}
+
+/* for the like button */
+.large-font {
+  font-size: xx-large;
+}
+
+ion-icon.active {
+  animation: like 0.5s 1;
+  fill: rgb(227, 70, 18);
+  stroke: none;
+}
+ion-icon {
+  fill: transparent;
+  stroke: rgb(248, 244, 244);
+  stroke-width: 30;
+  transition: all 0.5s;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* for the liked songs */
+.liked-songs-container{
+  padding: 10px;
+
+}
+
+
 
 
 
@@ -201,71 +372,7 @@ audio {
     border: 1px solid #ccc;
   }
 
-  /* for the songs list */
-h1{
-  font-size: 40px;
-  text-align: center;
-}
-#songlist .title{
-  font-size: 25px;
-  margin-bottom: 0px;
-  width: 186px;
-}
-   
-.songcontainer{
-  display: flex;
-  padding: 10px;
-}
-
-/* for the playbutton */
-.play-btn {
-  width: 30px;
-  height: 30px;
-  background: #222;
-  display: inline-block;
-  border-radius: 50%;
-  box-sizing: border-box;
-  transition: all .3s ease-in-out;
-}
-.play-btn span {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 8px solid #fff;
-  position: relative;
-  margin: 4px auto;
-}
-
-/* for the like button */
-.large-font {
-  font-size: xx-large;
-}
-
-ion-icon.active {
-  animation: like 0.5s 1;
-  fill: rgb(227, 70, 18);
-  stroke: none;
-}
-ion-icon {
-  fill: transparent;
-  stroke: rgb(248, 244, 244);
-  stroke-width: 30;
-  transition: all 0.5s;
-}
-
-@keyframes like {
-  0% {
-    transform: scale(1);
-  }
-  90% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
+  
 
 @media screen and (max-width:998px)  {
   /* for the music player */

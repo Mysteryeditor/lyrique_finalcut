@@ -26,9 +26,15 @@
   <!-- sweetalert cdn -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-<!-- ionicons -->
+  <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- mdi icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
+    integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -62,6 +68,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
+        
 
           <li class="nav-item" style="padding-right: 10px;">
             <!-- hello+username -->
@@ -69,70 +76,151 @@
             <span id="username"></span>
 
           </li>
-          <li class="nav-item" style="padding-right: 10px;">
-            <button onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
-              Profile</button>
-          </li>
 
-          <li class="nav-item" style="padding-right: 10px;">
-            <button onclick="logout()">LOGOUT</button>
+          <li class="nav-item">
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#optionsModal">
+              Open Options
+            </button> -->
+
+            <button data-bs-toggle="modal" data-bs-target="#optionsModal" class="menu-btn ">
+              <span class="icon">
+                  <svg viewBox="0 0 175 80" width="40" height="40">
+                      <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                      <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                      <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                  </svg>
+              </span>
+              <span class="text">MENU</span>
+          </button>
           </li>
+         
         </ul>
       </div>
     </div>
   </nav>
 
 
-  <div class="container">
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <input type="number" id="user_id" hidden="true">
-              <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="Username" placeholder="Enter your username">
-              </div>
-              <div class="mb-3">
-                <label for="gender" class="form-label">Gender</label>
-                <select class="form-select" id="gender">
-                  <option value="">Select your gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="non-binary">Non-Binary</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="dob" class="form-label">Date of Birth</label>
-                <input type="date" class="form-control" id="dob">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-              </div>
-            </form>
-          </div>
 
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-            <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
-              Changes</button>
+<!-- Modal for menu  -->
+<div class="modal fade right-end" id="optionsModal" tabindex="-1" aria-labelledby="optionsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="optionsModalLabel">Options</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <button class="custom-btn btn-delete">
+              <span class="mdi mdi-delete mdi-24px"></span>
+              <span class="mdi mdi-delete-empty mdi-24px"></span>
+              <span>Delete Account</span>
+            </button>
+          </li>
+          <li class="list-group-item">
+            <button onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
+              Profile</button>
+          </li>
+          <li class="list-group-item">
+            <button onclick="logout()">LOGOUT</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal for update profile -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+ aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+       <form>
+         <input type="number" id="user_id" hidden="true">
+         <div class="mb-3">
+           <label for="username" class="form-label">Username</label>
+           <input type="text" class="form-control" id="Username" placeholder="Enter your username">
+         </div>
+         <div class="mb-3">
+           <label for="gender" class="form-label">Gender</label>
+           <select class="form-select" id="gender">
+             <option value="">Select your gender</option>
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+             <option value="non-binary">Non-Binary</option>
+           </select>
+         </div>
+         <div class="mb-3">
+           <label for="dob" class="form-label">Date of Birth</label>
+           <input type="date" class="form-control" id="dob">
+         </div>
+         <div class="mb-3">
+           <label for="email" class="form-label">Email</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter your email">
+         </div>
+         <div class="mb-3">
+           <label for="password" class="form-label">Password</label>
+           <input type="password" class="form-control" id="password" placeholder="Enter your password">
+         </div>
+       </form>
+     </div>
+
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+       <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
+         Changes</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+    <div class="container-fluid" style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
+      <div class="container" >
+    <h1 style="color: rgb(227, 70, 18);">
+      Music Player
+    </h1>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <!-- the song list -->
+        <div class="col-lg-5 col-sm-12 col-md-12"   id="songlist">
+
+        </div>
+
+
+
+        <!-- the music player -->
+        <div class="container-audio col-sm-12 col-lg-5 col-md-12" >
+          <div class="album-art">
+            <img id="albumimage" src="assets/images/musicplayerdefaultalubumart.png" alt="Album Art">
           </div>
+          <div class="song-details">
+            <h3 id="songname" class="song-title">Hold My Hand</h3>
+          </div>
+          <audio id="player" controls loop autoplay
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
+            type="audio/ogg"></audio>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"> </div>
+        <div class="col-lg-5"><button onclick="likedSongs()">Liked Songs</button></div>
+
+      </div>
+    </div>
+
+
 
     <!-- info about the artists -->
     <div class="container" id="artistinfo">
@@ -152,7 +240,7 @@
                 <img src="https://i.pinimg.com/236x/2a/90/86/2a9086b3eabd4cc6bbae6f216dbd4a25.jpg" alt="images">
               </div>
               <div class="details">
-                <h2 >The Weeknd<br><span>Best Album: After Hours</span></h2>
+                <h2>The Weeknd<br><span>Best Album: After Hours</span></h2>
               </div>
             </div>
           </div>
@@ -164,7 +252,7 @@
                 <img src="https://i.pinimg.com/236x/f1/11/dd/f111dd867c624a85834727c1cf957e5e.jpg" alt="images">
               </div>
               <div class="details">
-                <h2 >Eminem<br><span>Best Album: Encore</span></h2>
+                <h2>Eminem<br><span>Best Album: Encore</span></h2>
               </div>
             </div>
           </div>
@@ -172,7 +260,7 @@
           <!-- Card 3 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx" >
+              <div class="imgBx">
                 <img src="https://i.pinimg.com/736x/0a/1a/48/0a1a48c5f057c4d2adfd7dd67a0676f3.jpg" alt="images">
               </div>
               <div class="details">
@@ -300,54 +388,14 @@
 
     </div>
 
-    <h1>
-      Music Player
-    </h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-2 col-md-6 " id="songlist">
-
-        </div>
-       
-
-        <!-- the music player -->
-        <div class="container-audio col-sm-12 col-lg-4 col-md-12 ">
-          <div class="album-art">
-            <img id="albumimage" src="assets/images/musicplayerdefaultalubumart.png" alt="Album Art">
-          </div>
-          <div class="song-details">
-            <h3 id="songname" class="song-title">Hold My Hand</h3>
-          </div>
-          <audio id="player" controls loop autoplay
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
-            type="audio/ogg"></audio>
-        </div>
-
-        <div class="col-lg-4 col-sm-2 col-md-6 " id="lyrics">
-          <div class="lyrics-container">
-            <div class="lyrics-title">Lyrics</div>
-            <div id="lyrics-text" class="lyrics-text">
-              
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-
 
   </div>
 
 
-  <div class="container">
-
-  </div>
-
-  <!-- Remove the container if you want to extend the Footer to full width. -->
 
 
+
+  <!-- footer -->
   <footer class="text-center text-lg-start " style="background-color: #222222;">
 
 

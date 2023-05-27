@@ -38,21 +38,52 @@ a:hover,a:visited:hover {
     background-size: cover;
 }
 
-#layer1 label{
-    font-size: x-large;
-    color: white;
-}
+
 
 #layer1 span{
-    font-size: xx-large;
+    font-size: 60px;
     font-family: LyriqueFont;
     color:rgb(227, 70, 18);
     text-transform: uppercase;
 }
 
 #layer1 span:hover{
-    font-size: 35px;
+    font-size: 65px;
 }
+
+#lyworld{
+    font-size: 50px;
+    color: azure;
+    font-family: LyriqueFont;
+
+}
+
+/* typewriter animation */
+  
+  .typewriter {
+    width: 295px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #fffdfd;
+    animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+  }
+  
+  @keyframes cursor {
+    0%,
+    100% {
+      border-color: #212121;
+    }
+  }
+  
+  @keyframes text {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 295px;
+    }
+  }
+  
 
 
 

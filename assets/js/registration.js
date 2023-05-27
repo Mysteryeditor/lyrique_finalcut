@@ -1,14 +1,14 @@
 // for the toggle button of show password
  function togglePasswordVisibility() {
   var passwordField = document.getElementById('password');
-  var showPasswordBtn = document.getElementById('showPasswordBtn');
+ 
 
   if (passwordField.type === 'password') {
     passwordField.type = 'text';
-      showPasswordBtn.textContent = 'Hide Password';
+      
   } else {
     passwordField.type = 'password';
-    showPasswordBtn.textContent = 'Show Password';
+    
   }
 }
 
@@ -55,6 +55,8 @@ function registerUser() {
       username: firstname + lastname
     })
   );
+  xhttp.onreadystatechange = function () {
+    if(this.readyState==4 && this.status==200){
   var username = firstname + lastname;
   Swal.fire({
     icon: 'success',
@@ -69,6 +71,8 @@ function registerUser() {
       window.location.href = './authentication.html';
     }
   });
+}
+  }
 }
 
 

@@ -41,20 +41,33 @@ a:hover{
     }
 
 #checkboxvalidate{
-    font-size: 17px;
+    font-size: 20px;
     color: red;
     text-transform: uppercase;
 }
 
-label,h3,h6{
+/* the labels */
+label{
     color: white;
     font-family: LyriqueFont;
+    font-size: larger;
+}
+
+h3,h6{
+    color: white;
+    font-family: LyriqueFont;
+    font-size: x-large;
 }
 
 input{
     border-radius: 10px;
     border: none;
-    box-shadow: 2px 2px 2px 2px rgb(222, 75, 22)
+    box-shadow: 1px 1px 1px 1px rgb(222, 75, 22)
+}
+
+.btn{
+    background-color: rgb(222, 75, 22);
+    color: azure;
 }
 
 

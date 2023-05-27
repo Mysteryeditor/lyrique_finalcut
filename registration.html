@@ -64,14 +64,6 @@
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-lg-6 col-md-12 col-sm-12"></div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <!-- <div class="card card-registration my-4"> -->
-                            <!-- <div class="row g-0"> -->
-                                <!-- <div  class="col-xl-6 d-none d-xl-block " style="background: none;"> -->
-                                    <!-- <img src="./assets/images/regn pic.png" alt="Sample photo" class="img-fluid" -->
-                                    <!-- style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" /> -->
-                                <!-- </div> -->
-                                <!-- <div class="col-xl-6" > -->
-                                    <!-- <div class="card-body p-md-5 text-black"> -->
                                         <h3 class="mb-5 text-uppercase">Registration Form</h3>
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
@@ -159,7 +151,7 @@
                                                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                                                         required />
                                                     <label class="form-label" for="password">Password</label>
-                                                    <i class="fa-solid fa-eye" id="showPasswordBtn" onclick="togglePasswordVisibility()"></i>
+                                                    <i style="color:azure" class="fa-solid fa-eye" id="showPasswordBtn" onclick="togglePasswordVisibility()"></i>
                                                     <div class="valid-feedback">
                                                         Strong Password!
                                                     </div>
@@ -175,7 +167,7 @@
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" id="terms" required>
                                             <label class="form-check-label" for="terms">I agree to the <a
-                                                style="color: #000;"
+                                                style="color: azure;" id="tandc"
                                                     href="./terms.html"> terms and
                                                     conditions </a></label>
                                             <div class="invalid-feedback">
@@ -183,17 +175,13 @@
                                             </div>
                                         </div>
 
-                                        <button type="submit" id="registernow" class="btn btn-primary btn-lg"
+                                        <button type="submit" id="registernow" class="btn  btn-lg"
                                             >Register</button>
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
         </form>
-        <footer class="text-center text-lg-start " style="background-color: rgba(63, 30, 139,0.5);" >
+        <footer class="text-center text-lg-start " style="background-color: black;" >
   
   
             <!-- Copyright -->
