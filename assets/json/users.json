@@ -29,17 +29,21 @@
       "id": 3
     },
     {
-      "firstname": "PriyaDarshan",
-      "lastname": "Ma",
+      "username": "PriyaDarshan",
       "gender": "male",
       "dob": "2021-02-25",
       "email": "priyapd@gmail.com",
       "password": "abc123AB",
-      "username": "PriyaDarshanMa",
       "id": 4
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "id": 1,
+      "username": "PriyaDarshan",
+      "password": "abc123AB"
+    }
+  ],
   "songs": [
     {
       "id": 1,
@@ -143,6 +147,213 @@
       "artwork": "https://i.pinimg.com/236x/75/e7/ba/75e7bac6a9bb097d1dc4e316b3db0a07.jpg",
       "url": "https://www.shazam.com/track/455579230/7-rings",
       "language": "English"
+    },
+    {
+      "id": 13,
+      "name": "New York Nagaram",
+      "Artist": "A.R.Rahman",
+      "year": 2006,
+      "artwork": "https://www.songlyricsplace.com/wp-content/uploads/2020/06/Newyork-Nagaram-Song-Lyrics.jpg",
+      "url": "./assets/songs/New York Nagaram.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 14,
+      "name": "Nenjukkula",
+      "Artist": "A.R.Rahman",
+      "year": 2013,
+      "artwork": "https://th.bing.com/th/id/R.30f77a7608aa0a1547f49065bfea3a94?rik=AkLncyCkE2Jx7g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-jQdVcd0dLwc%2fUNHRvMVtmNI%2fAAAAAAAAB_E%2fUqAPVjJJfdU%2fs1600%2fKadal-99tamilsonglyrics.blogspot.com.jpg&ehk=Y3eUnPrWrEYbXPCxe%2bBUnzahv9G1gZP0Gs%2fdu33NiIc%3d&risl=&pid=ImgRaw&r=0",
+      "url": "./assets/songs/Nenjukkule.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 15,
+      "name": "Venmegam",
+      "Artist": "Yuvan Shankar Raja",
+      "year": 2008,
+      "artwork": "https://a10.gaanacdn.com/images/playlists/54/15606954/crop_480x480_15606954_1512725337.jpg",
+      "url": "./assets/songs/Venmegam.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 16,
+      "name": "Arabu Naadu",
+      "Artist": "Yuvan Shankar Raja",
+      "year": 2007,
+      "artwork": "https://a10.gaanacdn.com/images/playlists/54/15606954/crop_480x480_15606954_1512725337.jpg",
+      "url": "./assets/songs/Arabu Naade.m4a",
+      "language": "Tamil"
+    },
+    {
+      "id": 17,
+      "name": "Bodhai Kaname",
+      "Artist": "Vishal Chandrashekhar",
+      "year": 2021,
+      "artwork": "https://www.quirkybyte.com/wp-content/uploads/2021/11/Bodhai-Kaname-Song-1.png",
+      "url": "./assets/songs/Bodhai Kaname.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 18,
+      "name": "Pavizha Mazha",
+      "Artist": "P.S.Jayhari",
+      "year": 2019,
+      "artwork": "https://i.ytimg.com/vi/IicjJWgABdY/maxresdefault.jpg",
+      "url": "./assets/songs/Pavizha Mazha.mp3",
+      "language": "Malayalam"
+    },
+    {
+      "id": 19,
+      "name": "Darshana",
+      "Artist": "Hesham Abdul Wahab",
+      "year": 2022,
+      "artwork": "https://m.media-amazon.com/images/I/41RSGezAIWL._UXNaN_FMjpg_QL85_.jpg",
+      "url": "./assets/songs/Darshana.mp3",
+      "language": "Malayalam"
+    },
+    {
+      "id": 20,
+      "name": "Raataan Lambiyan",
+      "Artist": "Azeem Dayani",
+      "year": 2021,
+      "artwork": "https://t2.genius.com/unsafe/315x315/https%3A%2F%2Fimages.genius.com%2Fb667e99f1c1a959025c2d0d828c5beee.980x940x1.jpg",
+      "url": "./assets/songs/Raataan Lambiyan - Shershaah.mp3",
+      "language": "Hindi"
+    },
+    {
+      "id": 21,
+      "name": "Megam Karukatha",
+      "Artist": "Anirudh Ravichander",
+      "year": 2022,
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273a88e2419e55cfdf1bf2a2fe2",
+      "url": "./assets/songs/Megham-Karukatha.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 22,
+      "name": "Marakkavillayae",
+      "Artist": "Anirudh Ravichander",
+      "year": 2019,
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273fc981d2682958c17cdb23ab0",
+      "url": "./assets/songs/Jersey Marakkavillayae.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 23,
+      "name": "Aga Naga",
+      "Artist": "A.R.Rahman",
+      "year": 2023,
+      "artwork": "https://i.ytimg.com/vi/uNmqMQQ8dHA/maxresdefault.jpg",
+      "url": "./assets/songs/Aga Naga.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 24,
+      "name": "Tum Hi Ho",
+      "Artist": "Mithoon",
+      "year": 2013,
+      "artwork": "https://th.bing.com/th/id/R.e7e7ec3681625fde38eaa9f208d4ebe7?rik=AxE%2bzriYj2Er1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-B0DAhSV2ZDs%2fUVVPBDekiHI%2fAAAAAAAAAQ0%2ffAn0nch_90I%2fs400%2ftum-hi-ho-song-lyrics-aashiqui-2.jpg&ehk=56Riiyl%2bU1ZujGUaC1p47Uxld6tyVb6MxObr7NkfszI%3d&risl=&pid=ImgRaw&r=0",
+      "url": "./assets/songs/Tum Hi Ho.mp3",
+      "language": "Hindi"
+    },
+    {
+      "id": 25,
+      "name": "Anbae Peranbae",
+      "Artist": "Yuvan Shankar Raja",
+      "year": 2019,
+      "artwork": "https://i.ytimg.com/vi/f3NdnmKqocM/maxresdefault.jpg",
+      "url": "./assets/songs/Anbae Peranbae.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 26,
+      "name": "Nee Paartha Vizhigal",
+      "Artist": "Anirudh Ravichander",
+      "year": 2011,
+      "artwork": "https://i.scdn.co/image/ab67616d0000b27340d3b59b2f1478395b4e3857",
+      "url": "./assets/songs/Nee Partha Vizhigal.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 27,
+      "name": "Azhagiye",
+      "Artist": "A.R.Rahman",
+      "year": 2017,
+      "artwork": "https://retamil.com/wp-content/uploads/2017/03/azhagiye-marry-song-lyrics-katru-veliyidai.jpg",
+      "url": "./assets/songs/Azhagiye.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 28,
+      "name": "Nenjukkul Peidhidum",
+      "Artist": "Harris Jayaraj",
+      "year": 2008,
+      "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/f7/79/9b/f7799ba6-0ac5-743f-68b7-615484b53db7/886449482740.jpg/1200x1200bf-60.jpg",
+      "url": "./assets/songs/Nenjukkul Peidhidum.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 29,
+      "name": "Vaarayo Vaarayo",
+      "Artist": "Harris Jayaraj",
+      "year": 2009,
+      "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eHWVfuvVJsZqCer_PkFlV-ZcGyVbU0BJn1gBHiGPlg&s",
+      "url": "./assets/songs/Vaarayo Vaarayo.mp3",
+      "language": "Tamil"
+    },
+    {
+      "id": 30,
+      "name": "Ennai Konjum",
+      "year": 2003,
+      "Artist": "Harris Jayaraj",
+      "artwork": "https://th.bing.com/th/id/R.7bec26caa1b410e828316daa87248138?rik=iDLM5OzPjDWJvA&riu=http%3a%2f%2f1.bp.blogspot.com%2f_phnWZyu7rLQ%2fTSnRAFQpqQI%2fAAAAAAAAFwA%2fr5qPfYwUO7Q%2fs1600%2fKaaka-Kaaka-cd.jpg&ehk=1jDX465b11NEhKJpuQBTZFe59tXEcvEdyVijc%2be1sA8%3d&risl=&pid=ImgRaw&r=0",
+      "language": "Tamil",
+      "url": "./assets/songs/Ennai Konjum.mp3"
+    },
+    {
+      "id": 31,
+      "name": "Oru Ooril",
+      "year": 2003,
+      "Artist": "Harris Jayaraj",
+      "artwork": "https://c.saavncdn.com/748/Kaakha-Kaakha-Tamil-2003-500x500.jpg",
+      "language": "Tamil",
+      "url": "./assets/songs/Oru Ooril.mp3"
+    },
+    {
+      "id": 32,
+      "name": "Yedho Ondru",
+      "year": 2003,
+      "Artist": "Harris Jayaraj",
+      "artwork": "https://www.watchwhere.co.uk/static/images/artwork/lesa-lesa-2003-amazon-instant-video.jpg",
+      "language": "Tamil",
+      "url": "./assets/songs/Yedho Ondru.mp3"
+    },
+    {
+      "id": 33,
+      "name": "Aval Ulaghazhagi",
+      "year": 2003,
+      "Artist": "Harris Jayaraj",
+      "artwork": "https://secureservercdn.net/198.71.233.216/h34.831.myftpupload.com/wp-content/uploads/2019/12/9.jpg",
+      "language": "Tamil",
+      "url": "./assets/songs/Aval Ulaghazhagi.mp3"
+    },
+    {
+      "id": 34,
+      "name": "Eppo Nee",
+      "year": 2008,
+      "Artist": "G.V.Prakash Kumar",
+      "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
+      "language": "Tamil",
+      "url": "./assets/songs/Eppo Nee.mp3"
+    },
+    {
+      "id": 35,
+      "name": "Vaa Vaathi",
+      "year": 2023,
+      "Artist": "G.V.Prakash Kumar",
+      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
+      "language": "Tamil",
+      "url": "./assets/songs/Vaa Vaathi.mp3"
     }
   ],
   "lyrics": [
@@ -185,6 +396,106 @@
     {
       "name": "Gangnam Style",
       "lyrics": "Oppa Gangnam Style\nGangnam Style\nWarmeul seuchyeo jinaesseo\ndalkomhan ni moksori\ngwangyanghage nae mameul heundeureo\nneol hyanghae sori jilleo\nnaege dhaejyeo kiseuhae\nppalgan seolgukhage weonhaneun nom\ngeureon banjeon i neomu yeppeo\nBeautiful, loveable\nYes you, hey, yes you, hey\nBeautiful, loveable\nYes you, hey, yes you, hey\nNow let's go until the end\nOppa Gangnam Style\nGangnam Style\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\nEh, sexy lady\nJal saenggakhaetneunde\nbarami bureo ddeugeowojineun\ngirls, girls, girls, girls\ngeureon banjeon i neomu yeppeo\nBeautiful, loveable\nYes you, hey, yes you, hey\nBeautiful, loveable\nYes you, hey, yes you, hey\nNow let's go until the end\nOppa Gangnam Style\nGangnam Style\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\nEh, sexy lady\nOppa Gangnam Style\n"
+    },
+    {
+      "name": "Shape of You",
+      "lyrics": "The club isn't the best place to find a lover\nSo the bar is where I go (mm-mm)\nMe and my friends at the table doing shots\nDrinking fast, and then we talk slow (mm-mm)\nYou come over and start up a conversation with just me\nAnd trust me, I'll give it a chance now (mm-mm)\nTake my hand, stop, put 'Van the Man' on the jukebox\nAnd then we start to dance\nAnd now I'm singing like\nGirl, you know I want your love\nYour love was handmade for somebody like me\nCome on now, follow my lead\nI may be crazy, don't mind me\nSay, 'Boy, let's not talk too much\nGrab on my waist and put that body on me'\nCome on now, follow my lead\nCome, come on now, follow my lead\n(Mm-mm)\nI'm in love with the shape of you\nWe push and pull like a magnet do\nAlthough my heart is falling too\nI'm in love with your body\nLast night you were in my room\nAnd now my bed sheets smell like you\nEvery day discovering something brand new\nOh, I'm in love with your body\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nEvery day discovering something brand new\nI'm in love with the shape of you\nOne week in we let the story begin\nWe're going out on our first date (mm-mm)\nBut you and me are thrifty, so go all-you-can-eat\nFill up your bag, and I fill up a plate (mm-mm)\nWe talk for hours and hours about the sweet and the sour\nAnd how your family is doing okay (mm-mm)\nAnd leave and get in a taxi, then kiss in the back seat\nTell the driver make the radio play\nAnd I'm singing like\nGirl, you know I want your love\nYour love was handmade for somebody like me\nCome on now, follow my lead\nI may be crazy, don't mind me\nSay, 'Boy, let's not talk too much\nGrab on my waist and put that body on me'\nCome on now, follow my lead\nCome, come on now, follow my lead\n(Mm-mm)\nI'm in love with the shape of you\nWe push and pull like a magnet do\nAlthough my heart is falling too\nI'm in love with your body\nLast night you were in my room\nAnd now my bed sheets smell like you\nEvery day discovering something brand new\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nOh I, oh I, oh I, oh I\nOh, I'm in love with your body\nEvery day discovering something brand new\nI'm in love with the shape of you\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nCome on, be my baby, come on\nI'm in love with the shape of you\nWe push and pull like a magnet do\nAlthough my heart is falling too\nI'm in love with your body\nLast night you were in my room\nAnd now my bed sheets smell like you\nEvery day discovering something brand new\nOh, I'm in love with your body\nCome on, be my baby, come on\nCome on, be my baby, come on (I'm in love with your body)\nCome on, be my baby, come on\nCome on, be my baby, come on (oh, I'm in love with your body)\nCome on, be my baby, come on\nCome on, be my baby, come on (I'm in love with your body)\nEvery day discovering something brand new\nI'm in love with the shape of you"
+    },
+    {
+      "name": "7 Rings",
+      "lyrics": "Yeah, breakfast at Tiffany's and bottles of bubbles\nGirls with tattoos who like getting in trouble\nLashes and diamonds, ATM machines\nBuy myself all of my favorite things (Yeah)\nBeen through some bad shit, I should be a sad bitch\nWho woulda thought it'd turn me to a savage?\nRather be tied up with cuffs and not strings\nWrite my own checks like I write what I sing, yeah (Yeah)\n[Pre-Chorus]\nMy wrist, stop watchin', my neck is flossy\nMake big deposits, my gloss is poppin'\nYou like my hair? Gee, thanks, just bought it\nI see it, I like it, I want it, I got it (Yeah)\n[Chorus]\nI want it, I got it, I want it, I got it\nI want it, I got it, I want it, I got it\nYou like my hair? Gee, thanks, just bought it\nI see it, I like it, I want it, I got it (Yeah)"
+    },
+    {
+      "name": "New York Nagaram",
+      "lyrics": "New york nagaram urangum neram\nThanimai adarnthathu\nPaniyum padarnthathu\nKappal irangiyae\nKaatrum karayil nadanthathu\nNaangu kannadi suvargalukullae\nNaanum meluguvarthiyum\nThanimai thanimayo..\nKodumai kodumaiyo…\nNew york nagaram urangum neram\nThanimai adarnthathu\nPaniyum padarnthathu\nKappal irangiyae\nKaatrum karayil nadanthathu\nNaangu kannadi suvargalukullae\nNaanum meluguvarthiyum\nThanimai thanimayo..\nThanimai thanimayo..\nKodumai kodumaiyo…\nOo…..ooooo..ooooo…..\nOo…..ooooo..ooooo…..\nMale : Pechellam thaalatu pola\nEnnai uranga vaikka nee illai\nThinamum oru mutham thanthu\nKaalai coffee koduka nee illai\n\nVizhyil vizhum thusi thannai\nYedukka nee ingu illai\nManathil ezhum kuzhappam thannai\nTheerka nee ingae illai..\nNaan ingae neeyum angae..\nIndha thanimaiyil nimishangal\nVarusham aanathenoo…\nVaan ingae neelam angae\nIntha uvamaiku iruvarum\nVilakamantheno …ooo…ooo..\n\nNew york nagaram urangum neram\nThanimai adarnthathu\nPaniyum padarnthathu\nChorus : Oo…..ooooo..ooooo…..\nOo…..ooooo..ooooo…..\nNaat kuripil nooru thadavai\nUnthan peyarai ezhuthum enn penna..\nEzhuthiyathum erumbu moika\nPeyarum aanathenna theanaa..aa..\nOo…..ooooo..ooooo…..\nJillendru bhoomi irunthum\nIndha tharunathil kulir kaalam\nKodai aanatheno..\nOooo..oooo\n\nVaa anbae neeyum vanthal\nSenthanal kuda panikatti pola\nMaarumae….ye ye ye yeah…..\nNew york nagaram urangum neram\nThanimai adarnthathu\nPaniyum padarnthathu\nKappal irangiyae\nKaatrum karayil nadanthathu\nNaangu kannadi suvargalukullae\nNaanum meluguvarthiyum\nThanimai thanimayo..\nThanimai thanimayo..\nKodumai kodumaiyo.."
+    },
+    {
+      "name": "Nenjukkule",
+      "lyrics": "Nenjukkulla umma mudinjirukken\nNenjukkulla umma mudinjirukken\nInga yethisaiyil\nYempozhappu vidinjirukko\nVella paarva\nVeesiviteer munnadi\nItha thaangatha manasu\nThanni patta kannadi\nVanna maniyaaram\nValathukai kediyaaram\nAanai puliyellaam\nAdakum athigaram\nNeer pona pinnum\nNizhal mattum pogalayae pogalayae\nNenjukuliyil nizhal vanthu\nVizhunthiruchu\nApa niminthava thaan\nAparama kuniyalayae kuniyalayae\nKodakambi pola manam\nKuthi nikkuthae\nNenjukkulla umma mudinjirukken\nNenjukkulla\nUmma mudinjirukken\nInga yethisaiyil\nYempozhappu vidinjirukko\nPachi orangiruchu\nPaal thayiraa thoongiruchu\nIchi marathu mela\nEla kuda thoongiruchu\nKaasa noikkaarigalum\nKannurangum velaiyila\nAasa noi vanthamaga\nAranimisham thungalaiyae…ae…ae…ae..\nNenjukkulla\nUmma mudinjirukken\nInga yethisaiyil\nYempozhappu vidinjirukko\nOru vaai yerangalayae\nUll naaku nanaiyalaiyae\nEzhettu naala\nEchil muzhungalaiyae\nYelae ilanchirukki\nYetho solla mudiyalayae\nRubber valavikkellaam\nSaththamida vaaiyillaiyae\nOh nenjukkulla\nUmma mudinjirukken\nInga yethisaiyil\nYempozhappu vidinjirukko\nVella paarva\nVeesiviteer munnadi\nItha thaangatha manasu\nThanni patta kannadi\nVanna maniyaaram\nValathukai kediyaaram\nAanai puliyellaam\nAdakum athigaram\nNeer pona pinnum\nNizhal mattum pogalayae pogalayae\nNenjukuliyil nizhal vanthu\nVizhunthiruchu\nApa niminthava thaan\nAparama kuniyalayae kuniyalayae\nKodakambi pola manam\nKuthi nikkuthae\nNenjukkulla\nUmma mudinjirukken\nNenjukkulla\nUmma mudinjirukken\nInga yethisaiyil\nYempozhappu vidinjirukko"
+    },
+    {
+      "name": "venmegam",
+      "lyrics": "Mmhmmmmhmmhmmhmmmm…..lalalalalala…\nVenmegam pennaga uruvaanatho\nInneram ennai paarthu vilaiyaadutho\nUnnalae pala gnaabagham\nEn munnae vanthaaduthae\nOru nenjam thindaduthae\nVaarthai oru vaarthai sonnal enna\nPaarvai oru paarvai paarthaal enna\nUnnalae pala gynaabagham\nEn munnae vanthaaduthae\nOru nenjam thindaduthae\nVenmegam pennaga uruvaanatho\nInneram ennai paarthu villaiyaadutho\nManjal veyil nee minnal oli nee\nUnnai kandavarai kann kalanga nirka vaikkum thee\nPennae yennadi unmai solladi\nOru punnagaiyil penninamae kopa pattathennadi\nDevathai vaalvathu veedu illai koyil\nKadavulin kaal thadam paarkiren\nOndraa irendaa un azhagai paada\nKan moodi oru oram naan saaigiren\nKanneeril aanandham naan kaangiren\nUnnalae pala gynaabagham en munnae vanthaaduthae\nOru nenjam thindaduthae\nEngal manathai kollai adithaai\nIntha thanthiramum manthiramum yengu sendru padithaai\nVizhiasaivil valai virithaai\nUnnai pallakinil thookki sella kattalaigal vithithaai\nUn viral pidithidum varam ondru kidaikka\nUyirudan vaalgiren naan adi\nEn kaadhalum en aagumo\nUn paathathil mann aagumo..ooo\nVenmegam pennaga uruvaanatho\nInneram ennai paarthu vilaiyaadutho.."
+    },
+    {
+      "name": "Arabu Naadu",
+      "lyrics": "Parde Mein Dekho\nWahan Ek Haseen Kamal Hai\nUrdu Ke Shaayar Ghalib Ki\nWoh Koyi Ghazal Hei\nChorus : { Lahila Lahilaa Lahila Lahilaa } (2)\n\nMugathai Eppothum Moodi Vaikaadhae\nEnadhu Nenjathil Mullai Thaikaadhae\n\nEn Kanmani Kaathodu Sol\nUn Mugavari Oh Oh\nEnnaalumae En Paatuku Nee\nMudhal Vari Hey Hey Hey\n\nMugathai Eppothum Moodi Vaikaadhae\nEnadhu Nenjathil Mullai Thaikaadhae\n\nArabu Naadae Asanthu\nNirkum Azhagiya Nee\nUrudu Kavingan Umargayamin\nKavithaiya Hey Hey Hey\n\nYea Unnudaiya Netri\nUnnai Patri Koorudhae …ae\nUllirukum Pottu Undhan Kuttu Solludhae\nEnnudaiya Paarvai\nKazhugu Paarvai Therinjuko …oo\nEnakirukum Sakthi Para\nSakthi Purinjiko\n\nKaal Kolusu Thaan Kala Kalakuthu\nKaiyin Valayal Kaathu Kulira Gaanam Paada Hey Hey\n\nMugathai Eppothum Moodi Vaikaadhae\nEnadhu Nenjathil Mullai Thaikaadhae\n\nPottirukum Ghosha\nVesam Besha Porunthudhae …ae\nPenazhagu Motham Kaana\nSitham Virumbudhae\n\nVennilavin Thegam Moodum\nMegam Vilagumaa …aa\nVanna Udal Yaavum Kaanum\nYogam Vaaikuma\n\nKonjam Kozhupu Konjam Thimiru\nEnakum Iruku Unaku Melae Anbu Thozhi Hey Hey\n\n{ Lahila Lahilaa Lahila Lahilaa } (2)\n\nMugathai Eppothum Moodi Vaikaadhae\nEnadhu Nenjathil Mullai Thaikaadhae\n\n{ Lahila Lahilaa Lahila Lahilaa } (2)"
+    },
+    {
+      "name": "Bodhai Kaname",
+      "lyrics": "Adhoo.. pon piraiyaa?\nUdaindhidum nuraiyaa?…\n\nIdhoo.. en nodiyin vazhippariyaa?..\n\nNaalum karaiyodum alaiyodum\nUravaadum kilinjal pol\nEn nenjam nilaiyindriyaa?..\n\nAngae tholai dhoorathil saaral\nMazhai kanden naan pakkam\nVarumbodhu sirai kambiyaa?…\n\nThavarena paartha kan indru\nKalai seiyudhae!…\n\nTharisena paartha megengal\nKadal peiyudhay!\n\nKangal kaaranam thedudhae\nUnnai vandhu serudhae…..\n\nBodhai kanamae kanamae\nPogaadhiru nee!\nBodhai kanamae kanamae\nPodhaadhiru nee!\n\nBodhai kanamae kanamae\nVaazhvaai iru nee!\nBodhai kanamae siragaagidu nee!\n\nNijamae nijamae..\nNeengadhiru nee!\nThaenin dhinamae dhinamae\nThengaadhiru nee!\nNaalai inimel analaai\nMelae vizhundhaal\nBodhai kanamae kudaiyaai iru nee!\n\nThodaadha paadhaiyoo?..\nKai veesum aasaiyoo?…\n\nNiraivadhu en oodaiyo?..\nNigazhvadhu yaarin kadhaiyoo?..\nEnakenna neenda kilaiyil\nKuyil serudhoo?\nMaragadha pon velaiyoo?..\nManadhinil yaazhin mazhaiyo?..\n"
+    },
+    {
+      "name": "Pavizha Mazha",
+      "lyrics": "Dhoore Oru Mazhavillin\nEzham Varnnam Pol\nThooval Kavilinayil\nNin Mayalavanyam\n\nInnen Idavazhiyil\nNinnomal Kalthaalam\nNeeyam Swarajathiyil\nEe Mounam Vaachalam\n\nSadhyaragangalettu Paadunnu\nBhoomiyum Vaanavum\nSaakshiyaay Bhavukangalekunnu\nShyamameghangalum\n\nPavizha Mazhaye…Nee Peyyumo\nInnivale…Nee Moodumo\nVen Panimathiyivalile\nMalaroliyazhakile Naalangalil\n\nEn Kanavukal Vithariya Tharakangale\nKaanuvaan Kaathu Njaan\n\nDhoore Oru Mazhavillin\nEzham Varnnam Pol\nThooval Kavilinayil\nNin Mayalavanyam\n\nAararume Thedattha Nin\nUlnambu Thedi\nArarume Kanathoraa\nDahangal Pulki\n\nNee Pokum Dhooram\nNizhalay Njaan Vannidam\nTheerangal Thedi\nChirakeri Poyidam\n\nMadhuramoorum Chiriyaale Nee\nPriyasammatham Moolumo\nManathaarin Azhineekki Nee\nIanayavaan Porumo\n\nKaalamakunna Thoniyil Nammal\nInnitha Cherave\nPeelineerthunnorayiram Jaalam\nEnnilinnakave\n\nPavizha Mazhaye…Nee Peyyumo\nInnivale…Nee Moodumo\nVen Panimathiyivalile\nMalaroliyazhakile Naalangalil\n\nEn Kanavukal Vithariya Tharakangale\nKaanuvaan Kaathu Njaan"
+    },
+    {
+      "name": "Darshana",
+      "lyrics": "Ninne Njan Kandanne\nMegham Pookal Peyunne\nOnnavaan Njanenne\nNenjil Theerthoren\nPranaya Prapanchamitha\n\nDarshana\nSarvam Sana Nin Sourabhyam\nDarshana\nEn Jeewan Saayujyam\nDarshana\n\nSnehaamrutham Ennileku\nDarshana\n\nNee Pokum Vazhiyil\nManam Kaathu Ninnu\nOru Nokku Nalkaathalannu Nee\nOrkunna Neram\nKanalanu Nenjil\nMaruwaakku Chollathathenthe\n\nEthu Naalathil\nMoodi Vachaalum Azhake\nManasu Thediyethunnu\nNinte Ee Punchiri\n\nNeeyam Madhuve\nNukaraan Kaathu Njaan\n\nDarshana\nSarvam Sana Nin Sourabhyam\nDarshana\nEn Jeewan Saayujyam\nDarshana\nSnehaamrutham Ennileku\nDarshana\n\nOnnaavaan Njanenne\nNenjil Theerthoren\nPranaya Prapanchamitha\n\nDarshana\nSarvam Sana Nin Sourabhyam\nDarshana\nEn Jeewan Saayujyam\nDarshana\nSnehaamrutham Ennileku\nDarshana\n\nDarshana  Darshana  Darshana\nSnehaamrutham Ennileku\nDarshana"
+    },
+    {
+      "name": "Raataan Lambiyan",
+      "lyrics": "Teri Meri Gallan Ho Gayi Mashhoor\nKar Na Kabhi Tu Mujhe Nazron Se Door\nKithe Chali Ae Tu Kithe Chali Ae Tu\nKithe Chali Ae Kithe Chali Ae\nJaanda Ae Dil Yeh Toh Jaandi Ae Tu\nTere Bin Main Na Rahun Mere Bina Tu\nKithe Chali Ae Tu Kithe Chali Ae Tu\nKithe Chali Ae, Jaan Chali Ae\nKaatun Kaise Raatan Oh Saawre?\nJiya Nahi Jaata Sunn Baawre?\nKe Raataan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nCham Cham Cham Ambran De Taare\nKehnde Ne Sajjna\nTu Hi Chan Mere Is Dil Da\nMann Le Ve Sajjna\nTere Bina Mera Howe Na Guzara\nChhad Ke Na Jawin Mainu\nTu Hi Hai Sahara\nKaatun Kaise Raatan Oh Saawre?\nJiya Nahi Jaata Sunn Baawre?\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nKe Raataan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nTeri Meri Gallan Ho Gayi Mashhoor\nKar Na Kabhi Tu Mainu Nazron Se Door\nPichhe Chali Ae Tere Pichhe Chali Ae\nTere Pichhe Chali Ae\nJaanda Ae Dil Yeh Toh Jaandi Ae Tu\nTere Bina Main Na Rahun Mere Bina Tu\nKithe Chali Ae Tu Kithe Chali Ae Tu\nKithe Chali Ae\nKaatun Kaise Raatan Oh Saawre?\nJiya Nahi Jaata Sunn Baawre?\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re\nKe Raatan Lambiyan Lambiyan Re\nKate Tere Sangeyan Sangeyan Re"
+    },
+    {
+      "name": "Megam Karukatha",
+      "lyrics": "Megham Karukkaatha Penne Penne\nSaaral Adikkatha Penne Penne\nThegham Nanaiyaatha Penne Penne\nTheeyum Anaiyaatha Penne Penne\n\nKanbaashai Pesinaal\nNaan Enna Seiven\nConfusion Aagiren Ullukkulle\nParakka Parakka Thudikkudhe\nPazhaga Pazhaga Pidikkudhe\nPazhaya Ranangal Marakkuthe\nPenn Thogai Varuduthe\n\nParakka Parakka Pazhaga Pazhaga\nPazhaiya Ranangal Penn Thogai Varuduthe\nMegham Karukkaatha Penne Penne\nSaaral Adikkaatha Penne Penne\n\nMannai Thooral Theendum Munnae\nVaasam Paarkkiraen\nMannai Kuda Bommai Aakkum\nNesam Paarkkiraen\n\nInnum Konjam Innum Konjam\nEndru Ketkiraen Konjam Konjam\n\nInnum Innum Endru Ketkiren\nEnnodu Serndhu Vaazhum Sogam Ellaam\nKaatril Poga Paarkkiren\nKaalgal Pona Paadhai Ellaam\nNaan Pogiren\n\nEnnulle Moodi Iruntha Kadhavu Ondru\nVetkappattu Thirakkiren\nVaazhkkai Pogum Pokkil Ellaam\nNaan Pogiraen\n\nKanbaashai Pesinaal Naan Enna Seiven\nConfusion Aagiren Ullukkulle\n\nParakka Parakka Thudikkudhe\nPazhaga Pazhaga Pidikkudhe\nPazhaiya Ranangal Marakkudhe\nPenn Thogai Varududhe\nParakka Parakka Pazhaga Pazhaga\nPazhaiya Ranangal Penn Thogai Varududhe\nMegham Karukkatha Penne Penne\nSaaral Adikkaatha Penne Penne\nThegham Nanaiyaadha\nTheeyum Anaiyaadha"
+    },
+    {
+      "name": "Marakkavillayae",
+      "lyrics": "Neeyaaga andru\nEnnai paarthathum\nNeeyaaga vandhu\nPesi ponathum\nNee ennai yaetru\nOppu kondathum\nMarakkadhae\n\nNilaavai paarka\nAasai pattadhum\nNidhaanamaga\nPaarvai vittadhum\nNeeyaaga vandhu\nMuththam ittadhum..mm\nMarakkadhae\n\nUn porvaiyaaga\nEnnai potri kondadhum\nPoraamai kondu\nOorae paarthadhum\n\nNee en ulaga azhagiyae\nUnnai pol oruthi illaiyae\nEdhuvum innum marakkavillaiyae\nOoo hoooo…ooo hooo\n\nNee en ulaga azhagiyae\nUnnai pol oruthi illaiyae\nEdhuvum innum marakkavillaiyae\n\nOoo hoooo…ooo hooo\n\n………………………Oor thoongum\nNeram dhinadhorum\nAndha mottai maadi\nSanthippellaam\nAaaaaaa…vendum vendum\nNadakkadhaa meendum\nThooridum neram\nSaalai oram\nUn dhuppattaavai\nSuththi kondom\nUuuuuuu…antha eeram\nKidaikaadha meendum\n\nPogathae endru\nUnnai kenji kettadhum\nNee pona pinbu\nNaan pudhainthadhum\n\nInnum marakkavillaiyae\nEdhaiyam marakkavillaiyae\nEdhuvum innum marakkavillaiyae\n\nOoo hoooo…ooo hooo\n\nNee en ulaga azhagiyae\nUnnai pol oruthi illaiyae\nEdhuvum innum marakkavillaiyae\n\nOoo hoooo…ooo hooo\n\nOoohoooo…hoo ooo(Overlapping)\n\nNee en ulaga azhagiyae\nUnnai pol oruthi illaiyae\nEdhuvum innum marakkavillaiyae\n\nOoo hoooo…ooo hooo\n\nNee en ulaga azhagiyae\nUnnai pol oruthi illaiyae\nEdhuvum innum marakkavillaiyae\n\nOoo hoooo…ooo hooo"
+    },
+    {
+      "name": "Aga Naga",
+      "lyrics": "Aganaga aganaga muganagaiyae..ho\nMuganaga muganaga murunagaiyae..ho\nMurunaga murunaga tharunagaiyae..ho hoo\nTharunaga tharunaga varunanaiyae..\n\nYaaradhu yaaradhu\nPunnagai korppadhu\nYaavilum yaavilum\nEn manam serppadhu\nNadai pazhagidum tholai aruvigalae..ho\nMugil kudithidum malai mugadugalae..ho\nKudai pidithidum nedu mara cherivae\nPani udhirthidum siru malar thuliyae..\n\nAzhagiya pulamae\nUnadhila magal naan\nValavanin nilamae\nEnadharasiyum nee\nValanila sirippae enadhuyiradiyo..oo\nUnadhilam vanappae enakkinithadiyo\nUnai ninaikkaiyilae manam silirtthidudhae\n\nUn vazhi nadandhaal\nUyir malarndhidudhae\nUn madi kidandhaal\nThavithavikkiradhae\nNinaivazhindhidudhae\n\nAganaga aganaga muganagaiyae..ho\nMuganaga muganaga murunagaiyae..ho\nMurunaga murunaga tharunagaiyae..ho ..\nTharunaga tharunaga varunanaiyae..\n\nYaaradhu yaaradhu\nPunnagai korppadhu\nYaavilum yaavilum\nEn manam serppadhu\n\nYaaradhu yaaradhu\nPunnagai korppadhu\nYaavilum yaavilum\nEn manam serppadhu"
+    },
+    {
+      "name": "Tum Hi Ho",
+      "lyrics": "Hum tere bin ab reh nahi sakte\nTere bina kya wajood mera?\nHum tere bin ab reh nahi sakte\nTere bina kya wajood mera?\nTujhse juda gar ho jayenge\nTo khudse hi ho jayenge juda\n\nKyunki tum hi ho, ab tum hi ho\nZindagi ab tum hi ho\nChain bhi, mera dard bhi\nMeri aashiqi, ab tum hi ho\n\nTera mera rishta hai kesa\nEk pal dur gawara nahi\nTere liye har roz hai jeete\nTujhko diya mera waqt sabhi\nKhoi lamha mera na ho tere bina\nHar saans pe naam tera\n\nKyunki tum hi ho, ab tum hi ho\nZindagi ab tum hi ho\nChain bhi, mera dard bhi\nMeri aashiqi, ab tum hi ho\n\nTere liye hi jiya main\nKhudko jo yun de diya hai\nTere wafa ne mujhko sambhala\nSare gham ko dil se nikala\nTere Saath mera hai naseeb jurah\nTujhe paake aadura na raha\nKyunki tum hi ho, ab tum hi ho\nZindagi ab tum hi ho\nChain bhi, mera dard bhi\nMeri aashiqi, ab tum hi ho\n\nKyunki tum hi ho, ab tum hi ho\nZindagi ab tum hi ho\nChain bhi, mera dard bhi\nMeri aashiqi, ab tum hi ho"
+    },
+    {
+      "name": "Anbae Peranbae",
+      "lyrics": "Anbae…. anbae anbae anbae\nAnbae…. anbae anbae anbae\nPeranbae …peranbae peranbae\nPeranbae …peranbae peranbae\n\nHoo ooo oo hooo\n\nYeno iravodu oliyaai koodum\nUravondru ketkkiren\nVaraimeerum ivalin aasai\nNiraivera paarkkiren\nNadhi serum kadalin meedhu\nMazhai neraai seruven\n\nAmuthae peramuthae\nPenn manadhin kanavin\nYekkam theerkkumaa… eerkkumaa..aa..\nMadhiyai than madhiyai\nIvan azhagin bimbam\nKangal paarkkuma..thorkkuma\n\nMazhaivaanam thoorum pothu\nManal enna koosumo\nMalarodu malargal kooda\nOor enna thootrumo\n\nThiraiyae thirai kadalae\nUn athirum anbu\nMathilai thaanduthae..thoonduthae\n\nAaa….aaa….aa…\nNenjoram thoongum mogam\nKannoram doobam poda\nSollaatha ragasiyam nee thaanae\nOoor ketka yenguthae\n\nThanimaiyil thunai varum yosanai\nNinaivilum manakkuthu un vaasanai\nEllaamae ondraaga maaruthae\nMananthida seval koovuthae\n\nOh kodai kaalaththin megangal\nKaarkaalam thoorum\nAal illaatha kaatilum\nBoobaalam ketkkum..\nMm..mm..mmm..mm\n\nAnbae peranbae\nNeduvazhvin nizhalgal\nVannam aaguthae aaguthae…ae…ae…\nUravae namm uravae\nOru anuvin pirivil\nAndril aaguthae aaguthae\n\nHoo hoo oo\nUraiyaadha sollin porulai\nMozhi ingu thaangumo\nUravaaga anbil vaazha\nOru aayul pothumo….."
+    },
+    {
+      "name": "Nee Paartha Vizhigal",
+      "lyrics": "Nee Paartha Vizhigal\nNee Paartha Nodigal\nKetaalum Varuma\nKetkaatha Varama\n\nIthu Pothuma..ithil Avasarama\nInum Venduma..athil Nirainthiduma\nNaam Paartha Naal..nam Vasam Varuma\nUyir Thaanguma..en Vizhigalil Muthal Vali\n\nNijamadi Penne..tholaivinil Unnai\nNilavinil Kanden..nadamaada\nVali Vali Penne..varaimurai Illai\nVathaikiraai Ennai..methuvaaga\n\nNee Paartha Vizhigal\nNee Paartha Nodigal\nKetaalum Varuma\nKetkaatha Varama\n\nNizhal Tharum\nIval Paarvai\nVazhi Engum Ini Thevai\nUyire Uyire\nUyir Nee Thaan Enraal\nUdane Varuvaai Udal Saagum Unnal\n\n(Manal Inri Kulir Veesum)\n(Ithu Enthan Siru Vaasam)\nIthil Nee Mattum Vendum Penne\n\nNijamadi Penne..tholaivinil Unnai\nNilavinil Kanden..nadamaada\nVali Vali Penne..varaimurai Illai\nVathaikiraai Ennai..methuvaaga\n\nNee Paartha Vizhigal\nNee Paartha Nodigal\nKetaalum Varuma\nKetkaatha Varama\n\nIthu Pothuma..ithil Avasarama\nInum Venduma..athil Nirainthiduma\nNaam Paartha Naal..nam Vasam Varuma\nUyir Thaanguma..Oh Oh Oh…"
+    },
+    {
+      "name": "Azhagiye",
+      "lyrics": "Waiting for the punnagai\nSiri di\nKaanavillai heart beat\nThirudi\n\nAdada naan kavignan\nUnnai paathu kettu pona\nKavignan\nHonest-ah naan pesavaa\nIlla idhu pothuma\nOh my darling\nNaanga coming\nPuthu puthu kanakellam pending\nOoh\nChorus-ah naan ketkavaa\nYes ah yes-ah no-ah yes-ah\n\nAzhagiyae..\nMarry me marry me\nAzhagiyae..\nFlirt with me\nGet high with me\nAzhagiyae..\nKovam vandhaa\nKoocham vandhaa\nDon’t worry\nAzhagiyae..\nHey azhagiyae\n\nHey azhagiyae..\nMarry me marry me\nAzhagiyae..\nFlirt with me\nGet high with me\nAzhagiyae..\nKadhal vanthaa\nMatter vanthaa\nCall-adi..\nAzhagiyae..\nHey azhagiye Hey…\n\nAarum ketka edhu ondrai\nEdhuondrai naan ketten unnai..\nAdhai thanthal nandri\nPidivaatham indri\nNee thanthal nandri\nThuli thulirae..eehh\nThuli kaalam ketten\nThuli kaadhal ketten\nThuli kaamam ketten\nMaru uyirae\nMarukkadhae nee\nMarakadhae nee\nEnthan azhagiyae nee\n\nNi ni ni…ni ni ni\nnin ni nin ni nin ni\nAzhagiyae..\nMarry me marry me\nAzhagiyae..\nFlirt with me\nGet high with me\nAzhagiyae..\nKovam vandhaa\nKoocham vandhaa\nDon’t worry\nAzhagiyae..\nHey azhagiyae\nHey azhagiyae..\nMarry me marry me\nAzhagiyae..\nFlirt with me\nGet high with me\nAzhagiyae..\nKaadhal vanthaa\nMatter vanthaa\nCall adi.. Azhagiyae..\nHey azhagiye Hey…"
+    },
+    {
+      "name": "Nenjukkul Peidhidum",
+      "lyrics": "Nenjukkul peidhidum maa mazhai\nNeerukul moozhgidum thaamarai\nSattendru maarudhu vaanilai\nPenne un mel pizhai\n\nNillamal veesidum peralai\nNenjukkul neenthidum tharagai\nPon vannam soodiya kaarigai\nPenne nee kaanchanai\n\nOh shaanti shaanti oh shaanti\nYen uyirai uyirai neeyenthi\nYen sendrai sendrai yennai thaandi\nIni neethan yenthan andhathi\n\nNenjukkul peidhidum maa mazhai\nNeerukul moozhgidum thaamarai\nSattendru maarudhu vaanilai\nPenne un mel pizhai\nYedho ondru ennai eerka\nMookin nuni marmam serka\nKalla-thanam yedhum illa\nPunnagaiyo boganvilla\n\nNee nindra idam endral Vilai yeri pogadho\nNee sellum vazhi ellam panikatti aahadho\nYennodu vaa veedu varaikkum\nYen veetai paar yennai pidikkum\n\nIval yaaro yaaro theriyadhey\nIval pinnal nenje pogadhey\nIdhu poyyo meyyo theriyadhey\nIval pinnal nenje pogadhey\n\nNenjukkul peidhidum maa mazhai\nNeerukul moozhgidum thaamarai\nSattendru maarudhu vaanilai\nPenne un mel pizhai.. oh.o.\n\nNillamal veesidum peralai\nNenjukkul neenthidum tharagai\nPon vannam soodiya kaarigai\nPenne nee kaanchanai\n\nThookangalai thooki sendrai\nYekkangalai thoovi sendrai\nUnnai thaandi pogum podhu\nVeesum kaatrin veechu veru\n\nNil endru nee sonnal en kaalam nagaradhey\nNee soodum poovellam oru podhum udhiradhey\nKadhal enai ketka villa\nKetkathadhu kadhal illa\n\nYen jeevan jeevan neethaney\nYena thondrum neram idhuthane\nNee illai illai yendrale\nYen nenjam nenjam thaangadhey\n\nNenjukkul peidhidum maa mazhai\nNeerukul moozhgidum thaamarai\nSattendru maarudhu vaanilai\nPenne un mel pizhai.. oh.o.\n\nNillamal veesidum peralai\nNenjukkul neenthidum tharagai\nPon vannam soodiya kaarigai\nPenne nee kaanchanai\n\nOh shaanti shaanti oh shaanti\nYen uyirai uyirai neeyenthi\nYen sendrai sendrai yennai thaandi\nIni neethan yenthan andhathi"
+    },
+    {
+      "name": "Vaarayo Vaarayo",
+      "lyrics": "Vaaraayo vaaraayo kaadhal kolla\nPoovodu pesaadha kaatru illa\nEan indha kaadhalum netru illa\nNeeyae sol manamae\n\nVaaraayo vaaraayo monalisa\nPesaamal pesudhae kangal lesa\nNaal thorum naan unthan kaadhal raasaa\nEnnodu vaa dhinamae\nEnnodu vaa dhinamae\n\nIngae ingae oru marlin manroe naan thaan\nUn kaiyin kaambil poo naanNam kaadhal yaavum thaen thaan\n\nPoovey povey nee bodhaikkollum paadam\nManam kaatraippola odum\nUnnai kaadhal kangal thedum\n\nHo ho ho\nLai lai lai lai kaadhal leelai\nSei sei sei sei kaalai maalai\n\nUn silai azhagai vizhigalaal naan viyandhen\nIvanudan serndhaadu cindrallaa\n\nVaaraayo vaaraayo kaadhal kolla\nPoovodu pesaadha kaatru illa\nEan indha kaadhalum netru illa\nNeeyae sol manamae\nNeeyae sol manamae\n\nNeeyae neeyae andha julietin saayal\nUn dhegam endhan koodal\nIni thevaiyillai oodal\n\nTheeyae theeyae naan\nThithikkindra theeyae\nEnai muthamiduvaaiyae\nIdhazh muthukkulippaaiyae\n\nNee nee nee nee my fair lady\nVaa vaa vaa vaa en kaadhal jodi\n\nNaan mudhal mudhalaai elithiya kaadhal isai\nAdharkoru adhaara sruthhi nee…..\n\nVaaraayo vaaraayo monalisha\nPesaamal pesudhae kangal lesa\nNaal thorum naan unthan kaadhal raasaa\n\nEnnodu vaa dhinamae\nEnnodu vaa dhinamae\n\nEnnodu vaa dhinamae"
+    },
+    {
+      "name": "Ennai Konjum",
+      "lyrics": "Siragugal neeludhae\nParavaigal polavae\nVinveli thandiyae\nThulli thulli pogudhae\n\nPudhuvidha anubhavam\nNodiyinil perugidum\nIruvarin uyirayum\nAlli alli pogudhae\n\nEnnai konjam maatri…\nEn nenjil unnai ootri\nNee ennai mella mella kolladhae\n\nNetrum indrum vaera\nIndru kaanum naanum naanaa\nUn pechchil ennai veezhththi selladhae\n\nSikkidabom sikkidabom\nSikkidabom go\n\nOnnae onnu sollanum…\nYeah heah\nOnnae onnu sollanum\nUn mugaththai paathu sollanum\nThanimai konjam kidaikka koodaadhaa\n\nNaanum maari ponadhae\nEn nalinam koodi ponadhae\nAdhu therindhaal neeyae\nSolla koodaadhaa\n\nWoahu woah aaa…\nWoahu woah ..aaa….\nYaarai naan ketppen…\nNee solvaayaa\n\nWoahu woah aaa…\nWoahu woah ..aaa….\nYaarai naan ketppen…\nNeeyae solvaayaa\n\nEnnai konjam maatri…\nEn nenjil unnai ootri\nNee ennai mella mella kolladhae\n\nNetrum indrum vaera\nIndru kaanum naanum naanaa\nUn pechchil ennai veezhththi selladhae\n\nVarugira vazhigalil\nMalargalin koottamundu\nOru murai kooda nindru rasithadhillai\n\nIndru mattum konjam nindru\nOru poovai killi kondu\nSiripudan selven endru ninaithadhillai..illai\n\nNee killum pookkalai…\nNaan soodi kollavae\nEndrae ennam indru vandhaachae..ae….\n\nAanaalum nerilae…\nEppodhum polavae\nIyalbaaga pesi povadhu endraachae…heyyy\nWoahu hooo ooo..oo\nWoahu..ooo…ooo\n\nEnnai konjam maatri…\nEn nenjil unnai ootri\nNee ennai mella mella kolladhae\n\nNetrum indrum vaera\nIndru kaanum naanum naanaa\nOru sollaal ennai veezhththi selladhae\nSiragugal neeludhae\nParavaigal polavae\nVinveli thandiyae\nThulli thulli pogudhae\n\nPudhuvidha anubhavam\nNodiyinil perugidum\nIruvarin uyirayum\nAlli alli pogudhae\n\nSikkidabom sikkidabom\nSikkidabom go\n\nEnnai ingae vara seidhaai\nYennanavoo pesa seidhaai\nPunnagaigal pookka seidhaai\nInnum yenna\n\nAriginil amarndhu ennai\nUttru uttru paarkkum undhan\nThuru thuru paarvaikundaan\nArththam yenna yenna\n\nEn paarvai pudhusudhaan\nEn pechum pudhusudhaan\nUnnalae naanum maariponenae\nKoottaththil ennai dhaan\nUn kangal thedanum endrellam\nEnnum payiththiyam aanenae\nLa lal laa la la la la la la laaa….\n\n Sikkidabom sikkidabom\nSikkidabom go\n\nEnnai konjam maatri…\nEn nenjil unnai ootri\nNee ennai mella mella kolladhae\nHey hey hey….\n\nNetrum indrum vaera\nIndru kaanum naanum naanaa\nUn pechchil ennai veezhththi selladhae\n\nOnnae onnu sollanum\nUn mugaththai paathu sollanum\nThanimai konjam kidaikka koodaadhaa\n\nNaanum maari ponadhae\nEn nalinam koodi ponadhae\nAdhu therindhaal neeyae\nSolla koodaadhaa\n\nWoahu woah aaa…\nWoahu woah ..aaa….\nYaarai naan ketppen…\nNee solvaayaa\n\nWoahu woah aaa…\nWoahu woah ..aaa….\nYaarai naan ketppen…\nNeeyae solvaayaa\nNeeyae solvaayaa…\nNeeyae sollvaayaa…\nNeeyae ….sollvaayaa…\nNeeyae…soll..vaayaa"
+    },
+    {
+      "name": "Oru Ooril",
+      "lyrics": "She Is A Fantasy\nShana Nan Naanaa Oh Ho\nSweet As A Harmony\nShana Nan Naanaa Oh Ho Ho\nNo One Knows She’s A Mystery\nShana Nan Naanaa Oh Ho Ho\nFills Your Heart With Ecstasy\nWoahu Woahu Yeahi Yeah Hey\n\nLa Lala Lala La La\nLala La La Laaaa…\nLala La La Lala La La\nLala La La Laaaaa…\nTu Ru Ta Ta…la La La La\nDu Bi Du Du…uuu\n\nOru Ooril Azhagae Uruvai\nOruthi Irundhalae\nAzhagukkae Ilakkanam Ezhutha\nAvalum Pirandhalae\n\nAval Pazhagum Vidhangalai Paarkkaiyilae\nPala Varuda Parichaiyam Polirukkum\nEdhilum Vaanchaigal Thaanirukkum\nMudhalam Paarvaiyilae Manathai Eerppalae\nMudhalam Paarvaiyilae Manathai Eerppalae\n\nOru Ooril Azhagae Uruvai\nOruthi Irundhalae\nAzhagukkae Ilakkanam Ezhutha\nAvalum Pirandhalae\n\nMaragatha Sombal Murippaalae\nPulveli Polae Silirppalae\nViralgalai Aatti Aatti Pesum Podhilae\nKaatrilum Veenai Undu Endru Thondrumae\n\nAval Kannathin Kuzhiyilae\nSiru Sedigalum Nadalam\nAval Kannathin Kuzhiyilae\nAzhagazhagai\nSiru Sedigalum Nadalaam\nVidhavidhamai\nYetho Yetho Thanithuvam Avalidam\nThadhumbidum Thadhumbidumae\n\nOru Ooril Azhagae Azhagae ..ae…\nOru Ooril Azhagae Uruvai\nOruthi Irundhalae..hey\nAzhagukkae Ilakkanam Ezhutha\nAvalum Pirandhalae…\n\nMagarandham Thaangum Malar Polae\nThaniyoru Vaasam Aval Melae\nPudavaiyin Therntha Madippil\nVisiri Vaazhaigal\nTholgalil Aadum Koonthal\nKarisal Kaadugal\n\nAval Kadanthidum Bothu\nThalai Anichiyai Thirumbum\nAval Kadanthidum Bothu\nNichayamai\nThalai Anichiyai Thirumbum\nAval Puramai\nYenna Solla Yenna Solla\nInnum Solla Mozhiyinil Vazhiyilaiyae\n\n…………………………………….\n\nNo One Knows She’s A Mystery\nShana Nan Naanaa\n\nAval Pazhagum Vidhangalai Paarkkaiyilae\n\nPaarkkaiyilae\n\nPala Varuda Parichaiyam Polirukkum\n\nPolirukkum\n\nEthilum Vanchaigal Thaanirukkum\nMudhalam Paarvaiyilae Manathai Eerppalae\nMudhal Mudhal Paarvaiyilae…\nManathai Eerppalae….."
+    },
+    {
+      "name": "Yedho Ondru",
+      "lyrics": "Aetho ondru aetho ondru unnai ketpen\nIllai endraal illai endraal uyir thurapen\nUn paatham nadakka naan pookkal viripen\nUn thegam muzhukka thangathaal pathipen\n\nUllaagi ullaagi laagi….\nullaagi ullaagi laagi\nOru aasai manathukkul pothum\nAthai mattum nee thanthaal pothum\n\nAetho aetho aetho ondru unnai ketpen\nIllai illai illai endraal uyir thurapen\n\nOho ..ho…ho..ho…ho…hoo..hoo\nOho…ho..ho..ho..ho..hoo..hoo\nOho …oho..ho..ho…oho…oho\n\nNalla manam un pol kidaiyaathu\nNandri solla vaarthai yenakethu\nOru thaai nee un sei naan\nIntha uravukku pirivethu\n\nThaai madiyil sei thaan varalaama\nThalli nindru thunbam tharalaama\nUnnai konja manam kenja ennai thaniyae vidalaama\n\nKuzhanthayum kumari yendraayachae\nKonjidum paruvamum poyaachae\nManam pola magal vaazha nee vaazhthum thaai aachae\n\nOhooo…hooo\n\nAetho aetho aetho ondru unnai ketpen\nIllai illai illai endraal uyir thurapen\nUn paatham nadakka naan pookkal viripen\nUn thegam muzhukka thangathaal pathipen\nUllaagi ullaagi laagi …. ullaagi ullaagi laagi\n\nVennilavai poovaai vaippenae\n\nVaanavillai udaiyaai thaippenae\nUnakaaga yethum seiven nee yenakkenna seivaayo\n\nIntha oru jenmam pothaathu\nEzhu jenmam eduthum theeraathu\nAntha theivam unaikaaka thinam thozhuven thavaraathu\n\nEnna naan ketpen theriyaatha\nInnumum en manam puriyaatha\nAda raama ivan paadu intha penmai ariyaatha…\n\nAhaaaa…aaaa\n\nAetho aetho aetho ondru unnai ketpen\nIllai illai illai endraal uyir thurapen\nUn paatham nadakka naan pookkal viripen\nUn thegam muzhukka thangathaal pathipen\n{ Ullaagi ullaagi laagi …. ullaagi ullaagi laagi } (2)"
+    },
+    {
+      "name": "Aval Ulaghazhagi",
+      "lyrics": "I am in love\nU are in love\nWe are in love…hahaha\n\nHmmm…mmmm…mmm..\nAval ulagha azhagiyae\nNenjil vizhuntha aruviyae\nAval ulagha azhagiyae\nNenjil vizhuntha aruviyae\n\nAndha neela vizhiyilae\nNenjam neendha thudiththathae\n\nOr verillamal neer illamal\nKan irandil kaadhal poothathae\nOr yedillamal yezhuthillamal\nPadal ondru parvai varthathae\n\nAval ulagha azhagiyae\nNenjil vizhuntha aruviyae..yae yae..\nAval ulagha azhagiyae\nNenjil vizhuntha aruviyae\n\nAndha neela vizhiyilae\nNenjam neendha thudiththathae\n\n…………………………..\n\nKanni pennai kaiyilae\nViolin pola yendhiyae\nVil illamal viralgalalae meettuven\nInba ragam enna vendru kattuven\n\nSuda suda\nSugangalai ….kodukkalam\nEn kaadhal dhevadhai\nThoda thoda\nSirippinaal… thelikkalam\nEn meedhu poo mazhai\nEngeyo ennangal\nOr oorvalam poga\nKan konda ullangal\nOr oviyam aaga\nAnandham anandhamae…hey\n\nAval ulagha azhagiyae\nNenjil vizhuntha aruviyae\nAndha neela vizhiyilae\nNenjam neendha thudiththathae\n\nRomeyovin juliet\nDhevadhasin parvathi\nRendu perum ondru serntha mathri\nThondruvalae nan virumbum kaadhali\n\nAvaladhu azhagellam\nEzhuthida or bhashai illaiyae\nAvalai nan arintha pin\nUyirin mel or asai illaiyae\n\nPoo vaazhai kondadum\nThai bhoomiyai parthu\nSandhosham kondadum\nEn kaadhalai parthu\nKondattam kondattamae..hey\nOho…ooo…aval ulagha azhagiyae\nNenjil vizhuntha aruviyae\nAhaaa….aaaa….ohooo…oooo\nAhaaa….aaaa…..ohooo…ooooo"
+    },
+    {
+      "name": "Eppo Nee",
+      "lyrics": "Eppo nee enna paapa\nEppo en pecha keppa\nEppo naan pesa, keta payyaa\nEppo da kovam koraiyum\nEppo da paasam theriyum\nEppo naan pesa, keta payyaa\n\nEppo nee enna paapa\nEppo en pecha keppa\nEppo naan pesa, keta payyaa\nEppo da kovam koraiyum\nEppo da paasam theriyum\nEppo naan pesa, keta payyaa\nNizhalaga unthan pinnal nadamaaduren\nNijamaga unthan munnal thadumaaruren\nOruu sellaga unthan munnae vaal aaturen\nOn seyalai elam thuram nindru paaraturen\nEnnai oru murai neeyum thirumbi paarpaaiyaa?\n\nOhooo ohoooo ohoooo...\n\nKannai katikondu unpinal\nKaalam muzhuvathum varuvenae\nUnthan paathaiyil bayamillai\nNee vaa\nMalayai sumakira balam unakku\nMalarai rasikira manam unakku\nInimael eppothum nee enakku\nNee vaa\n\nUn thunai thaedi naan vanthen\nThurathathae da\nUn kobam kuda naan nindru\nRasithenae da\n\nNee theeyai iru ennai thiriyai thodu\nNaan oli petrae vaazhvaenae da\nAdai ennai thavira ela peyarum aanai aanaiyo\nNaan unaku matum sontham endrum ena aanalum\nNee illai endru soli vidu da\n\nErimalai kangal rendu\nPanimalai ithayam ondru\nUnnidam kanden keta payyaa\nBoomiyil ambalai endru\nUnnai than solven indru\nVer ena solla ketta payyaa\n\nUnnalae atcham indri naan vaazhuren\nUn kita atcha patu en saaguren\nIntha boomi pandai thaandi poga mudyathu da\nUn arugil nindral manam kuda nerungaathu da\nEn nilavaram unaku puriya vilayyaa?\nOhooo ohooo ohooo"
+    },
+    {
+      "name": "Vaa Vaathi",
+      "lyrics": "Oru thala kaadhala thandha\nIndha tharudhala manasukulla vandha\nOru thala kaadhala thandha\nIndha tharudhala manasukulla vandha\n\nKaadhalika guide Illa\nSolli thara vaa vaathi\nSerthu vacha aasai ellaam\nAlli thara vaa vaathi\nEn usura un usuraa\nThaaren kai maathi\n\n{Adi aathi idhu enna feelu\nUnnala naan failu\nPudikaama ootunen realu\nInimel naan un aalu} (2)\n\nEy ley ley ley\nEy ley ley eloo\n\nUn pera dhinam koovum\nKuyila aanean naan\nNee paarka pudhu maari\nStyle ah aanean naan\n\nPocketil un hero pena\nAanean naan\nManasaara unnoda fan ah\nAanean naan\n\nKonjam parkanum\nKaigal korkkanum\nJodi sernthu loversaaga\nOora suthanum\n\nBandu vaasichu\nGrand ah marriageu\nGetti melam engum Kekkanum\n\n{Adi aathi idhu enna feelu\nUnnala naan failu\nPudikaama ootinen realu\nInimel naan un aalu} (2)\n\nOru thala kaadhala thandha\nIntha tharudhala manasukulla vandha\nOru thala kaadhala thandha\nIntha tharudhala manasukulla vandha\n\nKaadhalika guide Illa\nSolli thara vaa vaathi\nSerthu vacha aasai ellaam\nAlli thara vaa vaathi\nEn usura un usuraa\nThaaren kai maathi\n\nPudikaama ootinen realu\nInimel naan un aalu\nAdi aathi idhu enna feelu\nUnnala naan failu"
     }
   ],
   "artists": [
@@ -192,7 +503,7 @@
       "name": "Taylor Swift",
       "age": 32,
       "gender": "female",
-      "imageURL": "",
+      "imageURL": "https://hdqwalls.com/wallpapers/taylor-swift-2018-tx.jpg",
       "albums": [
         {
           "title": "Fearless",
@@ -431,6 +742,205 @@
           "year": 2021
         }
       ]
+    },
+    {
+      "name": "A.R.Rahman",
+      "age": 57,
+      "gender": "male",
+      "imageURL": "https://th.bing.com/th/id/R.0f286b1632e38db52376800f3ed2ff1e?rik=iCgWOclDq%2bofpA&riu=http%3a%2f%2fwww.dailyexcelsior.com%2fwp-content%2fuploads%2f2017%2f12%2far-rahman.jpg&ehk=ILlB3thNaK%2fRfWHSm%2fb9Mev6KeJBy9GLiiZRGkQNUcA%3d&risl=&pid=ImgRaw&r=0",
+      "albums": [
+        {
+          "title": "Sillunu Oru Kaadhal",
+          "year": 2006
+        },
+        {
+          "title": "Kadal",
+          "year": 2013
+        },
+        {
+          "title": "Ponniyin Selvan2",
+          "year": 2023
+        },
+        {
+          "title": "Kaatru Veliyidai",
+          "year": 2017
+        }
+      ]
+    },
+    {
+      "name": "Yuvan Shankar Raja",
+      "age": 43,
+      "gender": "male",
+      "imageURL": "https://th.bing.com/th/id/OIP.eGCOCF_7vRR_E29T-QYIBgHaJo?pid=ImgDet&rs=1",
+      "albums": [
+        {
+          "title": "Yaaradi Nee Mohini",
+          "Year": 2008
+        },
+        {
+          "title": "Thottal Poo Malarum",
+          "Year": 2007
+        },
+        {
+          "title": "NGK",
+          "Year": 2019
+        }
+      ]
+    },
+    {
+      "name": "Anirudh Ravichander",
+      "age": 32,
+      "gender": "male",
+      "imageURL": "https://i2.cinestaan.com/image-bank/1500-1500/146001-147000/146614.jpg",
+      "albums": [
+        {
+          "title": "Jersey",
+          "year": 2019
+        },
+        {
+          "title": "Thiruchitrambalam",
+          "year": 2022
+        },
+        {
+          "title": "3",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "name": "Vishal Chandrashekhar",
+      "age": 37,
+      "gender": "male",
+      "imageURL": "https://images.ottplay.com/images/vishal-chandrasekhar-64.jpeg?impolicy=ottplay-20210210&width=1200&height=675",
+      "albums": [
+        {
+          "title": "Oh Manapenne!",
+          "year": 2021
+        },
+        {
+          "title": "Sita Ramam",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "name": "P.S.Jayhari",
+      "age": 53,
+      "gender": "male",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Psjayhari.jpg",
+      "albums": [
+        {
+          "title": "Athiran",
+          "year": 2019
+        },
+        {
+          "title": "Kaadakalam",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "name": "Hesham Abdul Wahab",
+      "age": 32,
+      "gender": "male",
+      "imageURL": "https://static.toiimg.com/thumb/msid-93133580,imgsize-25892,width-800,height-600,resizemode-75/93133580.jpg",
+      "albums": [
+        {
+          "title": "Hridayam",
+          "year": 2022
+        },
+        {
+          "title": "Mike",
+          "year": 2022
+        },
+        {
+          "title": "Ohm Shanthi Oshaana",
+          "year": 2014
+        }
+      ]
+    },
+    {
+      "name": "Azeem Dayani",
+      "gender": "male",
+      "imageURL": "https://media5.bollywoodhungama.in/wp-content/uploads/2023/02/Azeem_Dayani_Exclusive_Interview.jpeg",
+      "albums": [
+        {
+          "title": "Shershaah",
+          "year": 2021
+        },
+        {
+          "title": "Laxmii",
+          "year": 2020
+        },
+        {
+          "title": "Liger",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "name": "Mithoon",
+      "age": 38,
+      "gender": "male",
+      "imageURL": "https://th.bing.com/th/id/R.34ac661d8cd9a15c667cb39faa429aa7?rik=y4FKonBI1frCbg&riu=http%3a%2f%2fwww.radioandmusic.com%2fsites%2fwww.radioandmusic.com%2ffiles%2fimages%2fentertainment%2f2015%2f05%2f25%2fmithoon-(1).jpg&ehk=hCemqjdAyXp7id0qidQjOsH2fXyZKyM7cPW5h8kZWP0%3d&risl=&pid=ImgRaw&r=0",
+      "albums": [
+        {
+          "title": "Radhe Shyam",
+          "year": 2022
+        },
+        {
+          "title": "Kabir Singh",
+          "year": 2019
+        },
+        {
+          "title": "Aashiqui2",
+          "year": 2013
+        }
+      ]
+    },
+    {
+      "name": "Harris Jayaraj",
+      "age": 48,
+      "gender": "male",
+      "imageURL": "https://divieditz.com/wp-content/uploads/2019/12/Harris-Jayaraj-768x576.jpg",
+      "albums": [
+        {
+          "title": "Vaaranam Aayiram",
+          "year": 2008
+        },
+        {
+          "title": "Aadhavan",
+          "year": 2009
+        },
+        {
+          "title": "Lesa Lesa",
+          "year": 2003
+        },
+        {
+          "title": "Kaakha Kaakha",
+          "year": 2003
+        },
+        {
+          "title": "Minnale",
+          "year": 2001
+        }
+      ]
+    },
+    {
+      "name": "G.V.Prakash Kumar",
+      "age": 35,
+      "gender": "male",
+      "imageURL": "https://wallpapercave.com/wp/wp6088394.jpg",
+      "albums": [
+        {
+          "title": "Kaalai",
+          "year": 2008
+        },
+        {
+          "title": "Vaathi",
+          "year": 2023
+        }
+      ]
     }
   ],
   "concerts": [
@@ -467,26 +977,5 @@
       "time": "19:00"
     }
   ],
-  "likes": [
-    {
-      "username": "",
-      "songid": 11,
-      "name": "Shape of You",
-      "url": "",
-      "id": 3
-    },
-    {
-      "username": "PriyaDarshanMa",
-      "songid": 7,
-      "name": "Solo",
-      "id": 4
-    },
-    {
-      "username": "",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
-      "id": 5
-    }
-  ]
+  "likes": []
 }

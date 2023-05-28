@@ -170,7 +170,12 @@ function songlist() {
           songurl.src = song.url;
           songname.textContent = song.name;
           albumart.src = song.artwork;
+
           songurl.play();
+
+          document.getElementById('mp').scrollIntoView({
+            behavior: 'smooth' // You can use 'auto' for instant scrolling
+          });
         });
 
         songlist.appendChild(songcontainer);
@@ -219,7 +224,7 @@ function removeliked(songid) {
       }).
         then((result) => {
           if (result.isConfirmed) {
-            location.href = "./Homepage.html";
+            // location.href = "./Homepage.html";
           }
         })
     }

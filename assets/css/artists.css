@@ -30,8 +30,9 @@
   }
 
   /* for the username */
-span{
-  color: #ffffff;
+  #Hello,#username{
+    font-size: 20px;
+    color: azure;
 }
 
 /* for the cards */

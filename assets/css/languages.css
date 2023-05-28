@@ -38,12 +38,13 @@ span {
 
 /* card */
 .card{
-  background-color: #242323;
+  /* background-color: #646262; */
+  background-color: transparent;
 }
 
 /* language */
 h6{
-  color:white;
+  color:azure;
   font-size: 35px;
 }
 
@@ -52,4 +53,9 @@ h6{
   font-size: 30px;
   color: orangered;
   list-style-type: circle;
+}
+
+#lang-list{
+  background-size: cover;
+  background-repeat: no-repeat;
 }

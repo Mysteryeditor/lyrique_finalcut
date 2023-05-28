@@ -32,6 +32,8 @@ a:visited:hover {
     font-family: LyriqueFont;
 }
 
+/* for the username */
+
 #Hello,#username{
     font-size: 20px;
     color: azure;
@@ -222,7 +224,7 @@ ion-icon.active {
 }
 ion-icon {
   fill: transparent;
-  stroke: rgb(248, 244, 244);
+  stroke: rgb(254, 254, 254);
   stroke-width: 30;
   transition: all 0.5s;
 }
@@ -265,7 +267,7 @@ ion-icon {
     background: #fff;
     margin: 0 auto;
     border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    box-shadow:0 2px 10px rgba(255, 255, 255, 0.2);
   }
   .card:before,
   .card:after
@@ -283,11 +285,11 @@ ion-icon {
   }
   .card:hover:before{
   transform: rotate(20deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  box-shadow: 0 2px 20px rgba(255, 255, 255);
   }
   .card:hover:after{
   transform: rotate(10deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  box-shadow: 0 2px 20px rgba(255, 255, 255);
   }
   .card .imgBx{
   position: absolute;
