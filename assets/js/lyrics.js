@@ -55,12 +55,12 @@ viewsongs();
 
 
 // for loggin out
-function logout(){
-  const xhttp=new XMLHttpRequest();
-  xhttp.open("DELETE","http://localhost:3000/login/1");
-  xhttp.send();
-  window.location.href="./authentication.html"
-}
+// function logout(){
+//   const xhttp=new XMLHttpRequest();
+//   xhttp.open("DELETE","http://localhost:3000/login/1");
+//   xhttp.send();
+//   window.location.href="./authentication.html"
+// }
 
 function showLyrics(songName) {
 
@@ -81,6 +81,13 @@ function showLyrics(songName) {
         }
       }
     };
+  }
+
+  // for the back to top functionality
+function home(){
+    document.getElementById('song-list').scrollIntoView({
+      behavior:"smooth"
+    })
   }
 
   

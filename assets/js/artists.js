@@ -23,7 +23,7 @@ function logout(){
   const xhttp=new XMLHttpRequest();
   xhttp.open("DELETE","http://localhost:3000/login/1");
   xhttp.send();
-  window.location.href="./authentication.html"
+  window.location.href = "./index.html"
 }
 
 // to display the artists of the songs
@@ -78,7 +78,7 @@ function displayUniqueArtists() {
                           </div>
                           <div class="col-lg-6">
                           <img style="height:100%" class="img-fluid" alt="artist img" src=${a.imageURL}></div>`,
-                          confirmButtonText:'View Songs'
+                          confirmButtonText:'Go Back'
                         })
                         break;
                       }

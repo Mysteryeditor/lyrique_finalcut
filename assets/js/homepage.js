@@ -46,7 +46,7 @@ function logout() {
   const xhttp = new XMLHttpRequest();
   xhttp.open("DELETE", "http://localhost:3000/login/1");
   xhttp.send();
-  window.location.href = "./authentication.html"
+  window.location.href = "./index.html"
 }
 
 // for the songs display
@@ -156,7 +156,8 @@ function songlist() {
                 username: username,
                 songid: song.id,
                 name: song.name,
-                url: song.url
+                url: song.url,
+                artwork:song.artwork
               }));
             }
           });
@@ -166,6 +167,8 @@ function songlist() {
         redbg.className = "red-bg";
 
         const spanplay = document.createElement('span');
+
+        // button for playing the song
         playbutton.addEventListener("click", function () {
           songurl.src = song.url;
           songname.textContent = song.name;
@@ -248,6 +251,7 @@ function likedSongs() {
         if (likes.username === username) {
           likelist += `<div class="liked-songs-container">
       <label class="liked-songs-name">${likes.name}</label>
+      <button class="btn-danger" style="border-radius:5px;color:azure;background-color:rgb(227, 70, 18)" onclick='playSong("${likes.url}", "${likes.name}", "${likes.artwork}")'>Play</button>
       <button class="btn-danger" style="border-radius:5px" onclick='removeliked(${likes.id})'>Delete</button><br>`
         }
       }
@@ -260,10 +264,22 @@ function likedSongs() {
       })
     }
   }
-
-
-
 }
+
+//song to be played from the liked songs list
+function playSong(url, name, artwork) {
+  var songurl = document.getElementById("player");
+  var songname = document.getElementById("songname");
+  var albumart = document.getElementById("albumimage");
+  songurl.src = url;
+  songname.textContent = name;
+  albumart.src = artwork;
+  songurl.play();
+  document.getElementById("mp").scrollIntoView({
+    behavior: "smooth" // You can use 'auto' for instant scrolling
+  });
+}
+
 
 //for updating the user details
 function updateprofile() {
@@ -322,6 +338,77 @@ function updateprofile2(uid) {
       })
     }
   };
+}
+
+function userDelete(){
+  var u=document.getElementById("u").value;
+  var p=document.getElementById("p").value;
+  // if the username field is empty
+  if(!u){
+    Swal.fire({
+      title: 'Enter your username',
+      icon: 'warning',
+      showCancelButton: false,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Ok'
+    })
+    return false;
+  }
+
+  // validation for password field
+  if(!p){
+    Swal.fire({
+      title: 'Enter the password',
+      icon: 'warning',
+      showCancelButton: false,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Ok'
+    })
+    return false;
+  }
+
+  // after validations
+  Swal.fire({
+    title: 'Final Confirmation',
+    text: 'Are you sure you want to delete the account?',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, Delete it!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const xhttp = new XMLHttpRequest();
+      xhttp.open("GET",`http://localhost:3000/users`);
+      xhttp.send();
+      xhttp.onreadystatechange=function(){
+        if(this.readyState == 4 && this.status == 200){
+          {
+            var jsonresult = JSON.parse(this.responseText);
+           for(let x of jsonresult){
+            console.log(x.username);
+            if(x.username == u && x.password == p){
+              const deletereq=new XMLHttpRequest();
+              deletereq.open("DELETE", `http://localhost:3000/users/${x.id}`); 
+              deletereq.send();
+              logout();
+              break;
+            }
+            }
+            Swal.fire({
+              title: 'Invalid username or password',
+              icon: 'warning',
+              showCancelButton: false,
+              confirmButtonText: 'Try Again'
+            });
+          }
+      }
+ 
+      
+    }
+  }
+});
+}
+
+function artist(){
+  window.location.href="./artists.html";
 }
 
 

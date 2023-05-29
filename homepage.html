@@ -104,27 +104,25 @@
 
 <!-- Modal for menu  -->
 <div class="modal fade right-end" id="optionsModal" tabindex="-1" aria-labelledby="optionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog ">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="optionsModalLabel">Options</h5>
+      <div class="modal-header ">
+        <h3 class="modal-title" id="optionsModalLabel">Options</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item">
-            <button class="custom-btn btn-delete">
-              <span class="mdi mdi-delete mdi-24px"></span>
-              <span class="mdi mdi-delete-empty mdi-24px"></span>
-              <span>Delete Account</span>
-            </button>
-          </li>
-          <li class="list-group-item">
-            <button onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
+            <button class="button" onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
               Profile</button>
           </li>
           <li class="list-group-item">
-            <button onclick="logout()">LOGOUT</button>
+            <button class="button" onclick="logout()">LOGOUT</button>
+          </li>
+          <li class="list-group-item">
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+              Delete Account
+            </button>
           </li>
         </ul>
       </div>
@@ -182,6 +180,35 @@
  </div>
 </div>
 
+<!-- modal for delete account -->
+<div class="modal fade" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Verification</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <form>
+          <div class="form-group">
+            <label style="margin-top: 10px;" for="username" >Username:</label>
+            <input id="u"  style="margin-top: 10px;" type="text" style="color: #222222;" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label  style="margin-top: 10px;" for="password">Password:</label>
+            <input id="p" style="margin-top: 10px;" type="password" style="color: #222222;" id="password" name="password" required>
+            
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="userDelete()">Delete Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="container-fluid" style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
       <div class="container" >
@@ -213,9 +240,9 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row">                               
         <div class="col-lg-2"> </div>
-        <div class="col-lg-5"><button onclick="likedSongs()">Liked Songs</button></div>
+        <div class="col-lg-5"><button class="likedbtn mt-lg-2 mt-sm-5 mt-md-3" onclick="likedSongs()">Liked Songs</button></div>
 
       </div>
     </div>
@@ -227,8 +254,8 @@
       <!-- Artists -->
       <h1 class="text-white">Artists</h1>
       <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'english')">English</button>
-        <button class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
+        <button style="font-size: 20px;" class="tablinks" onclick="openTab(event, 'english')">English</button>
+        <button style="font-size: 20px;"  class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
       </div>
 
       <div id="english" class="tab-content">
@@ -236,7 +263,7 @@
           <!-- Card 1 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx" onclick="weekend()">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/2a/90/86/2a9086b3eabd4cc6bbae6f216dbd4a25.jpg" alt="images">
               </div>
               <div class="details">
@@ -248,7 +275,7 @@
           <!-- Card 2 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/f1/11/dd/f111dd867c624a85834727c1cf957e5e.jpg" alt="images">
               </div>
               <div class="details">
@@ -260,7 +287,7 @@
           <!-- Card 3 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/736x/0a/1a/48/0a1a48c5f057c4d2adfd7dd67a0676f3.jpg" alt="images">
               </div>
               <div class="details">
@@ -272,7 +299,7 @@
           <!-- Card 4 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/a3/0c/ea/a30ceaad2a27a086916ba473afc03646.jpg" alt="images">
               </div>
               <div class="details">
@@ -284,7 +311,7 @@
           <!-- Card 5 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img
                   src="https://media.glamour.com/photos/6436a07a81c6a78ab79423a6/3:2/w_3600,h_2400,c_limit/GettyImages-1202826388.jpg"
                   alt="images">
@@ -298,7 +325,7 @@
           <!-- Card 6 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/69/c9/20/69c92094819b986e3733d5c3485d95dc.jpg" alt="images">
               </div>
               <div class="details">
@@ -314,7 +341,7 @@
           <!-- Card 1 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/564x/79/f2/eb/79f2eb66f49441a8f750c5688d1fd9f3.jpg" alt="images">
               </div>
               <div class="details">
@@ -326,7 +353,7 @@
           <!-- Card 2 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/f1/42/53/f1425338539cfddd84e4be99c2c23ff3.jpg" alt="images">
               </div>
               <div class="details">
@@ -338,7 +365,7 @@
           <!-- Card 3 -->
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/bc/53/3b/bc533b273a6e95ad63dcb71853ef3e9a.jpg" alt="images">
               </div>
               <div class="details">
@@ -350,7 +377,7 @@
 
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/564x/a4/9e/aa/a49eaac9f7379f77d50fa2e6957ddbc5.jpg" alt="images">
               </div>
               <div class="details">
@@ -361,7 +388,7 @@
 
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img
                   src="https://yt3.googleusercontent.com/_YNMQknsdF6jBaT47GsmUsd-OEomixCZKlrCy7f5v6eOeoTZ5fQshG0jF7Sl6woLxL9ImwKAHQ=s900-c-k-c0x00ffffff-no-rj"
                   alt="images">
@@ -374,7 +401,7 @@
 
           <div class="col-sm-12 col-lg-4 p-5">
             <div class="card">
-              <div class="imgBx">
+              <div class="imgBx" onclick="artist()">
                 <img src="https://i.pinimg.com/236x/0c/e7/8e/0ce78e38bc37b587d527a78b17e2ae8f.jpg" alt="images">
               </div>
               <div class="details">

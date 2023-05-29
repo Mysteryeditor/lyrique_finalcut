@@ -35,27 +35,75 @@
     color: azure;
 }
 
+/* for the logout button */
+.button {
+  font-size: 18px;
+  color: azure;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border:azure;
+  border-style: solid;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.button:focus,
+.button:hover {
+  color: rgb(227, 70, 18);
+}
+
+.button:focus:after,
+.button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(227, 70, 18);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
 /* for the cards */
 .card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  /* border: 1px solid rgb(227, 70, 18);
+  border-radius: 5px; */
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background:transparent;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+  
 }
 
 .card-title {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: azure;
   margin: 0;
+}
+
+.card-title:hover{
+  color: rgb(227, 70, 18);
+
 }
 
 .card-body {

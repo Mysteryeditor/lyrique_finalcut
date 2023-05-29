@@ -22,7 +22,7 @@
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-size: cover;  background-image: url(./assets/images/languagesbg.jpg);">
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
             <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
@@ -49,7 +49,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto" >
 
-                    <li class="nav-item" style="padding-right: 10px;padding-top: 10px;">
+                    <li class="nav-item" style="padding-right: 10px;padding-top: 4px;">
                         <!-- hello+username -->
                         <span id="Hello">Hello</span>
                         <span  id="username"></span>
@@ -58,7 +58,7 @@
                    
 
                     <li class="nav-item" style="padding-right: 10px;">
-                        <button  onclick="logout()">LOGOUT</button>
+                        <button class="button" onclick="logout()">LOGOUT</button>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
     </nav>
 
     <!-- the languages cards -->
-    <div style="background-image: url(./assets/images/languagesbg.jpg); "class="container-fluid " id="lang-list">
+    <div class="container-fluid " id="lang-list">
 
     </div>
 

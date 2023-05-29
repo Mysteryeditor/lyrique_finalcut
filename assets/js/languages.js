@@ -22,7 +22,7 @@ function displayuname(){
     const xhttp=new XMLHttpRequest();
     xhttp.open("DELETE","http://localhost:3000/login/1");
     xhttp.send();
-    window.location.href="./authentication.html"
+    window.location.href = "./index.html";
 }
 
 

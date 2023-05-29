@@ -9,41 +9,27 @@
       "id": 1
     },
     {
-      "firstname": "Dhana",
-      "lastname": "Prakash",
+      "firstname": "Rakesh",
+      "lastname": "Sds",
       "gender": "male",
-      "dob": "2023-05-03",
-      "email": "dhana@gmail.com",
-      "password": "dhanaDhana123",
-      "username": "DhanaPrakash",
+      "dob": "2023-05-13",
+      "email": "rakesh@gmail.com",
+      "password": "RakeshSds",
+      "username": "RakeshSds",
       "id": 2
     },
     {
-      "firstname": "Selva",
-      "lastname": "Ganapathy",
+      "firstname": "Ed",
+      "lastname": "Sheeran",
       "gender": "male",
-      "dob": "2023-05-11",
-      "email": "selva@gmail.com",
-      "password": "Selva123",
-      "username": "SelvaGanapathy",
+      "dob": "2023-05-10",
+      "email": "ed@gmail.com",
+      "password": "abcABC@12",
+      "username": "EdSheeran",
       "id": 3
-    },
-    {
-      "username": "PriyaDarshan",
-      "gender": "male",
-      "dob": "2021-02-25",
-      "email": "priyapd@gmail.com",
-      "password": "abc123AB",
-      "id": 4
     }
   ],
-  "login": [
-    {
-      "id": 1,
-      "username": "PriyaDarshan",
-      "password": "abc123AB"
-    }
-  ],
+  "login": [],
   "songs": [
     {
       "id": 1,
@@ -51,7 +37,7 @@
       "Artist": "John Newman",
       "year": 2013,
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "url": "https://www.shazam.com/track/40099833/kiss-the-rain",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
       "language": "English"
     },
     {
@@ -60,6 +46,7 @@
       "Artist": "Tom Odell",
       "year": 2013,
       "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
       "language": "English"
     },
     {
@@ -104,6 +91,7 @@
       "Artist": "Clean Bandit",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/solo.jpg",
+      "url": "./assets/songs/Solo-(Gospeljingle.com).mp3",
       "language": "English"
     },
     {
@@ -112,6 +100,7 @@
       "Artist": "Halsey",
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/without-me.jpg",
+      "url": "./assets/songs/Without-Me---Halsey-(PagalWorld).mp3",
       "language": "English"
     },
     {
@@ -120,6 +109,7 @@
       "Artist": "Luis Fonsi",
       "year": 2017,
       "artwork": "https://upload.wikimedia.org/wikipedia/en/c/c8/Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png",
+      "url": "./assets/songs/Despacito(PagalWorld).mp3",
       "language": "Spanish"
     },
     {
@@ -128,6 +118,7 @@
       "Artist": "PSY",
       "year": 2012,
       "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodP1tm2y__bMUyve9UJib3eMZDUZBPO8xenQTlL9hug&s",
+      "url": "./assets/songs/Gangnam Style PSY.mp3",
       "language": "Korean"
     },
     {
@@ -172,7 +163,7 @@
       "Artist": "Yuvan Shankar Raja",
       "year": 2008,
       "artwork": "https://a10.gaanacdn.com/images/playlists/54/15606954/crop_480x480_15606954_1512725337.jpg",
-      "url": "./assets/songs/Venmegam.mp3",
+      "url": "./assets/songs/Venmegam-Pennaga.mp3",
       "language": "Tamil"
     },
     {
@@ -861,6 +852,7 @@
     },
     {
       "name": "Azeem Dayani",
+      "age": 32,
       "gender": "male",
       "imageURL": "https://media5.bollywoodhungama.in/wp-content/uploads/2023/02/Azeem_Dayani_Exclusive_Interview.jpeg",
       "albums": [
@@ -943,39 +935,54 @@
       ]
     }
   ],
-  "concerts": [
+  "likes": [
     {
-      "artist": "Ed Sheeran",
-      "venue": "Wembley Stadium",
-      "city": "London",
-      "country": "United Kingdom",
-      "date": "2023-06-10",
-      "time": "20:00"
+      "username": "",
+      "songid": 35,
+      "name": "Vaa Vaathi",
+      "url": "./assets/songs/Vaa Vaathi.mp3",
+      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
+      "id": 1
     },
     {
-      "artist": "Ariana Grande",
-      "venue": "Madison Square Garden",
-      "city": "New York",
-      "country": "United States",
-      "date": "2023-07-15",
-      "time": "19:30"
+      "username": "",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 2
     },
     {
-      "artist": "Ed Sheeran",
-      "venue": "Rose Bowl Stadium",
-      "city": "Los Angeles",
-      "country": "United States",
-      "date": "2023-08-20",
-      "time": "21:00"
+      "username": "",
+      "songid": 29,
+      "name": "Vaarayo Vaarayo",
+      "url": "./assets/songs/Vaarayo Vaarayo.mp3",
+      "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eHWVfuvVJsZqCer_PkFlV-ZcGyVbU0BJn1gBHiGPlg&s",
+      "id": 3
     },
     {
-      "artist": "Ariana Grande",
-      "venue": "The O2 Arena",
-      "city": "London",
-      "country": "United Kingdom",
-      "date": "2023-09-05",
-      "time": "19:00"
+      "username": "",
+      "songid": 26,
+      "name": "Nee Paartha Vizhigal",
+      "url": "./assets/songs/Nee Partha Vizhigal.mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b27340d3b59b2f1478395b4e3857",
+      "id": 4
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 5
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 2,
+      "name": "Another Love",
+      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "id": 6
     }
-  ],
-  "likes": []
+  ]
 }
