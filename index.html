@@ -24,6 +24,12 @@
   <link rel="stylesheet" href="./assets/css/index.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -48,7 +54,7 @@
               <a class="nav-link" href="#">Songs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./piano/index.html">Services</a>
+              <a class="nav-link" href="./piano/piano.html">Instruments</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -96,10 +102,10 @@
         <div class="container">
           <label id="lyworld" class="mt-lg-5">
             Welcome To the<br> World of </label>
-          <div class="typewriter"> 
-            
-              <Span>Lyrique</Span>
-            </div>
+          <div class="typewriter">
+
+            <Span>Lyrique</Span>
+          </div>
         </div>
 
 
@@ -107,7 +113,8 @@
       </div>
 
       <div class="col-lg-4 col-sm-12">
-        <p class="text-white" style="font-family: Verdana, Geneva, Tahoma, sans-serif;white-space: pre-line; backdrop-filter: blur(5px); font-size: 20px;font-weight: 400;">
+        <p class="text-white"
+          style="font-family: Verdana, Geneva, Tahoma, sans-serif;white-space: pre-line; backdrop-filter: blur(5px); font-size: 20px;font-weight: 400;">
           Lyrique, the ultimate destination for all things music! .
 
           Lyrique goes beyond lyrics by providing you with a wealth of artist details.
@@ -120,6 +127,92 @@
     </div>
 
   </div>
+
+  <div class="container-fluid" id="carousels">
+    <!-- Carousel wrapper -->
+    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <img src="./assets/images/piano.png" class="d-block w-100" alt="Sunset Over the City" />
+
+          <div class="carousel-caption d-none d-md-block">
+            <div class="card ms-auto col-sm-4 col-lg-4 h-100" style="background-color: rgba(0,0,0,0.7); ">
+              <div class="card-body">
+                <h3 class="card-title">Play Piano</h3>
+                <p style="color:rgb(247, 110, 24)" class="card-text">Experience the enchantment of playing piano from
+                  the comfort of your home.Embark on a captivating musical journey with our virtual piano experience.
+                  Immerse yourself in the melodies as you play and create beautiful music, all from the convenience of
+                  your own device</p>
+                <button class="btn btn-primary">Go somewhere</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img src="./assets/images/guitar.png" class="d-block w-100" alt="Canyon at Nigh" />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="card col-sm-4 col-lg-4 " style="background-color: rgba(0,0,0,0.7);">
+              <div class="card-body">
+                <h3 class="card-title">Play Guitar</h3>
+                <p style="color:rgb(247, 110, 24)" class="card-text">Unleash your inner guitarist with our immersive
+                  virtual guitar experience. Strum, pluck, and rock out to your favorite tunes, all from the comfort of
+                  your own home. No matter your skill level, our virtual guitar platform offers an authentic playing
+                  experience that will inspire and delight.</p>
+                <button class="btn btn-primary">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img src="./assets/images/drums.png" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="card ms-auto col-sm-4 col-lg-4" style="background-color: rgba(0,0,0,0.7);">
+              <div class="card-body">
+                <h3 class="card-title">Play Drums</h3>
+                <p style="color:rgb(247, 110, 24)" class="card-text">Take your drumming skills to the next level as you unleash beats, fills, and
+                  grooves, right from your computer. With realistic sounds and an intuitive interface, our virtual drum
+                  platform brings the excitement of drumming straight to your fingertips, anytime, anywhere.</p>
+                <button class="btn btn-primary">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+  </div>
+
+
+
 
   <!-- the carousels -->
   <!-- <div class="container-fluid">
@@ -184,7 +277,9 @@
     </div>
     <!-- Copyright -->
   </footer>
-
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

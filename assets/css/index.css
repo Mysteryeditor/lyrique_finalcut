@@ -9,26 +9,30 @@
     width: 50px;
 }
 
+*{
+  font-family: LyriqueFont;
+}
+
 
 a,a:visited {
-    text-decoration: none;
-    color: rgb(254, 254, 254);
-    font-weight: 900;
-    font-family: LyriqueFont;
-    font-size: larger;
+    text-decoration: none !important;
+    color: rgb(254, 254, 254) !important;
+    font-weight: 900 !important;
+    font-family: LyriqueFont !important;
+    font-size: larger !important;
 }
 
 a:hover,a:visited:hover {
-    font-size: x-large;
-    color: rgb(227, 70, 18);
+    font-size: x-large !important;
+    color: rgb(227, 70, 18) !important;
 }
 
 .navbuttons:hover {
-    text-decoration: none;
-    color: rgb(227, 70, 18);
-    font-weight: 900;
-    font-family: LyriqueFont;
-    font-size: larger;
+    text-decoration: none !important;
+    color: rgb(227, 70, 18) !important;
+    font-weight: 900 !important;
+    font-family: LyriqueFont !important;
+    font-size: larger !important;
 }
 
 #layer1 {
@@ -83,20 +87,22 @@ a:hover,a:visited:hover {
       width: 295px;
     }
   }
+
+/* for the cards inside the carousels */
+.card{
+  height: 800px;
+}
+
+.carousel-item p{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
   
 
 
 
 
-/* for the background image in layer2 */
-#layer2bg {
-    position: absolute;
-    width: 100%;
-    filter: blur(2px);
-}
-
-/* for the heading of layer2 */
-#layer2head {
-    position: relative;
-    vertical-align: middle;
-}
