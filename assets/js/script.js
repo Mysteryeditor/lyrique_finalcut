@@ -6,7 +6,7 @@ let allKeys = [],
 audio = new Audio(`tunes/a.wav`); // by default, audio src is "a" tune
 
 const playTune = (key) => {
-    audio.src = `tunes/${key}.wav`; // passing audio src based on key pressed 
+    audio.src = `./assets/tunes/${key}.wav`; // passing audio src based on key pressed 
     audio.play(); // playing audio
 
     const clickedKey = document.querySelector(`[data-key="${key}"]`); // getting clicked key element

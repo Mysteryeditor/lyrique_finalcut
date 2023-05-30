@@ -9,27 +9,23 @@
       "id": 1
     },
     {
-      "firstname": "Rakesh",
-      "lastname": "Sds",
+      "firstname": "Srikanth",
+      "lastname": "JP",
       "gender": "male",
-      "dob": "2023-05-13",
-      "email": "rakesh@gmail.com",
-      "password": "RakeshSds",
-      "username": "RakeshSds",
+      "dob": "2003-07-22",
+      "email": "sri027.cvb@gmail.com",
+      "password": "ThisOneMeansForever@13",
+      "username": "SrikanthJP",
       "id": 2
-    },
-    {
-      "firstname": "Ed",
-      "lastname": "Sheeran",
-      "gender": "male",
-      "dob": "2023-05-10",
-      "email": "ed@gmail.com",
-      "password": "abcABC@12",
-      "username": "EdSheeran",
-      "id": 3
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "id": 1,
+      "username": "SrikanthJP",
+      "password": "ThisOneMeansForever@13"
+    }
+  ],
   "songs": [
     {
       "id": 1,
@@ -983,6 +979,30 @@
       "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
       "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
       "id": 6
+    },
+    {
+      "username": "SrikanthJP",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 7
+    },
+    {
+      "username": "SrikanthJP",
+      "songid": 2,
+      "name": "Another Love",
+      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "id": 8
+    },
+    {
+      "username": "SrikanthJP",
+      "songid": 22,
+      "name": "Marakkavillayae",
+      "url": "./assets/songs/Jersey Marakkavillayae.mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273fc981d2682958c17cdb23ab0",
+      "id": 9
     }
   ]
 }

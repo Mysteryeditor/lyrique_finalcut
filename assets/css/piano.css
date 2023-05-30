@@ -6,13 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #E3F2FD;
-}
+
 .wrapper {
   padding: 35px 40px;
   border-radius: 20px;

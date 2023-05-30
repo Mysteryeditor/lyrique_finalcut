@@ -55,13 +55,12 @@ function registerUser() {
       username: firstname + lastname
     })
   );
-  xhttp.onreadystatechange = function () {
-    if(this.readyState==4 && this.status==200){
-  var username = firstname + lastname;
+
   Swal.fire({
     icon: 'success',
     title: 'Registered Successfully!',
-    html: 'Your Username Is <strong><mark>' + username + '</mark></strong>',
+    html: 'Your Username Is <strong><mark>' + firstname + lastname + '</mark></strong>',
+    footer:`Note:UserName is used while LOGGING IN,please don't FORGET`,
     confirmButtonText: 'Login',
     showCancelButton: false,
     allowOutsideClick: false,
@@ -71,8 +70,6 @@ function registerUser() {
       window.location.href = './authentication.html';
     }
   });
-}
-  }
 }
 
 

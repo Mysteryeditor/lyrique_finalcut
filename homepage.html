@@ -25,6 +25,7 @@
 
   <!-- sweetalert cdn -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -68,7 +69,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-        
+
 
           <li class="nav-item" style="padding-right: 10px;padding-top: 10px;">
             <!-- hello+username -->
@@ -84,16 +85,16 @@
 
             <button data-bs-toggle="modal" data-bs-target="#optionsModal" class="menu-btn ">
               <span class="icon">
-                  <svg viewBox="0 0 175 80" width="40" height="40">
-                      <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                      <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                      <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                  </svg>
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                  <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                  <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                  <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
               </span>
               <span class="text">MENU</span>
-          </button>
+            </button>
           </li>
-         
+
         </ul>
       </div>
     </div>
@@ -102,130 +103,133 @@
 
 
 
-<!-- Modal for menu  -->
-<div class="modal fade right-end" id="optionsModal" tabindex="-1" aria-labelledby="optionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog ">
-    <div class="modal-content">
-      <div class="modal-header ">
-        <h3 class="modal-title" id="optionsModalLabel">Options</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <button class="button" onclick="updateprofile()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Update
-              Profile</button>
-          </li>
-          <li class="list-group-item">
-            <button class="button" onclick="logout()">LOGOUT</button>
-          </li>
-          <li class="list-group-item">
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
-              Delete Account
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- <!-- Modal for update profile -->
- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
- aria-labelledby="staticBackdropLabel" aria-hidden="true">
- <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-       <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
-       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div class="modal-body">
-       <form>
-         <input type="number" id="user_id" hidden="true">
-         <div class="mb-3">
-           <label for="username" class="form-label">Username</label>
-           <input type="text" class="form-control" id="Username" placeholder="Enter your username">
-         </div>
-         <div class="mb-3">
-           <label for="gender" class="form-label">Gender</label>
-           <select class="form-select" id="gender">
-             <option value="">Select your gender</option>
-             <option value="male">Male</option>
-             <option value="female">Female</option>
-             <option value="non-binary">Non-Binary</option>
-           </select>
-         </div>
-         <div class="mb-3">
-           <label for="dob" class="form-label">Date of Birth</label>
-           <input type="date" class="form-control" id="dob">
-         </div>
-         <div class="mb-3">
-           <label for="email" class="form-label">Email</label>
-           <input type="email" class="form-control" id="email" placeholder="Enter your email">
-         </div>
-         <div class="mb-3">
-           <label for="password" class="form-label">Password</label>
-           <input type="password" class="form-control" id="password" placeholder="Enter your password">
-         </div>
-       </form>
-     </div>
-
-     <div class="modal-footer">
-       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-       <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
-         Changes</button>
-     </div>
-   </div>
- </div>
-</div>
-
-<!-- modal for delete account -->
-<div class="modal fade" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Verification</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" >
-        <form>
-          <div class="form-group">
-            <label style="margin-top: 10px;" for="username" >Username:</label>
-            <input id="u"  style="margin-top: 10px;" type="text" style="color: #222222;" id="username" name="username" required>
-          </div>
-          <div class="form-group">
-            <label  style="margin-top: 10px;" for="password">Password:</label>
-            <input id="p" style="margin-top: 10px;" type="password" style="color: #222222;" id="password" name="password" required>
-            
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="userDelete()">Delete Account</button>
+  <!-- Modal for menu  -->
+  <div class="modal fade right-end" id="optionsModal" tabindex="-1" aria-labelledby="optionsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h3 class="modal-title" id="optionsModalLabel">Options</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <button class="button" onclick="updateprofile()" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Update
+                Profile</button>
+            </li>
+            <li class="list-group-item">
+              <button class="button" onclick="logout()">LOGOUT</button>
+            </li>
+            <li class="list-group-item">
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+                Delete Account
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <div class="container-fluid" style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
-      <div class="container" >
-    <h1 style="color: rgb(227, 70, 18);">
-      Music Player
-    </h1>
+  <!-- Modal for update profile -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="number" id="user_id" hidden="true">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="Username" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+              <label for="gender" class="form-label">Gender</label>
+              <select class="form-select" id="gender">
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-Binary</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="dob" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="dob">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+          <button type="button" class="btn btn-primary" onclick="updateprofile2(user_id.value)">Save
+            Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for delete account -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Verification</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label style="margin-top: 10px;" for="username">Username:</label>
+              <input id="u" style="margin-top: 10px;" type="text" style="color: #222222;" id="username" name="username"
+                required>
+            </div>
+            <div class="form-group">
+              <label style="margin-top: 10px;" for="password">Password:</label>
+              <input id="p" style="margin-top: 10px;" type="password" style="color: #222222;" id="password"
+                name="password" required>
+
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="userDelete()">Delete Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
+    <div class="container">
+      <h1 style="color: rgb(227, 70, 18);">
+        Music Player
+      </h1>
       <div class="row">
-        <div class="col-lg-2"></div>
+        
         <!-- the song list -->
-        <div class="col-lg-5 col-sm-12 col-md-12"   id="songlist">
-
+        <div class="col-lg-8 col-sm-12 col-md-4" id="songlist">
         </div>
 
 
 
         <!-- the music player -->
-        <div id="mp" class="container-audio col-sm-12 col-lg-5 col-md-12" >
+        <div id="mp" class="container-audio col-sm-12 col-lg-4 col-md-12">
           <div class="album-art">
             <img id="albumimage" src="assets/images/musicplayerdefaultalubumart.png" alt="Album Art">
           </div>
@@ -240,9 +244,10 @@
     </div>
 
     <div class="container">
-      <div class="row">                               
+      <div class="row">
         <div class="col-lg-2"> </div>
-        <div class="col-lg-5"><button class="likedbtn mt-lg-2 mt-sm-5 mt-md-3" onclick="likedSongs()">Liked Songs</button></div>
+        <div class="col-lg-5"><button class="likedbtn mt-lg-2 mt-sm-5 mt-md-3" onclick="likedSongs()">Liked
+            Songs</button></div>
 
       </div>
     </div>
@@ -255,7 +260,7 @@
       <h1 class="text-white">Artists</h1>
       <div class="tab">
         <button style="font-size: 20px;" class="tablinks" onclick="openTab(event, 'english')">English</button>
-        <button style="font-size: 20px;"  class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
+        <button style="font-size: 20px;" class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
       </div>
 
       <div id="english" class="tab-content">
