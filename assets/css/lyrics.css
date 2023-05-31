@@ -2,35 +2,39 @@
   font-family: LyriqueFont;
   src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
 }
+
 /* for the navbar */
 #logo {
   height: 50px;
   width: 50px;
 }
 
-a,a:hover,a:visited {
+a,
+a:hover,
+a:visited {
   font-size: x-large;
   text-decoration: none;
   color: rgb(237, 236, 236);
-  font-family: LyriqueFont; 
+  font-family: LyriqueFont;
 }
 
-nav{
+nav {
   background-color: #242323;
 }
 
-a:visited:hover{
+a:visited:hover {
   text-decoration: none;
   color: rgb(235, 224, 224);
 
 }
 
-*{
+* {
   font-family: LyriqueFont;
 }
 
 /* for the username */
-#Hello,#username{
+#Hello,
+#username {
   font-size: 20px;
   color: azure;
 }
@@ -59,6 +63,23 @@ a:visited:hover{
   margin-right: 0;
 }
 
+td {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+table tr:nth-child(odd) {
+  color: black;
+  background-color: white;
+
+}
+
+table tr:nth-child(even) {
+
+  color: orangered;
+  background-color: #242323;
+}
+
 /* for the back to top button */
 .btp {
   width: 140px;
@@ -72,7 +93,8 @@ a:visited:hover{
   float: right;
 }
 
-.btp > div,.btp > svg {
+.btp>div,
+.btp>svg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -97,44 +119,46 @@ a:visited:hover{
   transform-origin: bottom left;
 }
 
-.btp .clone > *,.btp .text > * {
+.btp .clone>*,
+.btp .text>* {
   opacity: 1;
   font-size: 1.3rem;
   transition: 0.2s;
   margin-left: 4px;
 }
 
-.btp .clone > * {
+.btp .clone>* {
   transform: translateY(60px);
 }
 
-.btp:hover .clone > * {
+.btp:hover .clone>* {
   opacity: 1;
   transform: translateY(0px);
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-.btp:hover .text > * {
+.btp:hover .text>* {
   opacity: 1;
   transform: translateY(-60px);
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-.btp:hover .clone > :nth-child(1) {
+.btp:hover .clone> :nth-child(1) {
   transition-delay: 0.15s;
 }
 
-.btp:hover .clone > :nth-child(2) {
+.btp:hover .clone> :nth-child(2) {
   transition-delay: 0.2s;
 }
 
-.btp:hover .clone > :nth-child(3) {
+.btp:hover .clone> :nth-child(3) {
   transition-delay: 0.25s;
 }
 
-.btp:hover .clone > :nth-child(4) {
+.btp:hover .clone> :nth-child(4) {
   transition-delay: 0.3s;
 }
+
 /* icon style and hover */
 .btp svg {
   width: 20px;
@@ -149,102 +173,101 @@ a:visited:hover{
 }
 
 /* styling for the loader  */
-    @keyframes ldio-1zq8yhog4fu-1 {
-      0% {
-        top: 36px;
-        height: 128px
-      }
+@keyframes ldio-1zq8yhog4fu-1 {
+  0% {
+    top: 36px;
+    height: 128px
+  }
 
-      50% {
-        top: 60px;
-        height: 80px
-      }
+  50% {
+    top: 60px;
+    height: 80px
+  }
 
-      100% {
-        top: 60px;
-        height: 80px
-      }
-    }
+  100% {
+    top: 60px;
+    height: 80px
+  }
+}
 
-    @keyframes ldio-1zq8yhog4fu-2 {
-      0% {
-        top: 41.99999999999999px;
-        height: 116.00000000000001px
-      }
+@keyframes ldio-1zq8yhog4fu-2 {
+  0% {
+    top: 41.99999999999999px;
+    height: 116.00000000000001px
+  }
 
-      50% {
-        top: 60px;
-        height: 80px
-      }
+  50% {
+    top: 60px;
+    height: 80px
+  }
 
-      100% {
-        top: 60px;
-        height: 80px
-      }
-    }
+  100% {
+    top: 60px;
+    height: 80px
+  }
+}
 
-    @keyframes ldio-1zq8yhog4fu-3 {
-      0% {
-        top: 48px;
-        height: 104px
-      }
+@keyframes ldio-1zq8yhog4fu-3 {
+  0% {
+    top: 48px;
+    height: 104px
+  }
 
-      50% {
-        top: 60px;
-        height: 80px
-      }
+  50% {
+    top: 60px;
+    height: 80px
+  }
 
-      100% {
-        top: 60px;
-        height: 80px
-      }
-    }
+  100% {
+    top: 60px;
+    height: 80px
+  }
+}
 
-    .ldio-1zq8yhog4fu div {
-      position: absolute;
-      width: 30px
-    }
+.ldio-1zq8yhog4fu div {
+  position: absolute;
+  width: 30px
+}
 
-    .ldio-1zq8yhog4fu div:nth-child(1) {
-      left: 35px;
-      background: #e15b64;
-      animation: ldio-1zq8yhog4fu-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-      animation-delay: -0.2s
-    }
+.ldio-1zq8yhog4fu div:nth-child(1) {
+  left: 35px;
+  background: #e15b64;
+  animation: ldio-1zq8yhog4fu-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation-delay: -0.2s
+}
 
-    .ldio-1zq8yhog4fu div:nth-child(2) {
-      left: 85px;
-      background: #f8b26a;
-      animation: ldio-1zq8yhog4fu-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-      animation-delay: -0.1s
-    }
+.ldio-1zq8yhog4fu div:nth-child(2) {
+  left: 85px;
+  background: #f8b26a;
+  animation: ldio-1zq8yhog4fu-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation-delay: -0.1s
+}
 
-    .ldio-1zq8yhog4fu div:nth-child(3) {
-      left: 135px;
-      background: #abbd81;
-      animation: ldio-1zq8yhog4fu-3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-      animation-delay: undefineds
-    }
+.ldio-1zq8yhog4fu div:nth-child(3) {
+  left: 135px;
+  background: #abbd81;
+  animation: ldio-1zq8yhog4fu-3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation-delay: undefineds
+}
 
-    .loadingio-spinner-pulse-2a5iv0z8ysb {
-      width: 200px;
-      height: 200px;
-      display: inline-block;
-      overflow: hidden;
-      background: #ffffff;
-    }
+.loadingio-spinner-pulse-2a5iv0z8ysb {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
 
-    .ldio-1zq8yhog4fu {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transform: translateZ(0) scale(1);
-      backface-visibility: hidden;
-      transform-origin: 0 0;
-      /* see note above */
-    }
+.ldio-1zq8yhog4fu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
 
-    .ldio-1zq8yhog4fu div {
-      box-sizing: content-box;
-    }
-  
+.ldio-1zq8yhog4fu div {
+  box-sizing: content-box;
+}

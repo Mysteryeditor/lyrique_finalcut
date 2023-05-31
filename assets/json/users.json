@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "username": "KokkiKumar",
+      "username": "KokkiKumaruh",
       "gender": "male",
-      "dob": "2023-05-09",
-      "email": "kokki@gmail.com",
-      "password": "abcdefgh",
+      "dob": "1990-07-09",
+      "email": "kokkiboy@gmail.com",
+      "password": "abcABC@1234",
       "id": 1
     },
     {
@@ -19,13 +19,7 @@
       "id": 2
     }
   ],
-  "login": [
-    {
-      "id": 1,
-      "username": "SrikanthJP",
-      "password": "ThisOneMeansForever@13"
-    }
-  ],
+  "login": [],
   "songs": [
     {
       "id": 1,
@@ -1003,6 +997,14 @@
       "url": "./assets/songs/Jersey Marakkavillayae.mp3",
       "artwork": "https://i.scdn.co/image/ab67616d0000b273fc981d2682958c17cdb23ab0",
       "id": 9
+    },
+    {
+      "username": "KokkiKumaruh",
+      "songid": 35,
+      "name": "Vaa Vaathi",
+      "url": "./assets/songs/Vaa Vaathi.mp3",
+      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
+      "id": 10
     }
   ]
 }

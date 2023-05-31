@@ -46,7 +46,7 @@ function logout() {
   const xhttp = new XMLHttpRequest();
   xhttp.open("DELETE", "http://localhost:3000/login/1");
   xhttp.send();
-  window.location.href = "./index.html"
+  window.location.href = "./authentication.html"
 }
 
 // for the songs display
@@ -410,7 +410,6 @@ function userDelete(){
 function artist(){
   window.location.href="./artists.html";
 }
-
 
 
 

@@ -1,108 +1,247 @@
 @font-face {
-    font-family: LyriqueFont;
-    src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
+  font-family: LyriqueFont;
+  src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
 }
 
 /* for the logo */
 #logo {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
-*{
+* {
   font-family: LyriqueFont;
 }
 
 
-a,a:visited {
-    text-decoration: none !important;
-    color: rgb(254, 254, 254) !important;
-    font-weight: 900 !important;
-    font-family: LyriqueFont !important;
-    font-size: larger !important;
+nav a,
+nav a:visited {
+  text-decoration: none !important;
+  color: rgb(254, 254, 254) !important;
+  font-weight: 900 !important;
+  font-family: LyriqueFont !important;
+  font-size: larger !important;
 }
 
-a:hover,a:visited:hover {
-    font-size: x-large !important;
-    color: rgb(227, 70, 18) !important;
+nav a:hover,
+nav a:visited:hover {
+  font-size: x-large !important;
+  color: rgb(227, 70, 18) !important;
 }
 
 .navbuttons:hover {
-    text-decoration: none !important;
-    color: rgb(227, 70, 18) !important;
-    font-weight: 900 !important;
-    font-family: LyriqueFont !important;
-    font-size: larger !important;
+  text-decoration: none !important;
+  color: rgb(227, 70, 18) !important;
+  font-weight: 900 !important;
+  font-family: LyriqueFont !important;
+  font-size: larger !important;
 }
 
 #layer1 {
-    /* background-image: url(https://wallpapercave.com/wp/wp2326986.jp.); */
-    background-image: url(./assets/images/layer1bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* background-image: url(https://wallpapercave.com/wp/wp2326986.jp.); */
+  background-image: url(./assets/images/layer1bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 
-#layer1 span{
-    font-size: 60px;
-    font-family: LyriqueFont;
-    color:rgb(227, 70, 18);
-    text-transform: uppercase;
+#layer1 span {
+  font-size: 60px;
+  font-family: LyriqueFont;
+  color: rgb(227, 70, 18);
+  text-transform: uppercase;
 }
 
-#layer1 span:hover{
-    font-size: 65px;
-}
-
-#lyworld{
-    font-size: 50px;
-    color: azure;
-    font-family: LyriqueFont;
-
+#lyworld {
+  font-size: 50px;
+  color: azure;
+  font-family: LyriqueFont;
 }
 
 /* typewriter animation */
-  
-  .typewriter {
-    width: 295px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid #fffdfd;
-    animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+
+.typewriter {
+  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #fffdfd;
+  animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+
+  0%,
+  100% {
+    border-color: #212121;
   }
-  
-  @keyframes cursor {
-    0%,
-    100% {
-      border-color: #212121;
-    }
-  }
-  
-  @keyframes text {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 295px;
-    }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
   }
 
+  100% {
+    width: 295px;
+  }
+}
+
+#layer1con {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: pre-line;
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: pre-line;
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  font-weight: 400;
+}
+
 /* for the cards inside the carousels */
-.card{
+.card {
   height: 800px;
 }
 
-.carousel-item p{
+.carousel-item p {
   font-size: 20px;
   text-align: center;
 }
 
+/* footer  */
+footer .main-footer {
+  padding: 20px 0;
+  background: #252525;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Copy Right Footer */
+.footer-copyright {
+  background: #222;
+  padding: 5px 0;
+}
+
+.footer-copyright p {
+  color: #969696;
+  margin: 2px 0 0;
+}
+
+/*==================== 
+  Widgets 
+====================== */
+.widget {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.widget.widget-last {
+  margin-bottom: 0px;
+}
+
+.widget.no-box {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.widget li a {
+  color: rgb(227, 70, 18);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.widget li a:hover {
+  color: azure;
+}
 
 
 
-  
+.widget-title {
+  margin-bottom: 20px;
+}
+
+.widget-title span {
+  background: #ffffff none repeat scroll 0 0;
+  display: block;
+  height: 1px;
+  margin-top: 25px;
+  position: relative;
+  width: 20%;
+}
+
+#mailid {
+  color: rgb(227, 70, 18);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.widget-title span::after {
+  background: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  top: -4px;
+  width: 50%;
+}
+
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+
+.typo-light h5,
+.typo-light p,
+.typo-light div,
+.typo-light span {
+  color: azure;
+}
+
+.typo-light p {
+  font-size: 17px;
+}
+
+/* for the icons */
+ul.social-footer2 li {
+  display: inline-block;
+}
+
+@media screen and (max-width:900px) {
 
 
 
+  /* for the text in layer1 */
+  #lyworld {
+    font-size: 25px;
+    color: azure;
+    font-family: LyriqueFont;
+    white-space: nowrap;
+  }
 
+  #layer1 span {
+    font-size: 35px;
+  }
+
+  #layer1con {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+
+
+}
