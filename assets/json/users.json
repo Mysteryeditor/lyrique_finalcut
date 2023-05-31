@@ -1,12 +1,12 @@
 {
   "users": [
     {
+      "id": 1,
       "username": "KokkiKumaruh",
-      "gender": "male",
-      "dob": "1990-07-09",
       "email": "kokkiboy@gmail.com",
-      "password": "abcABC@1234",
-      "id": 1
+      "dob": "1990-07-09",
+      "gender": "male",
+      "password": "KokkiKumar@123"
     },
     {
       "firstname": "Srikanth",
@@ -17,6 +17,16 @@
       "password": "ThisOneMeansForever@13",
       "username": "SrikanthJP",
       "id": 2
+    },
+    {
+      "firstname": "Pallavi",
+      "lastname": "Katari",
+      "gender": "female",
+      "dob": "2000-06-30",
+      "email": "pallavikatari@gmail.com",
+      "password": "abcABC@123",
+      "username": "PallaviKatari",
+      "id": 3
     }
   ],
   "login": [],
@@ -949,14 +959,6 @@
       "url": "./assets/songs/Vaarayo Vaarayo.mp3",
       "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eHWVfuvVJsZqCer_PkFlV-ZcGyVbU0BJn1gBHiGPlg&s",
       "id": 3
-    },
-    {
-      "username": "",
-      "songid": 26,
-      "name": "Nee Paartha Vizhigal",
-      "url": "./assets/songs/Nee Partha Vizhigal.mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b27340d3b59b2f1478395b4e3857",
-      "id": 4
     },
     {
       "username": "KokkiKumar",

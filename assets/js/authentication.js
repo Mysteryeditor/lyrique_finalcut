@@ -22,7 +22,9 @@ function authenticate() {
       Swal.fire({
         icon:"error",
         title:"Oops...",
-        text:"Invalid username/password"
+        text:"Invalid username/password",
+        footer: `<span></span>
+        <a id="forgotpassword" onclick="forgotPassword()">Forgot Your Password?Click here To Reset!</>`
       });
      
     }
@@ -43,13 +45,18 @@ function authenticate() {
   }
 
   // forgot password
-  function forgotPassword(){
+  function forgotPassword() {
     Swal.fire({
-      title: 'Enter Username',
+      title: 'Verification',
       input: 'text',
       inputLabel: 'Username',
       inputAttributes: {
         required: 'true'
+      },
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Please Enter Your Username';
+        }
       },
       showCancelButton: true,
       cancelButtonText: 'Cancel',
@@ -78,8 +85,19 @@ function authenticate() {
             
             Swal.fire({
               title: 'Enter Date of Birth',
-             html:` <label for="dob">Date of Birth:</label>
-             <input type="date" id="dob" name="dob" required><br><br>`,
+              input: 'text',
+              inputLabel: 'Date of Birth',
+              inputAttributes: {
+                required: 'true',
+                placeholder: 'yyyy-mm-dd',
+                
+              },
+              inputValidator: (value) => {
+                
+                if (!value) {
+                  return 'Please Enter Your Date Of Birth In the Mentioned Format YYYY-MM-DD';
+                }
+              },
               showCancelButton: true,
               cancelButtonText: 'Cancel',
               confirmButtonText: 'Submit',
@@ -87,25 +105,100 @@ function authenticate() {
               allowEscapeKey: false
             }).then((result) => {
               if (result.isConfirmed) {
-                const xhttp=new XMLHttpRequest;
-                xhttp.open("GET",`http://localhost:3000/users`);
-                xhttp.send();
-                xhttp.onreadystatechange=function(){
-                  if(this.readyState==4 && this.status==200){
-                    const jsonData=JSON.parse(this.responseText);
-                    for(let a of jsonData){
-                      if(a.username==username && a.email==email){
-                        Swal.fire(
-                          'success'
-                        )
+                const dob = result.value;
+                
+                Swal.fire({
+                  title: 'Select Gender',
+                  input: 'radio',
+                  inputLabel: 'Gender',
+                  inputOptions: {
+                    'male': 'Male',
+                    'female': 'Female',
+                    'other': 'Other'
+                  },
+                  inputValidator: (value) => {
+                    if (!value) {
+                      return 'Please select a gender';
+                    }
+                  },
+                  showCancelButton: true,
+                  cancelButtonText: 'Cancel',
+                  confirmButtonText: 'Next',
+                  allowOutsideClick: false,
+                  allowEscapeKey: false
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    const gender = result.value;
+                    
+                    const xhttp = new XMLHttpRequest();
+                    xhttp.open("GET", "http://localhost:3000/users");
+                    xhttp.send();
+                    xhttp.onreadystatechange = function () {
+                      if (this.readyState == 4 && this.status == 200) {
+                        const jsonData = JSON.parse(this.responseText);
+                        for (let user of jsonData) {
+                          if (user.username == username && user.email == email && user.dob == dob && user.gender == gender) {
+                            Swal.fire({
+                              title: 'Verification Success',
+                              input: 'password',
+                              inputLabel: 'Enter The New Password',
+                              inputAttributes: {
+                                required: 'true',
+                              },
+                              showCancelButton: true,
+                              cancelButtonText: 'Cancel',
+                              confirmButtonText: 'Submit',
+                              allowOutsideClick: false,
+                              allowEscapeKey: false
+                            }).then((result) => {
+                              if (result.isConfirmed) {
+                                const password = result.value;
+                                
+                                const xhttp = new XMLHttpRequest();
+                                xhttp.open("PUT", `http://localhost:3000/users/${user.id}`);
+                                xhttp.setRequestHeader("Content-type", "application/json");
+                                xhttp.send(JSON.stringify({
+                                  "id": user.id,
+                                  "username": username,
+                                  "email": email,
+                                  "dob": dob,
+                                  "gender": gender,
+                                  "password": password
+                                }));
+  
+                                xhttp.onreadystatechange = function () {
+                                  if (this.readyState == 4 && this.status == 200) {
+                                    Swal.fire({
+                                      title: 'Password Changed Successfully',
+                                      text: 'Please Login Again',
+                                      icon: 'success',
+                                      showCancelButton: false,
+                                      confirmButtonText: 'Ok',
+                                    })
+                                  }
+                                }
+                              }
+                            })
+                          }
+                          else{
+                            Swal.fire({
+                              title: `Verification Failed`,
+                              text: `Please Try Again`,
+                              icon: 'error',
+                              showCancelButton: false,
+                              confirmButtonText: 'Ok',
+                            })
+                          }
+                        }
                       }
                     }
                   }
-                }
+                })
               }
-            });
+            })
           }
-        });
+        })
       }
-    });
+    })
   }
+  

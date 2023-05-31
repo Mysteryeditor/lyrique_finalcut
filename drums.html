@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="./assets/css/drums.css">
 </head>
 <body>
-    <div>
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
         <div class="container-fluid p-0">
           <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
           <a class="navbar-brand me-lg-auto" href="./index.html">Lyrique-A World Of Music</a>
@@ -79,10 +79,10 @@
 
 
       <!-- the drum-kit layer -->
-      <div class="container-fluid">
+      <div class="container-fluid mt-5 p-5" style="float: left;">
     <main>
         <section class="main-wrapper">
-          <div class="key-map-wrapper">
+          <div class="key-map-wrapper d-lg-block d-sm-none">
             <h2>Key Mapping</h2>
             <ul class="key-map-list">
               <li>
@@ -174,5 +174,6 @@
       <audio data-key="75" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"></audio>
     </div>
       <script src="./assets/js/drums.js"></script>
+    
 </body>
 </html>

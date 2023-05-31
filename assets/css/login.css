@@ -32,3 +32,11 @@ a:hover{
 #swalfp{
     color: orangered;
 }
+
+#forgotpassword{
+    text-decoration: none;
+    color: orangered;
+    font-weight: 300;
+    font-family: LyriqueFont; 
+    font-size: larger;
+}
