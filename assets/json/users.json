@@ -27,6 +27,26 @@
       "password": "abcABC@123",
       "username": "PallaviKatari",
       "id": 3
+    },
+    {
+      "firstname": "John",
+      "lastname": "Wick",
+      "gender": "male",
+      "dob": "1974-02-01",
+      "email": "johnny@gmail.com",
+      "password": "Wifecar&Dog.007",
+      "username": "JohnWick",
+      "id": 4
+    },
+    {
+      "firstname": "vichu",
+      "lastname": "vicky",
+      "gender": "male",
+      "dob": "2023-05-29",
+      "email": "vicketvick@gmail.com",
+      "password": "Password@123",
+      "username": "vichuvicky",
+      "id": 5
     }
   ],
   "login": [],
@@ -937,30 +957,6 @@
   ],
   "likes": [
     {
-      "username": "",
-      "songid": 35,
-      "name": "Vaa Vaathi",
-      "url": "./assets/songs/Vaa Vaathi.mp3",
-      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
-      "id": 1
-    },
-    {
-      "username": "",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 2
-    },
-    {
-      "username": "",
-      "songid": 29,
-      "name": "Vaarayo Vaarayo",
-      "url": "./assets/songs/Vaarayo Vaarayo.mp3",
-      "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eHWVfuvVJsZqCer_PkFlV-ZcGyVbU0BJn1gBHiGPlg&s",
-      "id": 3
-    },
-    {
       "username": "KokkiKumar",
       "songid": 1,
       "name": "Love Me Again",
@@ -1007,6 +1003,14 @@
       "url": "./assets/songs/Vaa Vaathi.mp3",
       "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
       "id": 10
+    },
+    {
+      "username": "JohnWick",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 11
     }
   ]
 }

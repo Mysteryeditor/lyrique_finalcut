@@ -18,9 +18,9 @@ a:visited {
   font-family: LyriqueFont;
 }
 
-nav {
+/* nav {
   background-color: #242323;
-}
+} */
 
 a:visited:hover {
   text-decoration: none;
@@ -63,21 +63,23 @@ a:visited:hover {
   margin-right: 0;
 }
 
+th{
+  color: rgb(227, 174, 0);
+  font-size: 25px;
+}
 td {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-table tr:nth-child(odd) {
-  color: black;
-  background-color: white;
 
+
+tr:nth-child(odd) {
+  color: rgb(227, 70, 18);
 }
 
-table tr:nth-child(even) {
-
-  color: orangered;
-  background-color: #242323;
+tr:nth-child(even){
+  color: azure;
 }
 
 /* for the back to top button */
@@ -271,3 +273,21 @@ table tr:nth-child(even) {
 .ldio-1zq8yhog4fu div {
   box-sizing: content-box;
 }
+
+#lyricbutton {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgb(227, 174, 0);
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  cursor: grab;
+}
+
+
+

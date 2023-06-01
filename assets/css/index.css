@@ -101,10 +101,6 @@ nav a:visited:hover {
 }
 
 /* for the cards inside the carousels */
-.card {
-  height: 800px;
-}
-
 .carousel-item p {
   font-size: 20px;
   text-align: center;
@@ -217,13 +213,13 @@ footer ul {
 }
 
 /* for the icons */
-ul.social-footer2 li {
+.widget ul.social-footer2 li {
   display: inline-block;
 }
 
+
+
 @media screen and (max-width:900px) {
-
-
 
   /* for the text in layer1 */
   #lyworld {

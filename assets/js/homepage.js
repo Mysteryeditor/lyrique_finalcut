@@ -8,6 +8,12 @@ function toggleOptions() {
   deleteNavItem.classList.toggle("d-none");
   logoutNavItem.classList.toggle("d-none");
 }
+
+//for the animation
+for(var i=0;i<9;i++) {
+  var x = $('#dancingnotes');
+  $(x).css('-webkit-animation','music 1s '+i+'00ms  ease-in-out both infinite');
+}
 // for the artist tabs
 function openTab(evt, tabName) {
   var i, tabContent, tabLinks;
@@ -66,7 +72,7 @@ function songlist() {
 
       for (let song of data) {
         const songcontainer = document.createElement('div');
-        songcontainer.className = "songcontainer";
+        songcontainer.classList.add("col-lg-4","col-sm-6","col-md-6","songcontainer");
         const songName = document.createElement("p");
         songName.className = "title";
 

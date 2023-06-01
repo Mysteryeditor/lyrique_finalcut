@@ -40,7 +40,7 @@ xhttp.onreadystatechange=function(){
             songdet+="<td>"+song["Artist"]+"</td>";
             songdet+="<td>"+song["year"]+"</td>";
             songdet+='<td><img style="width:50px;height:50px" src="'+song["artwork"]+'"></td>';
-            songdet += '<td><button type="button" onclick="showLyrics(\'' + song["name"] + '\')">Lyrics</button></td>';
+            songdet += '<td><button id="lyricbutton" type="button" onclick="showLyrics(\'' + song["name"] + '\')"><i style="padding-right:3px" class="fa-solid fa-music"></i>Lyrics</button></td>';
             songdet+="</tr>";
 
         }
