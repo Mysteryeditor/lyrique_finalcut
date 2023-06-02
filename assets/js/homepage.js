@@ -210,7 +210,7 @@ function songlist() {
                           likelist += `<div class="liked-songs-container">
                           <label class="liked-songs-name">${likes.name}</label>
                           
-                          <button style="border-radius:5px" class="btn-danger" onclick='removeliked(${likes.id})'>Delete</button><br>`
+                          <button style="border-radius:5px" class="btn-danger" onclick='removeliked(${likes.id},${likes.songid})'>Delete</button><br>`
                         }
                       }
                       likelist += "</div>"
@@ -240,6 +240,35 @@ function songlist() {
                 url: song.url,
                 artwork:song.artwork
               }));
+
+              const likeincrement=new XMLHttpRequest();
+              likeincrement.open("GET", `http://localhost:3000/songs/${song.id}`);
+              likeincrement.send();
+              likeincrement.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                  const li=JSON.parse(this.responseText);
+                  var likecount=li.likes;
+                  likecount++;
+                  const xhttp = new XMLHttpRequest();
+                  xhttp.open("PUT", `http://localhost:3000/songs/${song.id}`);
+                  xhttp.setRequestHeader("Content-type", "application/json");
+                  xhttp.send(JSON.stringify({
+                    id:li['id'],
+                    name: li['name'],
+                    url: li['url'],
+                    Artist:li['Artist'],
+                    year:li["year"],
+                    language:li["language"],
+                    artwork: li['artwork'],
+                    likes: likecount
+
+                  }));
+                  
+                 
+
+                }
+              }
+
             }
           });
         });
@@ -288,9 +317,10 @@ function isSongAlreadyLiked(username, song, callback) {
 }
 
 //deleting the liked song
-function removeliked(songid) {
+function removeliked(id,songid) {
+  console.log(songid);
   const xhttp = new XMLHttpRequest();
-  xhttp.open("DELETE", `http://localhost:3000/likes/${songid}`)
+  xhttp.open("DELETE", `http://localhost:3000/likes/${id}`)
   xhttp.send();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -308,6 +338,35 @@ function removeliked(songid) {
         })
     }
   }
+
+  const likedecrement=new XMLHttpRequest();
+  likedecrement.open("GET", `http://localhost:3000/songs/${songid}`);
+  likedecrement.send();
+  likedecrement.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const ld=JSON.parse(this.responseText);
+      var likecount=ld.likes;
+      likecount--;
+      const xhttp = new XMLHttpRequest();
+      xhttp.open("PUT", `http://localhost:3000/songs/${songid}`);
+      xhttp.setRequestHeader("Content-type", "application/json");
+      xhttp.send(JSON.stringify({
+        id:ld['id'],
+        name: ld['name'],
+        url: ld['url'],
+        Artist:ld['Artist'],
+        year:ld["year"],
+        language:ld["language"],
+        artwork: ld['artwork'],
+        likes: likecount
+
+      }));
+      
+     
+
+    }
+  }
+
 }
 // Call the songlist function
 songlist();
@@ -328,7 +387,7 @@ function likedSongs() {
           likelist += `<div class="liked-songs-container">
       <label class="liked-songs-name">${likes.name}</label>
       <button class="btn-danger" style="border-radius:5px;color:azure;background-color:rgb(227, 70, 18)" onclick='playSong("${likes.url}", "${likes.name}", "${likes.artwork}")'>Play</button>
-      <button class="btn-danger" style="border-radius:5px" onclick='removeliked(${likes.id})'>Delete</button><br>`
+      <button class="btn-danger" style="border-radius:5px" onclick='removeliked(${likes.id},${likes.songid})'>Delete</button><br>`
         }
       }
       likelist += "</div>"
@@ -488,6 +547,42 @@ function artist(){
   window.location.href="./artists.html";
 }
 
+function mostLiked(){
+  const likestats=new XMLHttpRequest();
+  const likes=[];
+  likestats.open("GET",`http://localhost:3000/songs`)
+  likestats.send();
+  likestats.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+      const result=JSON.parse(this.responseText);
+      for(let lc of result){
+        if(lc.likes!=0){
+          if(!likes.includes(lc.likes)){
+            likes.push(lc.likes);
+          }
+        }
+      }
+    likes.sort();  
+    likes.reverse(); 
+    for(let count of likes){
+      const highlikes=new XMLHttpRequest();
+      highlikes.open("GET",`http://localhost:3000/songs?likes_like=${count}`);
+      highlikes.send()
+      highlikes.onreadystatechange=function(){
+      if(this.readyState==4 && this.status==200){
+        const abc=JSON.parse(this.responseText);
+        for (const i of abc) {
+
+        }
+
+      }
+      }
+    }   
+    }
+  }
+}
+
+mostLiked()
 
 
 

@@ -39,13 +39,11 @@
       "id": 4
     },
     {
-      "firstname": "vichu",
-      "lastname": "vicky",
+      "username": "vichuvickyyyyyyy",
       "gender": "male",
       "dob": "2023-05-29",
       "email": "vicketvick@gmail.com",
       "password": "Password@123",
-      "username": "vichuvicky",
       "id": 5
     }
   ],
@@ -54,56 +52,62 @@
     {
       "id": 1,
       "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
       "Artist": "John Newman",
       "year": 2013,
+      "language": "English",
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "language": "English"
+      "likes": 3
     },
     {
       "id": 2,
       "name": "Another Love",
+      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
       "Artist": "Tom Odell",
       "year": 2013,
+      "language": "English",
       "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
-      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
-      "language": "English"
+      "likes": 1
     },
     {
       "id": 3,
       "name": "Death Bed",
+      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
       "Artist": "Powfu",
       "year": 2014,
+      "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
-      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
-      "language": "English"
+      "likes": 1
     },
     {
       "id": 4,
       "name": "Bad Liar",
+      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
       "Artist": "Imagine Dragons",
       "year": 2014,
+      "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
-      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
-      "language": "English"
+      "likes": 0
     },
     {
       "id": 5,
       "name": "Faded",
+      "url": "./assets/songs/Faded - Alan Walker-(DJMaza).mp3",
       "Artist": "Alan Walker",
       "year": 2014,
+      "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg",
-      "url": "./assets/songs/Faded - Alan Walker-(DJMaza).mp3",
-      "language": "English"
+      "likes": 0
     },
     {
       "id": 6,
       "name": "Hate Me",
+      "url": "./assets/songs/Hate Me - Ellie Goulding, Juice WRLD_128- [PagalWorld.NL].mp3",
       "Artist": "Ellie Goulding",
       "year": 2014,
+      "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/hate-me.jpg",
-      "url": "./assets/songs/Hate Me - Ellie Goulding, Juice WRLD_128- [PagalWorld.NL].mp3",
-      "language": "English"
+      "likes": 0
     },
     {
       "id": 7,
@@ -112,7 +116,8 @@
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/solo.jpg",
       "url": "./assets/songs/Solo-(Gospeljingle.com).mp3",
-      "language": "English"
+      "language": "English",
+      "likes": 0
     },
     {
       "id": 8,
@@ -121,7 +126,8 @@
       "year": 2014,
       "artwork": "https://samplesongs.netlify.app/album-arts/without-me.jpg",
       "url": "./assets/songs/Without-Me---Halsey-(PagalWorld).mp3",
-      "language": "English"
+      "language": "English",
+      "likes": 0
     },
     {
       "id": 9,
@@ -130,7 +136,8 @@
       "year": 2017,
       "artwork": "https://upload.wikimedia.org/wikipedia/en/c/c8/Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png",
       "url": "./assets/songs/Despacito(PagalWorld).mp3",
-      "language": "Spanish"
+      "language": "Spanish",
+      "likes": 0
     },
     {
       "id": 10,
@@ -139,7 +146,8 @@
       "year": 2012,
       "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodP1tm2y__bMUyve9UJib3eMZDUZBPO8xenQTlL9hug&s",
       "url": "./assets/songs/Gangnam Style PSY.mp3",
-      "language": "Korean"
+      "language": "Korean",
+      "likes": 0
     },
     {
       "id": 11,
@@ -148,7 +156,8 @@
       "year": 2017,
       "artwork": "https://i.pinimg.com/236x/27/5e/26/275e26e27538792e29757efdeb6d33e7.jpg",
       "url": "",
-      "language": "English"
+      "language": "English",
+      "likes": 0
     },
     {
       "id": 12,
@@ -157,7 +166,8 @@
       "year": 2019,
       "artwork": "https://i.pinimg.com/236x/75/e7/ba/75e7bac6a9bb097d1dc4e316b3db0a07.jpg",
       "url": "https://www.shazam.com/track/455579230/7-rings",
-      "language": "English"
+      "language": "English",
+      "likes": 0
     },
     {
       "id": 13,
@@ -166,7 +176,8 @@
       "year": 2006,
       "artwork": "https://www.songlyricsplace.com/wp-content/uploads/2020/06/Newyork-Nagaram-Song-Lyrics.jpg",
       "url": "./assets/songs/New York Nagaram.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 14,
@@ -175,7 +186,8 @@
       "year": 2013,
       "artwork": "https://th.bing.com/th/id/R.30f77a7608aa0a1547f49065bfea3a94?rik=AkLncyCkE2Jx7g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-jQdVcd0dLwc%2fUNHRvMVtmNI%2fAAAAAAAAB_E%2fUqAPVjJJfdU%2fs1600%2fKadal-99tamilsonglyrics.blogspot.com.jpg&ehk=Y3eUnPrWrEYbXPCxe%2bBUnzahv9G1gZP0Gs%2fdu33NiIc%3d&risl=&pid=ImgRaw&r=0",
       "url": "./assets/songs/Nenjukkule.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 15,
@@ -184,7 +196,8 @@
       "year": 2008,
       "artwork": "https://a10.gaanacdn.com/images/playlists/54/15606954/crop_480x480_15606954_1512725337.jpg",
       "url": "./assets/songs/Venmegam-Pennaga.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 16,
@@ -193,7 +206,8 @@
       "year": 2007,
       "artwork": "https://a10.gaanacdn.com/images/playlists/54/15606954/crop_480x480_15606954_1512725337.jpg",
       "url": "./assets/songs/Arabu Naade.m4a",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 17,
@@ -202,7 +216,8 @@
       "year": 2021,
       "artwork": "https://www.quirkybyte.com/wp-content/uploads/2021/11/Bodhai-Kaname-Song-1.png",
       "url": "./assets/songs/Bodhai Kaname.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 18,
@@ -211,7 +226,8 @@
       "year": 2019,
       "artwork": "https://i.ytimg.com/vi/IicjJWgABdY/maxresdefault.jpg",
       "url": "./assets/songs/Pavizha Mazha.mp3",
-      "language": "Malayalam"
+      "language": "Malayalam",
+      "likes": 0
     },
     {
       "id": 19,
@@ -220,7 +236,8 @@
       "year": 2022,
       "artwork": "https://m.media-amazon.com/images/I/41RSGezAIWL._UXNaN_FMjpg_QL85_.jpg",
       "url": "./assets/songs/Darshana.mp3",
-      "language": "Malayalam"
+      "language": "Malayalam",
+      "likes": 0
     },
     {
       "id": 20,
@@ -229,7 +246,8 @@
       "year": 2021,
       "artwork": "https://t2.genius.com/unsafe/315x315/https%3A%2F%2Fimages.genius.com%2Fb667e99f1c1a959025c2d0d828c5beee.980x940x1.jpg",
       "url": "./assets/songs/Raataan Lambiyan - Shershaah.mp3",
-      "language": "Hindi"
+      "language": "Hindi",
+      "likes": 0
     },
     {
       "id": 21,
@@ -238,7 +256,8 @@
       "year": 2022,
       "artwork": "https://i.scdn.co/image/ab67616d0000b273a88e2419e55cfdf1bf2a2fe2",
       "url": "./assets/songs/Megham-Karukatha.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 22,
@@ -247,7 +266,8 @@
       "year": 2019,
       "artwork": "https://i.scdn.co/image/ab67616d0000b273fc981d2682958c17cdb23ab0",
       "url": "./assets/songs/Jersey Marakkavillayae.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 23,
@@ -256,7 +276,8 @@
       "year": 2023,
       "artwork": "https://i.ytimg.com/vi/uNmqMQQ8dHA/maxresdefault.jpg",
       "url": "./assets/songs/Aga Naga.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 24,
@@ -265,7 +286,8 @@
       "year": 2013,
       "artwork": "https://th.bing.com/th/id/R.e7e7ec3681625fde38eaa9f208d4ebe7?rik=AxE%2bzriYj2Er1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-B0DAhSV2ZDs%2fUVVPBDekiHI%2fAAAAAAAAAQ0%2ffAn0nch_90I%2fs400%2ftum-hi-ho-song-lyrics-aashiqui-2.jpg&ehk=56Riiyl%2bU1ZujGUaC1p47Uxld6tyVb6MxObr7NkfszI%3d&risl=&pid=ImgRaw&r=0",
       "url": "./assets/songs/Tum Hi Ho.mp3",
-      "language": "Hindi"
+      "language": "Hindi",
+      "likes": 0
     },
     {
       "id": 25,
@@ -274,7 +296,8 @@
       "year": 2019,
       "artwork": "https://i.ytimg.com/vi/f3NdnmKqocM/maxresdefault.jpg",
       "url": "./assets/songs/Anbae Peranbae.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 26,
@@ -283,7 +306,8 @@
       "year": 2011,
       "artwork": "https://i.scdn.co/image/ab67616d0000b27340d3b59b2f1478395b4e3857",
       "url": "./assets/songs/Nee Partha Vizhigal.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 27,
@@ -292,7 +316,8 @@
       "year": 2017,
       "artwork": "https://retamil.com/wp-content/uploads/2017/03/azhagiye-marry-song-lyrics-katru-veliyidai.jpg",
       "url": "./assets/songs/Azhagiye.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 28,
@@ -301,7 +326,8 @@
       "year": 2008,
       "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/f7/79/9b/f7799ba6-0ac5-743f-68b7-615484b53db7/886449482740.jpg/1200x1200bf-60.jpg",
       "url": "./assets/songs/Nenjukkul Peidhidum.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 29,
@@ -310,7 +336,8 @@
       "year": 2009,
       "artwork": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eHWVfuvVJsZqCer_PkFlV-ZcGyVbU0BJn1gBHiGPlg&s",
       "url": "./assets/songs/Vaarayo Vaarayo.mp3",
-      "language": "Tamil"
+      "language": "Tamil",
+      "likes": 0
     },
     {
       "id": 30,
@@ -319,6 +346,7 @@
       "Artist": "Harris Jayaraj",
       "artwork": "https://th.bing.com/th/id/R.7bec26caa1b410e828316daa87248138?rik=iDLM5OzPjDWJvA&riu=http%3a%2f%2f1.bp.blogspot.com%2f_phnWZyu7rLQ%2fTSnRAFQpqQI%2fAAAAAAAAFwA%2fr5qPfYwUO7Q%2fs1600%2fKaaka-Kaaka-cd.jpg&ehk=1jDX465b11NEhKJpuQBTZFe59tXEcvEdyVijc%2be1sA8%3d&risl=&pid=ImgRaw&r=0",
       "language": "Tamil",
+      "likes": 0,
       "url": "./assets/songs/Ennai Konjum.mp3"
     },
     {
@@ -328,7 +356,8 @@
       "Artist": "Harris Jayaraj",
       "artwork": "https://c.saavncdn.com/748/Kaakha-Kaakha-Tamil-2003-500x500.jpg",
       "language": "Tamil",
-      "url": "./assets/songs/Oru Ooril.mp3"
+      "url": "./assets/songs/Oru Ooril.mp3",
+      "likes": 0
     },
     {
       "id": 32,
@@ -337,7 +366,8 @@
       "Artist": "Harris Jayaraj",
       "artwork": "https://www.watchwhere.co.uk/static/images/artwork/lesa-lesa-2003-amazon-instant-video.jpg",
       "language": "Tamil",
-      "url": "./assets/songs/Yedho Ondru.mp3"
+      "url": "./assets/songs/Yedho Ondru.mp3",
+      "likes": 0
     },
     {
       "id": 33,
@@ -346,7 +376,8 @@
       "Artist": "Harris Jayaraj",
       "artwork": "https://secureservercdn.net/198.71.233.216/h34.831.myftpupload.com/wp-content/uploads/2019/12/9.jpg",
       "language": "Tamil",
-      "url": "./assets/songs/Aval Ulaghazhagi.mp3"
+      "url": "./assets/songs/Aval Ulaghazhagi.mp3",
+      "likes": 0
     },
     {
       "id": 34,
@@ -355,7 +386,8 @@
       "Artist": "G.V.Prakash Kumar",
       "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
       "language": "Tamil",
-      "url": "./assets/songs/Eppo Nee.mp3"
+      "url": "./assets/songs/Eppo Nee.mp3",
+      "likes": 0
     },
     {
       "id": 35,
@@ -364,7 +396,8 @@
       "Artist": "G.V.Prakash Kumar",
       "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
       "language": "Tamil",
-      "url": "./assets/songs/Vaa Vaathi.mp3"
+      "url": "./assets/songs/Vaa Vaathi.mp3",
+      "likes": 0
     }
   ],
   "lyrics": [
@@ -957,52 +990,44 @@
   ],
   "likes": [
     {
-      "username": "KokkiKumar",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 5
-    },
-    {
-      "username": "KokkiKumar",
-      "songid": 2,
-      "name": "Another Love",
-      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
-      "id": 6
-    },
-    {
-      "username": "SrikanthJP",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 7
-    },
-    {
-      "username": "SrikanthJP",
-      "songid": 2,
-      "name": "Another Love",
-      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
-      "id": 8
-    },
-    {
-      "username": "JohnWick",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 11
-    },
-    {
       "username": "KokkiKumaruh",
       "songid": 1,
       "name": "Love Me Again",
       "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 12
+      "id": 1
+    },
+    {
+      "username": "KokkiKumaruh",
+      "songid": 2,
+      "name": "Another Love",
+      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "id": 2
+    },
+    {
+      "username": "KokkiKumaruh",
+      "songid": 3,
+      "name": "Death Bed",
+      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
+      "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
+      "id": 3
+    },
+    {
+      "username": "",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 4
+    },
+    {
+      "username": "SrikanthJP",
+      "songid": 1,
+      "name": "Love Me Again",
+      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
+      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
+      "id": 5
     }
   ]
 }
