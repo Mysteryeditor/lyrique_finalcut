@@ -1,3 +1,72 @@
+function showPopup() {
+  $(document).ready(function() {
+
+    // Check if the modal was already shown
+    if (!localStorage.getItem('modalShown')) {
+      $('#modalpopup').modal('show');
+     localStorage.setItem('modalShown', true);
+     }
+  });
+}
+
+// After 3 seconds
+setTimeout(showPopup, 3000);
+
+// for the modal that is shown when the page is loaded up
+$(document).ready(function(){
+  $('#dancingnotes').hide();
+  const modalbody=document.getElementById(`modalbody`)
+  const xhttp=new XMLHttpRequest();
+  var songid=Math.floor(Math.random()*36);
+  xhttp.open("GET",`http://localhost:3000/songs/${songid}`);
+  xhttp.send();
+  xhttp.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+      const json=JSON.parse(this.responseText);
+      const wholediv=document.createElement(`div`);
+      wholediv.className=`row`;
+      const leftdiv=document.createElement('div');
+      leftdiv.className=`col-6`;
+      const title=document.createElement('h6');
+      title.innerHTML='Title:';
+      const linebreak=document.createElement('br');
+      const songname=document.createElement('label');
+      songname.innerHTML=json.name;
+      const Artist=document.createElement('h6');
+      Artist.innerHTML='Artist:';
+      const artist=document.createElement(`label`);
+      artist.innerHTML=json.Artist;
+      const rightdiv=document.createElement('div');
+      rightdiv.className=`col-6`;
+      const artwork=document.createElement(`img`);
+      artwork.style.width=`100%`
+      artwork.style.height=`100%`
+      artwork.src=json.artwork;
+      const button=document.createElement('button');
+      button.className=`btn btn-primary`;
+      button.innerHTML='Listen Now';
+      button.addEventListener('click',function(){
+        playSong(json.url, json.name, json.artwork);
+        $('#modalpopup').modal('hide');
+      });
+
+      modalbody.appendChild(wholediv);
+      wholediv.appendChild(leftdiv);
+      wholediv.appendChild(rightdiv);
+      leftdiv.appendChild(title);
+      leftdiv.appendChild(songname);
+      leftdiv.appendChild(linebreak);
+      leftdiv.appendChild(Artist);
+      leftdiv.appendChild(artist);
+      leftdiv.appendChild(linebreak);
+      leftdiv.appendChild(button);
+      rightdiv.appendChild(artwork);      
+    }
+  }
+})
+
+
+
 //for the toggle inside navbar
 function toggleOptions() {
   var profileNavItem = document.getElementById("profileNavItem");
@@ -9,7 +78,7 @@ function toggleOptions() {
   logoutNavItem.classList.toggle("d-none");
 }
 
-//for the animation
+//for the dancing notes animation
 for(var i=0;i<9;i++) {
   var x = $('#dancingnotes');
   $(x).css('-webkit-animation','music 1s '+i+'00ms  ease-in-out both infinite');
@@ -52,6 +121,7 @@ function logout() {
   const xhttp = new XMLHttpRequest();
   xhttp.open("DELETE", "http://localhost:3000/login/1");
   xhttp.send();
+  localStorage.removeItem('modalShown');
   window.location.href = "./authentication.html"
 }
 
@@ -149,9 +219,14 @@ function songlist() {
                         html:
                           likelist,
                         confirmButtonText: 'Return'
+                      }).then((result)=>{
+                        if(result.isConfirmed){
+                          songlist();
+                        }
                       })
                     }
                   }
+                  
                 }
               });
             } else {
@@ -176,15 +251,10 @@ function songlist() {
 
         // button for playing the song
         playbutton.addEventListener("click", function () {
-          songurl.src = song.url;
-          songname.textContent = song.name;
-          albumart.src = song.artwork;
+          
+          playSong(song.url,song.name,song.artwork);
 
-          songurl.play();
-
-          document.getElementById('mp').scrollIntoView({
-            behavior: 'smooth' // You can use 'auto' for instant scrolling
-          });
+         
         });
 
         songlist.appendChild(songcontainer);
@@ -274,6 +344,7 @@ function likedSongs() {
 
 //song to be played from the liked songs list
 function playSong(url, name, artwork) {
+  $('#dancingnotes').show();
   var songurl = document.getElementById("player");
   var songname = document.getElementById("songname");
   var albumart = document.getElementById("albumimage");
