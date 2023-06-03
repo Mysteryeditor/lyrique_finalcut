@@ -1,11 +1,11 @@
 function showPopup() {
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     // Check if the modal was already shown
     if (!localStorage.getItem('modalShown')) {
       $('#modalpopup').modal('show');
-     localStorage.setItem('modalShown', true);
-     }
+      localStorage.setItem('modalShown', true);
+    }
   });
 }
 
@@ -13,39 +13,39 @@ function showPopup() {
 setTimeout(showPopup, 3000);
 
 // for the modal that is shown when the page is loaded up
-$(document).ready(function(){
+$(document).ready(function () {
   $('#dancingnotes').hide();
-  const modalbody=document.getElementById(`modalbody`)
-  const xhttp=new XMLHttpRequest();
-  var songid=Math.floor(Math.random()*36);
-  xhttp.open("GET",`http://localhost:3000/songs/${songid}`);
+  const modalbody = document.getElementById(`modalbody`)
+  const xhttp = new XMLHttpRequest();
+  var songid = Math.floor(Math.random() * 36);
+  xhttp.open("GET", `http://localhost:3000/songs/${songid}`);
   xhttp.send();
-  xhttp.onreadystatechange=function(){
-    if(this.readyState==4 && this.status==200){
-      const json=JSON.parse(this.responseText);
-      const wholediv=document.createElement(`div`);
-      wholediv.className=`row`;
-      const leftdiv=document.createElement('div');
-      leftdiv.className=`col-6`;
-      const title=document.createElement('h6');
-      title.innerHTML='Title:';
-      const linebreak=document.createElement('br');
-      const songname=document.createElement('label');
-      songname.innerHTML=json.name;
-      const Artist=document.createElement('h6');
-      Artist.innerHTML='Artist:';
-      const artist=document.createElement(`label`);
-      artist.innerHTML=json.Artist;
-      const rightdiv=document.createElement('div');
-      rightdiv.className=`col-6`;
-      const artwork=document.createElement(`img`);
-      artwork.style.width=`100%`
-      artwork.style.height=`100%`
-      artwork.src=json.artwork;
-      const button=document.createElement('button');
-      button.className=`btn btn-primary`;
-      button.innerHTML='Listen Now';
-      button.addEventListener('click',function(){
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const json = JSON.parse(this.responseText);
+      const wholediv = document.createElement(`div`);
+      wholediv.className = `row`;
+      const leftdiv = document.createElement('div');
+      leftdiv.className = `col-6`;
+      const title = document.createElement('h6');
+      title.innerHTML = 'Title:';
+      const linebreak = document.createElement('br');
+      const songname = document.createElement('label');
+      songname.innerHTML = json.name;
+      const Artist = document.createElement('h6');
+      Artist.innerHTML = 'Artist:';
+      const artist = document.createElement(`label`);
+      artist.innerHTML = json.Artist;
+      const rightdiv = document.createElement('div');
+      rightdiv.className = `col-6`;
+      const artwork = document.createElement(`img`);
+      artwork.style.width = `100%`
+      artwork.style.height = `100%`
+      artwork.src = json.artwork;
+      const button = document.createElement('button');
+      button.className = `btn btn-primary`;
+      button.innerHTML = 'Listen Now';
+      button.addEventListener('click', function () {
         playSong(json.url, json.name, json.artwork);
         $('#modalpopup').modal('hide');
       });
@@ -60,7 +60,7 @@ $(document).ready(function(){
       leftdiv.appendChild(artist);
       leftdiv.appendChild(linebreak);
       leftdiv.appendChild(button);
-      rightdiv.appendChild(artwork);      
+      rightdiv.appendChild(artwork);
     }
   }
 })
@@ -79,9 +79,9 @@ function toggleOptions() {
 }
 
 //for the dancing notes animation
-for(var i=0;i<9;i++) {
+for (var i = 0; i < 9; i++) {
   var x = $('#dancingnotes');
-  $(x).css('-webkit-animation','music 1s '+i+'00ms  ease-in-out both infinite');
+  $(x).css('-webkit-animation', 'music 1s ' + i + '00ms  ease-in-out both infinite');
 }
 // for the artist tabs
 function openTab(evt, tabName) {
@@ -100,6 +100,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 // the username display in the navbar
 function displayuname() {
   const xhttp = new XMLHttpRequest();
@@ -135,14 +136,11 @@ function songlist() {
     if (this.readyState == 4 && this.status == 200) {
       const data = JSON.parse(this.responseText);
       const songlist = document.getElementById("songlist");
-      const songurl = document.getElementById("player");
-      const songname = document.getElementById("songname");
-      const albumart = document.getElementById("albumimage");
       const username = document.getElementById("username").textContent;
 
       for (let song of data) {
         const songcontainer = document.createElement('div');
-        songcontainer.classList.add("col-lg-4","col-sm-6","col-md-6","songcontainer");
+        songcontainer.classList.add("col-lg-4", "col-sm-6", "col-md-6", "songcontainer");
         const songName = document.createElement("p");
         songName.className = "title";
 
@@ -219,14 +217,14 @@ function songlist() {
                         html:
                           likelist,
                         confirmButtonText: 'Return'
-                      }).then((result)=>{
-                        if(result.isConfirmed){
+                      }).then((result) => {
+                        if (result.isConfirmed) {
                           songlist();
                         }
                       })
                     }
                   }
-                  
+
                 }
               });
             } else {
@@ -238,33 +236,33 @@ function songlist() {
                 songid: song.id,
                 name: song.name,
                 url: song.url,
-                artwork:song.artwork
+                artwork: song.artwork
               }));
 
-              const likeincrement=new XMLHttpRequest();
+              const likeincrement = new XMLHttpRequest();
               likeincrement.open("GET", `http://localhost:3000/songs/${song.id}`);
               likeincrement.send();
               likeincrement.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                  const li=JSON.parse(this.responseText);
-                  var likecount=li.likes;
+                  const li = JSON.parse(this.responseText);
+                  var likecount = li.likes;
                   likecount++;
                   const xhttp = new XMLHttpRequest();
                   xhttp.open("PUT", `http://localhost:3000/songs/${song.id}`);
                   xhttp.setRequestHeader("Content-type", "application/json");
                   xhttp.send(JSON.stringify({
-                    id:li['id'],
+                    id: li['id'],
                     name: li['name'],
                     url: li['url'],
-                    Artist:li['Artist'],
-                    year:li["year"],
-                    language:li["language"],
+                    Artist: li['Artist'],
+                    year: li["year"],
+                    language: li["language"],
                     artwork: li['artwork'],
                     likes: likecount
 
                   }));
-                  
-                 
+
+
 
                 }
               }
@@ -280,10 +278,10 @@ function songlist() {
 
         // button for playing the song
         playbutton.addEventListener("click", function () {
-          
-          playSong(song.url,song.name,song.artwork);
 
-         
+          playSong(song.url, song.name, song.artwork);
+
+
         });
 
         songlist.appendChild(songcontainer);
@@ -317,7 +315,7 @@ function isSongAlreadyLiked(username, song, callback) {
 }
 
 //deleting the liked song
-function removeliked(id,songid) {
+function removeliked(id, songid) {
   console.log(songid);
   const xhttp = new XMLHttpRequest();
   xhttp.open("DELETE", `http://localhost:3000/likes/${id}`)
@@ -339,30 +337,30 @@ function removeliked(id,songid) {
     }
   }
 
-  const likedecrement=new XMLHttpRequest();
+  const likedecrement = new XMLHttpRequest();
   likedecrement.open("GET", `http://localhost:3000/songs/${songid}`);
   likedecrement.send();
   likedecrement.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      const ld=JSON.parse(this.responseText);
-      var likecount=ld.likes;
+      const ld = JSON.parse(this.responseText);
+      var likecount = ld.likes;
       likecount--;
       const xhttp = new XMLHttpRequest();
       xhttp.open("PUT", `http://localhost:3000/songs/${songid}`);
       xhttp.setRequestHeader("Content-type", "application/json");
       xhttp.send(JSON.stringify({
-        id:ld['id'],
+        id: ld['id'],
         name: ld['name'],
         url: ld['url'],
-        Artist:ld['Artist'],
-        year:ld["year"],
-        language:ld["language"],
+        Artist: ld['Artist'],
+        year: ld["year"],
+        language: ld["language"],
         artwork: ld['artwork'],
         likes: likecount
 
       }));
-      
-     
+
+
 
     }
   }
@@ -476,11 +474,11 @@ function updateprofile2(uid) {
   };
 }
 
-function userDelete(){
-  var u=document.getElementById("u").value;
-  var p=document.getElementById("p").value;
+function userDelete() {
+  var u = document.getElementById("u").value;
+  var p = document.getElementById("p").value;
   // if the username field is empty
-  if(!u){
+  if (!u) {
     Swal.fire({
       title: 'Enter your username',
       icon: 'warning',
@@ -492,7 +490,7 @@ function userDelete(){
   }
 
   // validation for password field
-  if(!p){
+  if (!p) {
     Swal.fire({
       title: 'Enter the password',
       icon: 'warning',
@@ -512,21 +510,22 @@ function userDelete(){
   }).then((result) => {
     if (result.isConfirmed) {
       const xhttp = new XMLHttpRequest();
-      xhttp.open("GET",`http://localhost:3000/users`);
+      xhttp.open("GET", `http://localhost:3000/users`);
       xhttp.send();
-      xhttp.onreadystatechange=function(){
-        if(this.readyState == 4 && this.status == 200){
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
           {
             var jsonresult = JSON.parse(this.responseText);
-           for(let x of jsonresult){
-            console.log(x.username);
-            if(x.username == u && x.password == p){
-              const deletereq=new XMLHttpRequest();
-              deletereq.open("DELETE", `http://localhost:3000/users/${x.id}`); 
-              deletereq.send();
-              logout();
-              break;
-            }
+            for (let x of jsonresult) {
+              console.log(x.username);
+              if (x.username == u && x.password == p) {
+                const deletereq = new XMLHttpRequest();
+                deletereq.open("DELETE", `http://localhost:3000/users/${x.id}`);
+                deletereq.send();
+                
+                logout();
+                break;
+              }
             }
             Swal.fire({
               title: 'Invalid username or password',
@@ -535,49 +534,60 @@ function userDelete(){
               confirmButtonText: 'Try Again'
             });
           }
+        }
+
+
       }
- 
-      
     }
-  }
-});
+  });
 }
 
-function artist(){
-  window.location.href="./artists.html";
+function artist() {
+  window.location.href = "./artists.html";
 }
 
-function mostLiked(){
-  const likestats=new XMLHttpRequest();
-  const likes=[];
-  likestats.open("GET",`http://localhost:3000/songs`)
+function mostLiked() {
+  const likestats = new XMLHttpRequest();
+  const likes = [];
+  likestats.open("GET", `http://localhost:3000/songs`)
   likestats.send();
-  likestats.onreadystatechange=function(){
-    if(this.readyState==4 && this.status==200){
-      const result=JSON.parse(this.responseText);
-      for(let lc of result){
-        if(lc.likes!=0){
-          if(!likes.includes(lc.likes)){
+  likestats.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const result = JSON.parse(this.responseText);
+      for (let lc of result) {
+        if (lc.likes != 0) {
+          if (!likes.includes(lc.likes)) {
             likes.push(lc.likes);
           }
         }
       }
-    likes.sort();  
-    likes.reverse(); 
-    for(let count of likes){
-      const highlikes=new XMLHttpRequest();
-      highlikes.open("GET",`http://localhost:3000/songs?likes_like=${count}`);
-      highlikes.send()
-      highlikes.onreadystatechange=function(){
-      if(this.readyState==4 && this.status==200){
-        const abc=JSON.parse(this.responseText);
-        for (const i of abc) {
+      likes.sort();
+      likes.reverse();
+      for (let count of likes) {
+        const highlikes = new XMLHttpRequest();
+        highlikes.open("GET", `http://localhost:3000/songs?likes_like=${count}`);
+        highlikes.send()
+        highlikes.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            const abc = JSON.parse(this.responseText);
 
+
+            var likeddata = "";
+            for (const i of abc) {
+              likeddata += `<tr>
+          <td>${i.name}</td>  
+          <td>${i.Artist}</td>
+          <td>${i.likes}</td>
+          <td>${i.language}</td>
+          <td>${i.year}</td>
+          <td><Button onclick='playSong("${i.url}","${i.name}","${i.artwork}")'>Listen Now</button>`
+          
+            }
+            document.getElementById("likedtable").innerHTML = likeddata;
+
+          }
         }
-
       }
-      }
-    }   
     }
   }
 }

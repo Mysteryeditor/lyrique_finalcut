@@ -7,44 +7,6 @@
       "dob": "1990-07-09",
       "gender": "male",
       "password": "KokkiKumar@123"
-    },
-    {
-      "firstname": "Srikanth",
-      "lastname": "JP",
-      "gender": "male",
-      "dob": "2003-07-22",
-      "email": "sri027.cvb@gmail.com",
-      "password": "ThisOneMeansForever@13",
-      "username": "SrikanthJP",
-      "id": 2
-    },
-    {
-      "firstname": "Pallavi",
-      "lastname": "Katari",
-      "gender": "female",
-      "dob": "2000-06-30",
-      "email": "pallavikatari@gmail.com",
-      "password": "abcABC@123",
-      "username": "PallaviKatari",
-      "id": 3
-    },
-    {
-      "firstname": "John",
-      "lastname": "Wick",
-      "gender": "male",
-      "dob": "1974-02-01",
-      "email": "johnny@gmail.com",
-      "password": "Wifecar&Dog.007",
-      "username": "JohnWick",
-      "id": 4
-    },
-    {
-      "username": "vichuvickyyyyyyy",
-      "gender": "male",
-      "dob": "2023-05-29",
-      "email": "vicketvick@gmail.com",
-      "password": "Password@123",
-      "id": 5
     }
   ],
   "login": [],
@@ -57,7 +19,7 @@
       "year": 2013,
       "language": "English",
       "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "likes": 3
+      "likes": 8
     },
     {
       "id": 2,
@@ -67,7 +29,7 @@
       "year": 2013,
       "language": "English",
       "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
-      "likes": 1
+      "likes": 5
     },
     {
       "id": 3,
@@ -77,17 +39,17 @@
       "year": 2014,
       "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
-      "likes": 1
+      "likes": 3
     },
     {
       "id": 4,
       "name": "Bad Liar",
-      "url": "https://fine.sunproxy.net/file/Sk0xTTc5QTE0NC84ejI0L3VMNlVld0RNMDBFQVVOWVNaODZtSHV2SFNBbTNjdmsyTjQzSFdJOHo3am9nRlBkVnFleWp2dHoxT1NocjNjWGRQeHZCY2RXNDRLaXdLTFM4T3VhblZ2UVduS3M9/Imagine_Dragons_-_Bad_Liar_(ColdMP3.com).mp3",
+      "url": "./assets/songs/Bad-Liar(PagalWorld).mp3",
       "Artist": "Imagine Dragons",
       "year": 2014,
       "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 5,
@@ -97,7 +59,7 @@
       "year": 2014,
       "language": "English",
       "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 6,
@@ -222,11 +184,11 @@
     {
       "id": 18,
       "name": "Pavizha Mazha",
+      "url": "./assets/songs/Pavizha Mazha.mp3",
       "Artist": "P.S.Jayhari",
       "year": 2019,
-      "artwork": "https://i.ytimg.com/vi/IicjJWgABdY/maxresdefault.jpg",
-      "url": "./assets/songs/Pavizha Mazha.mp3",
       "language": "Malayalam",
+      "artwork": "https://i.ytimg.com/vi/IicjJWgABdY/maxresdefault.jpg",
       "likes": 0
     },
     {
@@ -362,12 +324,12 @@
     {
       "id": 32,
       "name": "Yedho Ondru",
-      "year": 2003,
-      "Artist": "Harris Jayaraj",
-      "artwork": "https://www.watchwhere.co.uk/static/images/artwork/lesa-lesa-2003-amazon-instant-video.jpg",
-      "language": "Tamil",
       "url": "./assets/songs/Yedho Ondru.mp3",
-      "likes": 0
+      "Artist": "Harris Jayaraj",
+      "year": 2003,
+      "language": "Tamil",
+      "artwork": "https://www.watchwhere.co.uk/static/images/artwork/lesa-lesa-2003-amazon-instant-video.jpg",
+      "likes": 1
     },
     {
       "id": 33,
@@ -382,21 +344,21 @@
     {
       "id": 34,
       "name": "Eppo Nee",
-      "year": 2008,
-      "Artist": "G.V.Prakash Kumar",
-      "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
-      "language": "Tamil",
       "url": "./assets/songs/Eppo Nee.mp3",
+      "Artist": "G.V.Prakash Kumar",
+      "year": 2008,
+      "language": "Tamil",
+      "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
       "likes": 0
     },
     {
       "id": 35,
       "name": "Vaa Vaathi",
-      "year": 2023,
-      "Artist": "G.V.Prakash Kumar",
-      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
-      "language": "Tamil",
       "url": "./assets/songs/Vaa Vaathi.mp3",
+      "Artist": "G.V.Prakash Kumar",
+      "year": 2023,
+      "language": "Tamil",
+      "artwork": "https://images.hindustantimes.com/tamil/img/2022/11/10/960x540/FhH2x5MUUAI_fhZ_1668083889229_1668083909380_1668083909380.jpg",
       "likes": 0
     }
   ],
@@ -988,46 +950,5 @@
       ]
     }
   ],
-  "likes": [
-    {
-      "username": "KokkiKumaruh",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 1
-    },
-    {
-      "username": "KokkiKumaruh",
-      "songid": 2,
-      "name": "Another Love",
-      "url": "./assets/songs/Another-Love-Slowed(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f",
-      "id": 2
-    },
-    {
-      "username": "KokkiKumaruh",
-      "songid": 3,
-      "name": "Death Bed",
-      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
-      "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
-      "id": 3
-    },
-    {
-      "username": "",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 4
-    },
-    {
-      "username": "SrikanthJP",
-      "songid": 1,
-      "name": "Love Me Again",
-      "url": "./assets/songs/Love-Me-Again---John-Newman(PagalWorld).mp3",
-      "artwork": "https://i.scdn.co/image/ab67616d0000b273c31ce98936c6c5d0deefe978",
-      "id": 5
-    }
-  ]
+  "likes": [  ]
 }

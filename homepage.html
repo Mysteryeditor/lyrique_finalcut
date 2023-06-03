@@ -42,7 +42,7 @@
 </head>
 
 
-<body>
+<body style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
 
 
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -67,6 +67,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./lyrics.html">Lyrics</a>
+          </li>
+
+          <li class="nav-item">
+    <a class="nav-link text-white" href="#mostliked">Top Charts</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -224,7 +228,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" id="modalbody">
-          
+
         </div>
       </div>
     </div>
@@ -232,13 +236,13 @@
 
 
 
-  <div class="container-fluid" style="background-image: url(./assets/images/homepagebg.jpg);background-size: cover;">
+  <div class="container-fluid">
     <div class="container">
-      <h1 style="color: rgb(227, 70, 18);">
+      <h1>
         Music Player
       </h1>
       <div class="row">
-        
+
         <!-- the song list -->
         <div class="col-lg-7 col-sm-12 col-md-6" id="songlist">
         </div>
@@ -256,18 +260,18 @@
           <audio id="player" controls loop autoplay
             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
             type="audio/ogg"></audio>
-            <ul id="dancingnotes">
-              <li>&#9833;</li>
-              <li>&#9834;</li>
-              <li>&#9835;</li>
-              <li>&#9836;</li>
-              <li>&#9833;</li>
-              <li>&#9834;</li>
-              <li>&#9835;</li>
-              <li>&#9836;</li>
-            </ul>
+          <ul id="dancingnotes">
+            <li>&#9833;</li>
+            <li>&#9834;</li>
+            <li>&#9835;</li>
+            <li>&#9836;</li>
+            <li>&#9833;</li>
+            <li>&#9834;</li>
+            <li>&#9835;</li>
+            <li>&#9836;</li>
+          </ul>
         </div>
-        
+
       </div>
     </div>
 
@@ -285,7 +289,7 @@
     <!-- info about the artists -->
     <div class="container" id="artistinfo">
       <!-- Artists -->
-      <h1 class="text-white">Artists</h1>
+      <h1>Artists</h1>
       <div class="tab">
         <button style="font-size: 20px;" class="tablinks" onclick="openTab(event, 'english')">English</button>
         <button style="font-size: 20px;" class="tablinks" onclick="openTab(event,'tamil')">Tamil</button>
@@ -451,6 +455,26 @@
 
   </div>
 
+  <!-- liked songs table -->
+  <div class="container" id="mostliked">
+    <h1>Most Liked</h1>
+    <table class="table table-responsive text-white">
+      <thead>
+        <tr>
+          <!-- <th scope="col">#</th> -->
+          <th scope="col">Song-Title</th>
+          <th scope="col">Artist</th>
+          <th scope="col">Likes</th>
+          <th scope="col">Languages</th>
+          <th scope="col">Year</th>
+          <th scope="col">Listen</th>
+        </tr>
+      </thead>
+      <tbody id="likedtable">
+
+      </tbody>
+    </table>
+  </div>
 
 
 
@@ -460,7 +484,7 @@
 
 
     <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center text-white p-3">
       © 2023 Copyright:
       <a class="text-white" href="./homepage.html">Lyrique</a>
     </div>

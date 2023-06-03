@@ -59,6 +59,10 @@ a:visited:hover {
     font-family: LyriqueFont;
 }
 
+h1{
+  color:rgb(227, 70, 18) ;
+}
+
 /* for the username */
 
 #Hello,#username{
@@ -349,11 +353,11 @@ ion-icon {
   }
   .card:hover:before{
   transform: rotate(20deg);
-  box-shadow: 0 2px 20px rgba(255, 255, 255);
+  box-shadow: 0 2px 20px rgb(229, 113, 31);
   }
   .card:hover:after{
   transform: rotate(10deg);
-  box-shadow: 0 2px 20px rgba(255, 255, 255);
+  box-shadow: 0 2px 20px rgb(235, 111, 10);
   }
   .card .imgBx{
   position: absolute;
@@ -478,7 +482,20 @@ audio {
 }
   
 }
-  
+
+/* for the table */
+th{
+  color: rgb(227, 174, 0);
+  font-size: 25px;
+}
+td {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+tr{
+  color: azure;
+}
 
 
 
