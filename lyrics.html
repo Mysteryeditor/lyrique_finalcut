@@ -23,55 +23,60 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body style="background-image: url(./assets/images/lyricsbg.png); background-repeat: no-repeat;">
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
-        <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
-        <a class="navbar-brand" href="./homepage.html">Lyrique</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="./assets/images/lyrique_logo.jpg" class="img-fluid" id="logo">
+      <a class="navbar-brand" href="./homepage.html" id="lyrique">Lyrique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-            <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item" >
-                    <a class="nav-link " aria-current="page" href="./homepage.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./artists.html">Artists</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./languages.html">Languages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./lyrics.html">Lyrics</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ms-auto" >
-              <li class="nav-item" style="padding-right: 10px;padding-top: 3px;">
-                <!-- hello+username -->
-                <span id="Hello">Hello</span>
-                <span id="username"></span>
+        <i style="color: azure;" class="fa-solid fa-bars navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./artists.html">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./languages.html">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lyrics.html">Lyrics</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" style="padding-right: 10px;padding-top: 3px;">
+            <!-- hello+username -->
+            <span id="Hello">Hello</span>
+            <span id="username"></span>
 
-            </li>
-              <li class="nav-item">
-                <input placeholder="Search By SongName" id="searchvalue" type="text" onkeyup="search()">
-              </li>
+          </li>
+          <li class="nav-item">
+            <input placeholder="Search By SongName" id="searchvalue" type="text" onkeyup="search()">
+          </li>
 
-    
-              
 
-                <!-- <li class="nav-item" style="padding-right: 10px;">
+
+
+          <!-- <li class="nav-item" style="padding-right: 10px;">
                     <button  onclick="logout()">LOGOUT</button>
                 </li> -->
-            </ul>
-        </div>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
   <!-- table -->
   <table id="song-list" class="table ">
     <thead>
@@ -103,28 +108,29 @@
     </tbody>
   </table>
   <div id="lyricsContainer">
-   
+
   </div>
 
   <button class="btp" onclick="home()">
     <div class="text">
-        <span>Back</span>
-        <span>to</span>
-        <span>top</span>
+      <span>Back</span>
+      <span>to</span>
+      <span>top</span>
     </div>
     <div class="clone">
-        <span>Back</span>
-        <span>to</span>
-        <span>top</span>
+      <span>Back</span>
+      <span>to</span>
+      <span>top</span>
     </div>
-    <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+    <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
     </svg>
-</button>
+  </button>
 
   <footer class="text-center text-lg-start" style="background-color: #222222;">
-  
-  
+
+
     <!-- Copyright -->
     <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2023 Copyright:

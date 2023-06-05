@@ -4,22 +4,18 @@
     width: 50px;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(133, 34, 34);
-}
 
 
+#lyrique{
+    font-family: 'Fredericka the Great', cursive;
+    color: azure;
+    /* color: rgb(229, 113, 31); */
+    font-size: 30px;
+  }
+  
+  #lyrique:hover{
+    color: rgb(235, 111, 10);
+    font-size: 32px;
+  }
 
 
-/* carousel button */
-#booknow{
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(11, 9, 15);
-    color: rgb(80, 238, 255);
-}
-
-#booknow:hover{
-    scale: 1.5;
-}

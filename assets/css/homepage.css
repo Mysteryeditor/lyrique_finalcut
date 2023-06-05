@@ -2,6 +2,20 @@
     font-family: LyriqueFont;
     src: url("./assets/fonts/003 Engineer's Hand Regular.ttf");
 }
+
+#lyrique{
+  font-family: 'Fredericka the Great', cursive;
+  color: azure;
+  /* color: rgb(229, 113, 31); */
+  font-size: 30px;
+}
+
+#lyrique:hover{
+  color: rgb(235, 111, 10);
+  font-size: 32px;
+}
+
+
 *{
   font-family: LyriqueFont;
 }
@@ -100,15 +114,27 @@ h1{
 }
 
 .menu-btn .text {
-  transform: translateX(55px);
+  transform: translateX(50px);
+  margin-left: 10px;
 }
 
 .menu-btn:hover .icon {
-  width: 175px;
+  width: 170px;
 }
 
+.menu-btn .icon .edit{
+  font-size: 0px;
+}
+
+.menu-btn:hover .icon .edit {
+  transition: all 0.3s;
+  font-size: 15px;
+  color: rgb(251, 123, 32);
+}
+
+
 .menu-btn:hover .text {
-  transition: all 0.5s;
+  transition: all 0.3s;
   opacity: 0;
 }
 

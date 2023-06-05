@@ -63,6 +63,18 @@ a:visited:hover {
   margin-right: 0;
 }
 
+#lyrique{
+  font-family: 'Fredericka the Great', cursive;
+  color: azure;
+  /* color: rgb(229, 113, 31); */
+  font-size: 30px;
+}
+
+#lyrique:hover{
+  color: rgb(235, 111, 10);
+  font-size: 32px;
+}
+
 th{
   color: rgb(227, 174, 0);
   font-size: 25px;

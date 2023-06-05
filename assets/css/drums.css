@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
 
+#lyrique{
+  font-family: 'Fredericka the Great', cursive;
+  color: azure;
+  /* color: rgb(229, 113, 31); */
+  font-size: 30px;
+}
 
+#lyrique:hover{
+  color: rgb(235, 111, 10);
+  font-size: 32px;
+}
 
 .main-wrapper {
   margin: 30px auto 0;

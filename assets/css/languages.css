@@ -7,6 +7,18 @@
   font-family: LyriqueFont;
 }
 
+#lyrique{
+  font-family: 'Fredericka the Great', cursive;
+  color: azure;
+  /* color: rgb(229, 113, 31); */
+  font-size: 30px;
+}
+
+#lyrique:hover{
+  color: rgb(235, 111, 10);
+  font-size: 32px;
+}
+
 /* for the navbar */
 #logo {
   height: 50px;
