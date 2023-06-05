@@ -40,6 +40,10 @@ function registerUser() {
   const dob = document.getElementById("DOB").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
+  const profilepic=document.getElementById("dp");
+  const filename="./assets/images/profilepic/"+profilepic.files[0].name;
+  console.log(filename);
+
 
   const xhttp = new XMLHttpRequest();
   xhttp.open("POST", "http://localhost:3000/users");
@@ -52,25 +56,39 @@ function registerUser() {
       dob: dob,
       email: email,
       password: password,
-      username: firstname + lastname
+      username: firstname + lastname,
+      profilepic:filename
     })
   );
-
-  Swal.fire({
-    icon: 'success',
-    title: 'Registered Successfully!',
-    html: 'Your Username Is <strong><mark>' + firstname + lastname + '</mark></strong>',
-    footer:`Note:UserName is used while LOGGING IN,please don't FORGET`,
-    confirmButtonText: 'Login',
-    showCancelButton: false,
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-  }).then((result) => {
-    if (result.isConfirmed) {
-      window.location.href = './authentication.html';
-    }
-  });
+xhttp.onreadystatechange=function(){
+ // if(xhttp.readyState==4 && xhttp.status==200){
+    Swal.fire({
+      icon: 'success',
+      title: 'Registered Successfully!',
+      html: 'Your Username Is <strong><mark>' + firstname + lastname + '</mark></strong>',
+      footer:`Note:UserName is used while LOGGING IN,please don't FORGET`,
+      confirmButtonText: 'Login',
+      showCancelButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = './authentication.html';
+      }
+    });
+ // }
+  // else{
+  //   Swal.fire({
+  //     icon: 'error',
+  //     title: 'Oops...',
+  //     text: 'The server is Down',
+  //     footer:'Please Try Again Later',
+  //     timer:3000
+  //   })
+  // }
 }
+}
+
 
 
 

@@ -80,21 +80,23 @@
             <!-- hello+username -->
             <span id="Hello">Hello</span>
             <span id="username"></span>
-
           </li>
 
-          <li class="nav-item">
-            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#optionsModal">
-              Open Options
-            </button> -->
+          <!-- the profile pic -->
+          <!-- <li class="nav-item" style="padding-right: 10px;padding-top: 10px;">
+        <img src="./assets/images/profilepic/user1.jpg" style="height:50px;width: 50px;" class="img-fluid" alt="profilepic">
+          </li> -->
 
-            <button data-bs-toggle="modal" data-bs-target="#optionsModal" class="menu-btn ">
+          <!-- the menu -->
+          <li class="nav-item">
+       <button data-bs-toggle="modal" data-bs-target="#optionsModal" class="menu-btn ">
               <span class="icon">
-                <svg viewBox="0 0 175 80" width="40" height="40">
+                <img id="dp" src="./assets/images/profilepic/user1.jpg" style="height:45px;width: 45px; margin: 0;" class="img-fluid rounded-circle" alt="profilepic">
+                <!-- <svg viewBox="0 0 175 80" width="40" height="40">
                   <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                   <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                   <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                </svg>
+                </svg> -->
               </span>
               <span class="text">MENU</span>
             </button>
@@ -175,6 +177,11 @@
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
               <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <div class="mb-3">
+              <label for="ProfilePic" class="form-label">Profile Pic</label>
+              <input type="file" class="form-control" id="ProfilePic" accept="image/*">
             </div>
           </form>
         </div>

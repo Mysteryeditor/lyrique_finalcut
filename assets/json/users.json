@@ -1,12 +1,22 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "KokkiKumaruh",
-      "email": "kokkiboy@gmail.com",
-      "dob": "1990-07-09",
+      "username": "KokkiKumar",
       "gender": "male",
-      "password": "KokkiKumar@123"
+      "dob": "1990-07-09",
+      "email": "kokkiboy@gmail.com",
+      "password": "KokkiKumar@123",
+      "profilepic": "./assets/images/profilepic/kokkikumar.jpg",
+      "id": 1
+    },
+    {
+      "username": "KumarSheeran",
+      "gender": "male",
+      "dob": "2023-05-31",
+      "email": "kokki@gmail.com",
+      "password": "Darshan@123",
+      "profilepic": "./assets/images/profilepic/user2.jfif",
+      "id": 2
     }
   ],
   "login": [],
@@ -950,5 +960,5 @@
       ]
     }
   ],
-  "likes": [  ]
+  "likes": []
 }

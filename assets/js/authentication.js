@@ -15,7 +15,7 @@ function authenticate() {
          {
           // Authentication successful
           window.location.href = "./homepage.html";
-          session(username, pwd);
+          session(username, pwd,user.profilepic);
           return;
         }
       }
@@ -32,14 +32,16 @@ function authenticate() {
 }
 
 // for storing the username and password of the current user
-  function session(username, pwd) {
+  function session(username, pwd,dp) {
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:3000/login");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
       id: 1,
       username: username,
-      password: pwd
+      password: pwd,
+      profilepic:dp
+
     }
     ));
   }

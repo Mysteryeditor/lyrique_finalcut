@@ -112,6 +112,9 @@ function displayuname() {
       var username = userdata[0].username;
       var usercontainer = document.getElementById("username");
       usercontainer.textContent = username;
+
+      var dp=document.getElementById("dp");
+      dp.src = userdata[0].profilepic;
     }
   }
 }
@@ -432,6 +435,7 @@ function updateprofile() {
         document.getElementById("dob").value = data['dob'];
         document.getElementById("email").value = data['email'];
         document.getElementById("password").value = data['password'];
+        document.getElementById("ProfilePic").value=data['profilepic'];
       }
     }
   }
@@ -445,6 +449,9 @@ function updateprofile2(uid) {
   const dob = document.getElementById("dob").value;
   const email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  const profilepic=document.getElementById("ProfilePic");
+  const filename="./assets/images/profilepic/"+profilepic.files[0].name;
+
   xhttp.open("PUT", `http://localhost:3000/users/${uid}`);
   xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhttp.send(JSON.stringify({
@@ -452,7 +459,8 @@ function updateprofile2(uid) {
     "gender": gender,
     "dob": dob,
     "email": email,
-    "password": password
+    "password": password,
+    "profilepic":filename
   })
   );
   xhttp.onreadystatechange = function () {
