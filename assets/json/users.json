@@ -19,7 +19,14 @@
       "id": 2
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "id": 1,
+      "username": "KokkiKumar",
+      "password": "KokkiKumar@123",
+      "profilepic": "./assets/images/profilepic/kokkikumar.jpg"
+    }
+  ],
   "songs": [
     {
       "id": 1,
