@@ -1,73 +1,55 @@
-$num = $(".ui-card").length;
-$even = $num / 2;
-$odd = ($num + 1) / 2;
-
-if ($num % 2 == 0) {
-  $(".ui-card:nth-child(" + $even + ")").addClass("active");
-  $(".ui-card:nth-child(" + $even + ")")
-    .prev()
-    .addClass("prev");
-  $(".ui-card:nth-child(" + $even + ")")
-    .next()
-    .addClass("next");
-} else {
-  $(".ui-card:nth-child(" + $odd + ")").addClass("active");
-  $(".ui-card:nth-child(" + $odd + ")")
-    .prev()
-    .addClass("prev");
-  $(".ui-card:nth-child(" + $odd + ")")
-    .next()
-    .addClass("next");
+// for the storing of feedback
+function feedback(){
+  const name=document.getElementById('name').value;
+  const email=document.getElementById('email').value;
+  const message=document.getElementById('message').value;
+  const fbsubmit=new XMLHttpRequest();
+  fbsubmit.open('POST','http://localhost:3000/feedbacks');
+  fbsubmit.setRequestHeader('Content-Type','application/JSON');
+  fbsubmit.send(
+    JSON.stringify({
+      name:name,
+      email:email,
+      message:message 
+    })
+  );
+  Swal.fire({
+    icon:'success',
+    title:'FeedBack Submitted',
+    text:'Thank You For Submitting Your FeedBack'
+  }).then((result)=>{
+    if(result.isConfirmed){
+      window.location.href='./index.html';
+    }
+  })
 }
 
-$(".ui-card").click(function () {
-  $slide = $(".active").width();
-  console.log($(".active").position().left);
-
-  if ($(this).hasClass("next")) {
-    $(".container")
-      .stop(false, true)
-      .animate({ left: "-=" + $slide });
-  } else if ($(this).hasClass("prev")) {
-    $(".container")
-      .stop(false, true)
-      .animate({ left: "+=" + $slide });
-  }
-
-  $(this).removeClass("prev next");
-  $(this).siblings().removeClass("prev active next");
-
-  $(this).addClass("active");
-  $(this).prev().addClass("prev");
-  $(this).next().addClass("next");
-});
-
-// Keyboard nav
-$("html body").keydown(function (e) {
-  if (e.keyCode == 37) {
-    // left
-    $(".active").prev().trigger("click");
-  } else if (e.keyCode == 39) {
-    // right
-    $(".active").next().trigger("click");
-  }
-});
-
-
-// for the artist tabs
-function openTab(evt, tabName) {
-  var i, tabContent, tabLinks;
-
-  tabContent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
-
-  tabLinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+// for a sweetalert to be fired
+function loginSwal(){
+  Swal.fire({
+    title: 'Welcome to LYRIQUE',
+    text: 'Are you an existing user or a new user?',
+    icon: 'question',
+    // background: 'URL(./assets/images/bg.jpg) no-repeat',
+    // backgroundSize:'contain',
+    showCancelButton: true,
+    confirmButtonText: 'Existing User',
+    cancelButtonText: 'New User',
+    reverseButtons: true,
+    customClass: {
+      title: 'my-swal-title',
+      content: 'my-swal-content',
+      confirmButton: 'my-swal-button',
+      cancelButton: 'my-swal-button',
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href="./authentication.html"
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      window.location.href="./registration.html"
+    }
+  });
 }
+
+setTimeout(loginSwal,10000)
+

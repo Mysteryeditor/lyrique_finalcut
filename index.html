@@ -37,6 +37,9 @@
 
   <!-- jquery cdn -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <!-- sweetalert cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
@@ -58,7 +61,7 @@
               <a class="nav-link " aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Songs</a>
+              <a class="nav-link" onclick="loginSwal()">Songs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#carousels">Instruments</a>
@@ -220,6 +223,44 @@
       </button>
     </div>
 </div>
+
+<!-- modal for feedback -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">FeedBack Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" onsubmit="feedback();return false">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="your-name" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="your-email" required>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="submit"  class="btn btn-dark w-100 fw-bold" >Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   
 <!-- footer -->
   <footer id="footer" class="footer-1">
@@ -257,9 +298,9 @@
 
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="widget no-box">
-              <h5 class="widget-title">GET STARTED<span></span></h5>
-              <p>Get access to your full Training and Marketing Suite.</p>
-              <a class="btn bg-light" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
+              <h5 class="widget-title">FEEDBACK<span></span></h5>
+              <p>Your thoughts hold great <b>VALUE</b> and <b>INFLUENCE</b>.</p>
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(247, 110, 24);color: azure;">FeedBack</a>
             </div>
           </div>
 

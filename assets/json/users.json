@@ -19,7 +19,14 @@
       "id": 2
     }
   ],
-  "login": [],
+  "login": [
+    {
+      "id": 1,
+      "username": "KokkiKumar",
+      "password": "KokkiKumar@123",
+      "profilepic": "./assets/images/profilepic/kokkikumar.jpg"
+    }
+  ],
   "songs": [
     {
       "id": 1,
@@ -284,12 +291,12 @@
     {
       "id": 27,
       "name": "Azhagiye",
+      "url": "./assets/songs/Azhagiye.mp3",
       "Artist": "A.R.Rahman",
       "year": 2017,
-      "artwork": "https://retamil.com/wp-content/uploads/2017/03/azhagiye-marry-song-lyrics-katru-veliyidai.jpg",
-      "url": "./assets/songs/Azhagiye.mp3",
       "language": "Tamil",
-      "likes": 0
+      "artwork": "https://retamil.com/wp-content/uploads/2017/03/azhagiye-marry-song-lyrics-katru-veliyidai.jpg",
+      "likes": 1
     },
     {
       "id": 28,
@@ -339,17 +346,17 @@
       "year": 2003,
       "language": "Tamil",
       "artwork": "https://www.watchwhere.co.uk/static/images/artwork/lesa-lesa-2003-amazon-instant-video.jpg",
-      "likes": 1
+      "likes": 0
     },
     {
       "id": 33,
       "name": "Aval Ulaghazhagi",
-      "year": 2003,
-      "Artist": "Harris Jayaraj",
-      "artwork": "https://secureservercdn.net/198.71.233.216/h34.831.myftpupload.com/wp-content/uploads/2019/12/9.jpg",
-      "language": "Tamil",
       "url": "./assets/songs/Aval Ulaghazhagi.mp3",
-      "likes": 0
+      "Artist": "Harris Jayaraj",
+      "year": 2003,
+      "language": "Tamil",
+      "artwork": "https://secureservercdn.net/198.71.233.216/h34.831.myftpupload.com/wp-content/uploads/2019/12/9.jpg",
+      "likes": 1
     },
     {
       "id": 34,
@@ -359,7 +366,7 @@
       "year": 2008,
       "language": "Tamil",
       "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 35,
@@ -584,6 +591,14 @@
         {
           "title": "Tribute",
           "year": 2013
+        },
+        {
+          "title": "Revolve",
+          "year": 2015
+        },
+        {
+          "title": "A.N.i.M.A.L",
+          "year": 2019
         }
       ]
     },
@@ -720,6 +735,10 @@
         {
           "title": "Walker & the Ghost",
           "year": 2021
+        },
+        {
+          "title": "Walkerverse Pt I & II",
+          "year": 2022
         }
       ]
     },
@@ -752,6 +771,10 @@
         {
           "title": "poems of the past",
           "year": 2019
+        },
+        {
+          "title": "some boring, love stories, pt. 5",
+          "year": 2021
         },
         {
           "title": "some boring, love stories, pt. 5",
@@ -836,6 +859,10 @@
         {
           "title": "Sita Ramam",
           "year": 2022
+        },
+        {
+          "title": "Sita Ramam",
+          "year": 2022
         }
       ]
     },
@@ -848,6 +875,10 @@
         {
           "title": "Athiran",
           "year": 2019
+        },
+        {
+          "title": "Kaadakalam",
+          "year": 2021
         },
         {
           "title": "Kaadakalam",
@@ -956,9 +987,46 @@
         {
           "title": "Vaathi",
           "year": 2023
+        },
+        {
+          "title": "Aayirathil Oruvan",
+          "year": 2010
         }
       ]
     }
   ],
-  "likes": []
+  "likes": [
+    {
+      "username": "KokkiKumar",
+      "songid": 27,
+      "name": "Azhagiye",
+      "url": "./assets/songs/Azhagiye.mp3",
+      "artwork": "https://retamil.com/wp-content/uploads/2017/03/azhagiye-marry-song-lyrics-katru-veliyidai.jpg",
+      "id": 1
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 34,
+      "name": "Eppo Nee",
+      "url": "./assets/songs/Eppo Nee.mp3",
+      "artwork": "https://images.hungama.com/c/1/a6d/9b1/4769965/4769965_300x300.jpg",
+      "id": 2
+    },
+    {
+      "username": "KokkiKumar",
+      "songid": 33,
+      "name": "Aval Ulaghazhagi",
+      "url": "./assets/songs/Aval Ulaghazhagi.mp3",
+      "artwork": "https://secureservercdn.net/198.71.233.216/h34.831.myftpupload.com/wp-content/uploads/2019/12/9.jpg",
+      "id": 3
+    }
+  ],
+  "feedbacks": [
+    {
+      "name": "Srikanth",
+      "email": "sri027.cvb@gmail.com",
+      "message": "hlo",
+      "id": 1
+    }
+  ]
 }

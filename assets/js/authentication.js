@@ -1,3 +1,17 @@
+// for the toggle button of show password
+function togglePasswordVisibility() {
+  var passwordField = document.getElementById('password-field');
+ 
+
+  if (passwordField.type === 'password') {
+    passwordField.type = 'text';
+      
+  } else {
+    passwordField.type = 'password';
+    
+  }
+}
+// authenticating the username and password from the json
 function authenticate() {
   const xhttp = new XMLHttpRequest();
   xhttp.open("GET", "http://localhost:3000/users");

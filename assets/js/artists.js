@@ -46,7 +46,7 @@ function displayUniqueArtists() {
             });
   
             var cardContainer = document.getElementById('card-container'); //Container element for the cards
-  
+            uniqueArtists.sort();
             // Create a Bootstrap card for each unique artist
             uniqueArtists.forEach(function (artist) {
               var card = document.createElement('div');
@@ -68,13 +68,15 @@ function displayUniqueArtists() {
                     var artinfo=JSON.parse(this.responseText);
                     for(let a of artinfo){
                       if(a.name===artist){
+                        var rand=Math.floor(Math.random()*3)
                         Swal.fire({
                           title: 'Artist Info',
                           html:`<div class="row">
                           <div class="col-lg-6 ">
                           <h2>${a.name}</h2>
                           <label>Age:</label>&nbsp${a.age}<br>
-                          <label>Gender:</label>&nbsp${a.gender}<br> 
+                          <label>Gender:</label>&nbsp${a.gender}<br>
+                          <label>Best Album:</label>&nbsp${a.albums[rand].title}&nbsp ${a.albums[rand].year}<br>
                           </div>
                           <div class="col-lg-6">
                           <img style="height:100%" class="img-fluid" alt="artist img" src=${a.imageURL}></div>`,

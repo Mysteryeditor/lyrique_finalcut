@@ -588,7 +588,22 @@ function mostLiked() {
           <td>${i.likes}</td>
           <td>${i.language}</td>
           <td>${i.year}</td>
-          <td><Button onclick='playSong("${i.url}","${i.name}","${i.artwork}")'>Listen Now</button>`
+          <td><button class="listennow">
+          <span class="span-mother">
+              <span><i class="fa-solid fa-headphones"></i></span>
+              <span>L</span>
+              <span>I</span>
+              <span>S</span>
+              <span>T</span>
+              <span>E</span>
+              <span>N</span>
+          </span>
+          <span class="span-mother2">
+              <span>N</span>
+              <span>O</span>
+              <span>W</span>
+          </span>
+        </button>`
           
             }
             document.getElementById("likedtable").innerHTML = likeddata;
